@@ -1,34 +1,95 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #0f0f10;
+.App {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    background: #0a0a0b;
+    color: #fff;
 }
 
-.App-link {
-    color: #61dafb;
+/* Smooth font rendering */
+body,
+.App {
+    font-family: "Outfit", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
-@keyframes App-logo-spin {
+.font-serif,
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+    font-feature-settings: "liga", "kern";
+}
+
+/* Selection color */
+::selection {
+    background: #b76e79;
+    color: #fff;
+}
+
+/* Custom scrollbar (dark + rose gold thumb) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0a0a0b;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(183, 110, 121, 0.4);
+    border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(183, 110, 121, 0.7);
+}
+
+/* Reveal on viewport (simple) */
+@keyframes knc-fade-up {
     from {
-        transform: rotate(0deg);
+        opacity: 0;
+        transform: translateY(24px);
     }
     to {
-        transform: rotate(360deg);
+        opacity: 1;
+        transform: translateY(0);
     }
+}
+
+.knc-fade-up {
+    animation: knc-fade-up 0.9s ease-out both;
+}
+
+/* Underline link */
+.link-underline {
+    position: relative;
+    display: inline-block;
+}
+.link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, #b76e79, #d4af37);
+    transition: width 0.45s ease;
+}
+.link-underline:hover::after {
+    width: 100%;
+}
+
+/* Prevent text overflow on small screens */
+@media (max-width: 480px) {
+    h1 {
+        word-break: break-word;
+    }
+}
+
+/* line-clamp utility */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
