@@ -17,6 +17,7 @@ import FAQ from "@/pages/FAQ";
 import Contact from "@/pages/Contact";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
+import LandingPage from "@/pages/LandingPage";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
               <Route path="/iletisim" element={<Contact />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
+              <Route path="/:slug" element={<LandingPage />} />
             </Routes>
           </main>
           <Footer />

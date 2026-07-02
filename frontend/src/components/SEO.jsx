@@ -1,12 +1,22 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { useLang } from "@/i18n/LanguageContext";
+import { SITE } from "@/data/site";
 
 /**
- * Lightweight SEO component — updates document title and meta tags
- * without needing react-helmet. Keeps "Girne Kıbrıs Eskort" keywords prominent.
+ * SEO component - updates document title, meta tags, canonical URL,
+ * hreflang, Open Graph, and injects JSON-LD (LocalBusiness by default).
+ * Keeps "Girne Kıbrıs Eskort" / "Kyrenia Cyprus Escort" keywords prominent.
  */
-export const SEO = ({ titleKey, descriptionKey, customTitle, customDesc }) => {
+export const SEO = ({
+  titleKey,
+  descriptionKey,
+  customTitle,
+  customDesc,
+  jsonLd,
+}) => {
   const { lang, t } = useLang();
+  const { pathname } = useLocation();
 
   useEffect(() => {
     const brand = t.brand;
@@ -21,10 +31,12 @@ export const SEO = ({ titleKey, descriptionKey, customTitle, customDesc }) => {
       customDesc ||
       descriptionKey ||
       (lang === "tr"
-        ? "Kıbrıs Night Club — Girne Kıbrıs eskort dünyasının en seçkin VIP ajansı. 7/24 diskret hizmet, gerçek fotoğraflar, premium modeller."
-        : "Kıbrıs Night Club — the most exclusive VIP agency of the Kyrenia Cyprus escort scene. 24/7 discreet service, real photos, premium models.");
+        ? "Kıbrıs Night Club — Girne Kıbrıs eskort dünyasının en seçkin VIP ajansı. 7/24 diskret hizmet, gerçek fotoğraflar, 24 premium model. Otel-çağrı, VIP casino ve yat partileri."
+        : "Kıbrıs Night Club — the most exclusive VIP agency of the Kyrenia Cyprus escort scene. 24/7 discreet service, real photos, 24 premium models. Incall, VIP casino and yacht parties.");
 
     document.title = title;
+
+    const canonicalUrl = `${SITE.url}${pathname === "/" ? "" : pathname}`;
 
     const setMeta = (name, content, isProperty = false) => {
       const selector = isProperty
@@ -44,18 +56,73 @@ export const SEO = ({ titleKey, descriptionKey, customTitle, customDesc }) => {
     setMeta(
       "keywords",
       lang === "tr"
-        ? "Girne Kıbrıs Eskort, Girne eskort, Kıbrıs eskort, Girne VIP eskort, Girne otel eskort, Kıbrıs Night Club, KKTC eskort"
-        : "Kyrenia Cyprus Escort, Kyrenia escort, Cyprus escort, Kyrenia VIP escort, Kyrenia hotel escort, Kıbrıs Night Club, TRNC escort",
+        ? "Girne Kıbrıs Eskort, Girne eskort, Kıbrıs eskort, Kıbrıs Night Club, Girne VIP eskort, Girne otel eskort, KKTC eskort, Kıbrıs Rus eskort, Kıbrıs Türk eskort, Cratos eskort, Merit eskort, Acapulco eskort, Girne casino eskort, Girne yat eskort"
+        : "Kyrenia Cyprus Escort, Kyrenia escort, Cyprus escort, Kıbrıs Night Club, Kyrenia VIP escort, Kyrenia hotel escort, TRNC escort, Russian escort Cyprus, Turkish escort Kyrenia, Cratos escort, Merit escort, Acapulco escort, Kyrenia casino escort, Kyrenia yacht escort",
     );
+
+    // Open Graph
     setMeta("og:title", title, true);
     setMeta("og:description", description, true);
     setMeta("og:type", "website", true);
+    setMeta("og:url", canonicalUrl, true);
+    setMeta("og:site_name", brand, true);
     setMeta("og:locale", lang === "tr" ? "tr_TR" : "en_US", true);
+    setMeta(
+      "og:locale:alternate",
+      lang === "tr" ? "en_US" : "tr_TR",
+      true,
+    );
+    setMeta(
+      "og:image",
+      "https://images.unsplash.com/photo-1646977858731-ec11d66a1aaa?w=1200&q=80",
+      true,
+    );
     setMeta("twitter:card", "summary_large_image");
     setMeta("twitter:title", title);
     setMeta("twitter:description", description);
-    setMeta("robots", "index, follow");
-  }, [lang, t, titleKey, descriptionKey, customTitle, customDesc]);
+    setMeta("robots", "index, follow, max-image-preview:large");
+
+    // Canonical link
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute("href", canonicalUrl);
+
+    // hreflang (tr / en / x-default)
+    const setHreflang = (hreflang, href) => {
+      let el = document.querySelector(
+        `link[rel="alternate"][hreflang="${hreflang}"]`,
+      );
+      if (!el) {
+        el = document.createElement("link");
+        el.setAttribute("rel", "alternate");
+        el.setAttribute("hreflang", hreflang);
+        document.head.appendChild(el);
+      }
+      el.setAttribute("href", href);
+    };
+    setHreflang("tr", canonicalUrl);
+    setHreflang("en", canonicalUrl);
+    setHreflang("x-default", canonicalUrl);
+
+    // JSON-LD injection (page-specific or default LocalBusiness)
+    const scriptId = "knc-jsonld-page";
+    const existing = document.getElementById(scriptId);
+    if (existing) existing.remove();
+    if (jsonLd) {
+      const script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.id = scriptId;
+      script.textContent = JSON.stringify(jsonLd);
+      document.head.appendChild(script);
+    }
+
+    // Update html lang
+    document.documentElement.lang = lang;
+  }, [lang, t, titleKey, descriptionKey, customTitle, customDesc, pathname, jsonLd]);
 
   return null;
 };

@@ -11,9 +11,26 @@ import {
 export default function FAQ() {
   const { t, lang } = useLang();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => {
+      const q = lang === "tr" ? f.tr.q : f.en.q;
+      const a = lang === "tr" ? f.tr.a : f.en.a;
+      return {
+        "@type": "Question",
+        name: q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: a,
+        },
+      };
+    }),
+  };
+
   return (
     <div className="pt-32 pb-24 bg-[#0A0A0B] min-h-screen" data-testid="faq-page">
-      <SEO customTitle={t.faq.title} />
+      <SEO customTitle={t.faq.title} jsonLd={jsonLd} />
       <div className="max-w-4xl mx-auto px-6 lg:px-10">
         <div className="mb-16">
           <p className="text-xs uppercase tracking-[0.32em] text-[#B76E79] mb-5">

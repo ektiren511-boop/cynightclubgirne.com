@@ -3,6 +3,8 @@ import { useLang } from "@/i18n/LanguageContext";
 import { girls } from "@/data/girls";
 import { SEO } from "@/components/SEO";
 import { ProfileCard } from "@/components/ProfileCard";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { landings } from "@/data/landings";
 import { waLink, SITE } from "@/data/site";
 import {
   ShieldCheck,
@@ -20,9 +22,52 @@ export default function Home() {
 
   const whyIcons = [ShieldCheck, Crown, Clock, Hotel];
 
+  const homeJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": `${SITE.url}#business`,
+        name: SITE.name,
+        image: "https://images.unsplash.com/photo-1646977858731-ec11d66a1aaa?w=1200&q=80",
+        url: SITE.url,
+        telephone: SITE.phone,
+        priceRange: "€€€",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Girne",
+          addressRegion: "Kuzey Kıbrıs",
+          addressCountry: "CY",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: SITE.latitude,
+          longitude: SITE.longitude,
+        },
+        openingHoursSpecification: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday", "Tuesday", "Wednesday", "Thursday",
+            "Friday", "Saturday", "Sunday",
+          ],
+          opens: "00:00",
+          closes: "23:59",
+        },
+        sameAs: [SITE.url],
+      },
+      {
+        "@type": "WebSite",
+        "@id": `${SITE.url}#website`,
+        url: SITE.url,
+        name: SITE.name,
+        inLanguage: [lang === "tr" ? "tr-TR" : "en-US"],
+      },
+    ],
+  };
+
   return (
     <div data-testid="home-page">
-      <SEO />
+      <SEO jsonLd={homeJsonLd} />
 
       {/* HERO */}
       <section className="relative min-h-[100vh] flex items-end overflow-hidden">
@@ -190,6 +235,68 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* CATEGORIES (SEO LANDING LINKS) */}
+      <section className="py-24 md:py-32 bg-[#0A0A0B] border-t border-white/[0.05]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+          <div className="flex items-end justify-between flex-wrap gap-6 mb-14">
+            <div>
+              <p className="text-xs uppercase tracking-[0.32em] text-[#B76E79] mb-5">
+                {lang === "tr" ? "Kategoriler" : "Categories"}
+              </p>
+              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white tracking-tight leading-[1.05]">
+                {lang === "tr"
+                  ? "Milliyet ve Otel Bazlı Rehberler"
+                  : "Nationality & Hotel Guides"}
+              </h2>
+              <p className="text-white/55 mt-4 max-w-xl">
+                {lang === "tr"
+                  ? "Tercih ettiğiniz milliyet veya otele göre model seçin — Girne Kıbrıs eskort dünyasında en detaylı rehberler."
+                  : "Choose by preferred nationality or hotel — the most detailed guides in the Kyrenia Cyprus escort scene."}
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5">
+            {landings.map((l) => {
+              const item = l[lang] || l.tr;
+              return (
+                <Link
+                  key={l.slug}
+                  to={`/${l.slug}`}
+                  data-testid={`category-${l.slug}`}
+                  className="group relative aspect-[4/5] overflow-hidden bg-[#0E0E10] border border-white/[0.06] hover:border-[#D4AF37]/40 transition-colors duration-500"
+                >
+                  <img
+                    src={l.hero}
+                    alt={item.h1}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-90 scale-105 group-hover:scale-110 transition-all duration-[1200ms] ease-out"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0B] via-[#0A0A0B]/50 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 p-5">
+                    <p className="text-[10px] uppercase tracking-[0.25em] text-[#D4AF37] mb-2">
+                      {l.type === "hotel"
+                        ? lang === "tr"
+                          ? "Otel"
+                          : "Hotel"
+                        : lang === "tr"
+                          ? "Milliyet"
+                          : "Nationality"}
+                    </p>
+                    <h3 className="font-serif text-2xl text-white leading-tight">
+                      {item.breadcrumb}
+                    </h3>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <TestimonialsSection />
 
       {/* CTA BANNER */}
       <section className="py-24 md:py-32 bg-[#0A0A0B] relative overflow-hidden">

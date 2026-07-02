@@ -1,14 +1,18 @@
 export const SITE = {
   name: "Kıbrıs Night Club",
-  domain: "kibrisnightclub.com",
+  domain: "cynightclubgirne.com",
+  url: "https://cynightclubgirne.com",
   phone: "+905488552387",
   phoneDisplay: "+90 548 855 23 87",
   whatsapp: "905488552387",
-  email: "info@kibrisnightclub.com",
+  email: "info@cynightclubgirne.com",
   location: "Girne, Kuzey Kıbrıs",
+  latitude: 35.3417,
+  longitude: 33.3197,
   social: {
     instagram: "#",
     telegram: "#",
+    twitter: "#",
   },
 };
 
