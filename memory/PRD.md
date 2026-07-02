@@ -25,17 +25,22 @@
 ## What's Been Implemented (2025-12)
 - [x] Bilingual TR/EN with header language switch
 - [x] Age verification 18+ modal
-- [x] Home page (hero, about, featured 6, why-us, CTA banner)
-- [x] Gallery /galeri with 12 profiles + 4 filters (all / new / vip / featured)
-- [x] Profile detail /galeri/:id (gallery, stats, bio, WA + call CTA)
-- [x] Services /hizmetler (6 services, alternating editorial layout)
+- [x] Home page (hero, about, featured 6, why-us, categories, testimonials, CTA banner)
+- [x] Gallery /galeri with **24 profiles** + 4 filters
+- [x] Profile detail /galeri/:id (24 total)
+- [x] Services /hizmetler (6 services)
 - [x] Pricing /fiyatlar (3 plans, VIP highlighted)
-- [x] FAQ /sss (8 accordions)
-- [x] Blog /blog + /blog/:slug (4 SEO posts in TR+EN)
+- [x] FAQ /sss (8 accordions + FAQPage JSON-LD)
+- [x] Blog /blog + /blog/:slug (**10 SEO posts** in TR+EN)
 - [x] Contact /iletisim (info cards + working form → POST /api/contact)
+- [x] **5 SEO landing pages**: /rus-eskort, /turk-eskort, /ukraynali-eskort, /cratos-eskort, /merit-eskort
+- [x] **Testimonials section** on Home (6 bilingual reviews)
 - [x] Footer with quick links, contact, disclaimer
-- [x] SEO meta tags with "Girne Kıbrıs Eskort" / "Kyrenia Cyprus Escort"
-- [x] Backend tested 7/7, frontend tested 35/35 (Playwright)
+- [x] **Enhanced SEO**: canonical URLs, hreflang tr/en/x-default, JSON-LD (LocalBusiness on Home, FAQPage on /sss), OG tags, meta keywords with 14+ keyword variations
+- [x] **sitemap.xml** at /sitemap.xml (46 URLs)
+- [x] **robots.txt** at /robots.txt
+- [x] Domain: **cynightclubgirne.com** (canonical URL base)
+- [x] Backend tested 7/7 (2 iterations), Frontend 100% (2 iterations)
 
 ## P0 — Done
 All requested sections + i18n + SEO live.
