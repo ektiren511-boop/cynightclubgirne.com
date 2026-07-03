@@ -27,7 +27,7 @@ export const girls = [
   },
   {
     id: "ayla",
-    name: "Ayla",
+    name: "Alina",
     age: 22,
     height: "168 cm",
     weight: "52 kg",
@@ -45,9 +45,9 @@ export const girls = [
       "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=1200&q=80",
     ],
     bio_tr:
-      "Ayla, İstanbul'dan gelen, esmer ve sıcakkanlı bir Türk modeli. Sosyal etkinliklerde harika bir partnerdir, gece kulübü turlarında size eşlik etmeyi sever.",
+      "Alina, İstanbul'dan gelen, esmer ve sıcakkanlı bir Türk modeli. Sosyal etkinliklerde harika bir partnerdir, gece kulübü turlarında size eşlik etmeyi sever.",
     bio_en:
-      "Ayla is a warm, brunette Turkish model from Istanbul. A wonderful partner for social events — she loves accompanying you on nightclub tours.",
+      "Alina is a warm, brunette Turkish model from Istanbul. A wonderful partner for social events — she loves accompanying you on nightclub tours.",
   },
   {
     id: "natasha",
@@ -171,7 +171,7 @@ export const girls = [
   },
   {
     id: "defne",
-    name: "Defne",
+    name: "Daria",
     age: 24,
     height: "169 cm",
     weight: "53 kg",
@@ -189,9 +189,9 @@ export const girls = [
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=1200&q=80",
     ],
     bio_tr:
-      "Defne, İzmir'in tatlı esmer modeli. Doğal güzelliği ve cana yakın kişiliğiyle uzun süredir Girne'nin favorilerinden.",
+      "Daria, İzmir'in tatlı esmer modeli. Doğal güzelliği ve cana yakın kişiliğiyle uzun süredir Girne'nin favorilerinden.",
     bio_en:
-      "Defne, the charming brunette model from Izmir. Her natural beauty and friendly personality have made her a long-time Kyrenia favourite.",
+      "Daria, the charming brunette model from Izmir. Her natural beauty and friendly personality have made her a long-time Kyrenia favourite.",
   },
   {
     id: "anna",
@@ -219,7 +219,7 @@ export const girls = [
   },
   {
     id: "yasmin",
-    name: "Yasmin",
+    name: "Yasmine",
     age: 23,
     height: "167 cm",
     weight: "51 kg",
@@ -237,9 +237,9 @@ export const girls = [
       "https://images.unsplash.com/photo-1502767089025-6572583495f4?w=1200&q=80",
     ],
     bio_tr:
-      "Yasmin, egzotik güzelliği ve sıcak bakışlarıyla nefes kesen bir partner. Orta Doğu misafirleri için tercih edilen modeldir.",
+      "Yasmine, egzotik güzelliği ve sıcak bakışlarıyla nefes kesen bir partner. Orta Doğu misafirleri için tercih edilen modeldir.",
     bio_en:
-      "Yasmin's exotic beauty and warm gaze make her a breathtaking companion — a preferred model for Middle Eastern guests.",
+      "Yasmine's exotic beauty and warm gaze make her a breathtaking companion — a preferred model for Middle Eastern guests.",
   },
   {
     id: "klara",
@@ -267,7 +267,7 @@ export const girls = [
   },
   {
     id: "selin",
-    name: "Selin",
+    name: "Serena",
     age: 22,
     height: "166 cm",
     weight: "50 kg",
@@ -285,9 +285,9 @@ export const girls = [
       "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80",
     ],
     bio_tr:
-      "Selin, Ankara'dan, taze ve enerjik bir Türk modeli. İlk randevular ve sosyal etkinlikler için ideal.",
+      "Serena, Ankara'dan, taze ve enerjik bir Türk modeli. İlk randevular ve sosyal etkinlikler için ideal.",
     bio_en:
-      "Selin is a fresh, energetic Turkish model from Ankara. Ideal for first-time bookings and social events.",
+      "Serena is a fresh, energetic Turkish model from Ankara. Ideal for first-time bookings and social events.",
   },
   {
     id: "irina",
@@ -363,7 +363,7 @@ export const girls = [
   },
   {
     id: "melis",
-    name: "Melis",
+    name: "Melissa",
     age: 25,
     height: "170 cm",
     weight: "54 kg",
@@ -381,9 +381,9 @@ export const girls = [
       "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=1200&q=80",
     ],
     bio_tr:
-      "Melis, İstanbul'un moda çevresinden zarif ve şık bir Türk modeli. Akşam yemekleri ve etkinlikler için ideal.",
+      "Melissa, İstanbul'un moda çevresinden zarif ve şık bir Türk modeli. Akşam yemekleri ve etkinlikler için ideal.",
     bio_en:
-      "Melis is an elegant, chic Turkish model from Istanbul's fashion scene — ideal for dinners and events.",
+      "Melissa is an elegant, chic Turkish model from Istanbul's fashion scene — ideal for dinners and events.",
   },
   {
     id: "chloe",
@@ -411,7 +411,7 @@ export const girls = [
   },
   {
     id: "zeynep",
-    name: "Zeynep",
+    name: "Zara",
     age: 23,
     height: "168 cm",
     weight: "52 kg",
@@ -429,9 +429,9 @@ export const girls = [
       "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80",
     ],
     bio_tr:
-      "Zeynep, İzmir'in güneşi kadar sıcak, doğal esmer bir Türk modeli. Otel eskort ve gece kulübü partnerliğinde tercih edilir.",
+      "Zara, İzmir'in güneşi kadar sıcak, doğal esmer bir Türk modeli. Otel konsomatris ve gece kulübü partnerliğinde tercih edilir.",
     bio_en:
-      "Zeynep is a natural brunette Turkish model — warm as the Izmir sun. Preferred for hotel escort and nightclub companionship.",
+      "Zara is a natural brunette Turkish model — warm as the Izmir sun. Preferred for hotel hostess and nightclub companionship.",
   },
   {
     id: "diana",
@@ -531,7 +531,7 @@ export const girls = [
   },
   {
     id: "elif",
-    name: "Elif",
+    name: "Emily",
     age: 22,
     height: "167 cm",
     weight: "50 kg",
@@ -549,9 +549,9 @@ export const girls = [
       "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=1200&q=80",
     ],
     bio_tr:
-      "Elif, Antalya'dan güneşin kızı — tatlı gülüşü ve sıcak tavırlarıyla ilk kez Girne'ye gelenlerin favori seçimi.",
+      "Emily, Antalya'dan güneşin kızı — tatlı gülüşü ve sıcak tavırlarıyla ilk kez Girne'ye gelenlerin favori seçimi.",
     bio_en:
-      "Elif — a daughter of the sun from Antalya. Her sweet smile and warm manner make her a favourite for first-timers in Kyrenia.",
+      "Emily — a daughter of the sun from Antalya. Her sweet smile and warm manner make her a favourite for first-timers in Kyrenia.",
   },
   {
     id: "victoria",
@@ -573,8 +573,8 @@ export const girls = [
       "https://images.unsplash.com/photo-1503104834685-7205e8607eb9?w=1200&q=80",
     ],
     bio_tr:
-      "Victoria, Londra'dan üst düzey bir yaşam tarzına sahip, olgun ve prestijli bir eskort. İş yemekleri ve uzun süreli seyahatler için premium seçim.",
+      "Victoria, Londra'dan üst düzey bir yaşam tarzına sahip, olgun ve prestijli bir konsomatris. İş yemekleri ve uzun süreli seyahatler için premium seçim.",
     bio_en:
-      "Victoria is a mature, prestigious escort from London with a high-end lifestyle — a premium pick for business dinners and long trips.",
+      "Victoria is a mature, prestigious hostess from London with a high-end lifestyle — a premium pick for business dinners and long trips.",
   },
 ];

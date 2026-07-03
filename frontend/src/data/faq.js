@@ -3,11 +3,11 @@ export const faqs = [
   {
     id: 1,
     tr: {
-      q: "Girne Kıbrıs eskort hizmetiniz yasal mı?",
+      q: "Girne Kıbrıs konsomatris hizmetiniz yasal mı?",
       a: "Tüm hizmetlerimiz Kuzey Kıbrıs Türk Cumhuriyeti yasalarına uygun olarak, 18 yaş ve üzeri yetişkinlere sunulmaktadır. Tüm modellerimiz kendi rızalarıyla çalışmaktadır.",
     },
     en: {
-      q: "Is your Kyrenia Cyprus escort service legal?",
+      q: "Is your Kyrenia Cyprus hostess service legal?",
       a: "All our services are provided in compliance with the laws of the Turkish Republic of Northern Cyprus, to adults aged 18 and above. All our models work entirely by their own consent.",
     },
   },

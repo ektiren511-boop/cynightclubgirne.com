@@ -27,8 +27,8 @@ export const Footer = () => {
             <p className="text-white/55 text-sm leading-relaxed max-w-md">
               {t.footer.tagline}{" "}
               {lang === "tr"
-                ? "Girne Kıbrıs eskort hizmetinde diskretliğin, zarafetin ve kalitenin adresi."
-                : "The address of discretion, elegance and quality in the Kyrenia Cyprus escort scene."}
+                ? "Girne Kıbrıs konsomatris hizmetinde diskretliğin, zarafetin ve kalitenin adresi."
+                : "The address of discretion, elegance and quality in the Kyrenia Cyprus hostess scene."}
             </p>
             <div className="flex items-center gap-3 pt-3">
               <a
@@ -61,6 +61,7 @@ export const Footer = () => {
                 { to: "/galeri", label: t.nav.gallery },
                 { to: "/hizmetler", label: t.nav.services },
                 { to: "/fiyatlar", label: t.nav.pricing },
+                { to: "/nasil-rezervasyon", label: t.nav.booking },
                 { to: "/blog", label: t.nav.blog },
                 { to: "/sss", label: t.nav.faq },
                 { to: "/iletisim", label: t.nav.contact },
@@ -132,8 +133,8 @@ export const Footer = () => {
             </p>
             <p className="uppercase tracking-[0.25em]">
               {lang === "tr"
-                ? "Girne • Kıbrıs • Eskort"
-                : "Kyrenia • Cyprus • Escort"}
+                ? "Girne • Kıbrıs • Konsomatris"
+                : "Kyrenia • Cyprus • Hostess"}
             </p>
           </div>
         </div>

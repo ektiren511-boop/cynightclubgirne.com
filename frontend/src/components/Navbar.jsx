@@ -13,6 +13,7 @@ export const Navbar = () => {
     { to: "/galeri", label: t.nav.gallery, key: "gallery" },
     { to: "/hizmetler", label: t.nav.services, key: "services" },
     { to: "/fiyatlar", label: t.nav.pricing, key: "pricing" },
+    { to: "/nasil-rezervasyon", label: t.nav.booking, key: "booking" },
     { to: "/blog", label: t.nav.blog, key: "blog" },
     { to: "/sss", label: t.nav.faq, key: "faq" },
     { to: "/iletisim", label: t.nav.contact, key: "contact" },

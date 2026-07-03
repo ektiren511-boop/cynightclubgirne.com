@@ -17,6 +17,7 @@ import FAQ from "@/pages/FAQ";
 import Contact from "@/pages/Contact";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
+import BookingGuide from "@/pages/BookingGuide";
 import LandingPage from "@/pages/LandingPage";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
               <Route path="/galeri/:id" element={<ProfileDetail />} />
               <Route path="/hizmetler" element={<Services />} />
               <Route path="/fiyatlar" element={<Pricing />} />
+              <Route path="/nasil-rezervasyon" element={<BookingGuide />} />
               <Route path="/sss" element={<FAQ />} />
               <Route path="/iletisim" element={<Contact />} />
               <Route path="/blog" element={<Blog />} />

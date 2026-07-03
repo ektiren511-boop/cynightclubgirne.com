@@ -15,8 +15,8 @@ export const testimonials = [
     location_tr: "Ankara",
     location_en: "Ankara",
     rating: 5,
-    tr: "Acapulco Resort'ta bir haftalık tatilimde iki farklı gece rezervasyon yaptım. Modeller galerideki fotoğraflarla birebir aynıydı — bunun için tebrik ederim. Ayla ve Defne'ye teşekkürler.",
-    en: "I booked two separate nights during my week at Acapulco Resort. The models were identical to their gallery photos — congratulations on that. Thanks to Ayla and Defne.",
+    tr: "Acapulco Resort'ta bir haftalık tatilimde iki farklı gece rezervasyon yaptım. Modeller galerideki fotoğraflarla birebir aynıydı — bunun için tebrik ederim. Alina ve Daria'ya teşekkürler.",
+    en: "I booked two separate nights during my week at Acapulco Resort. The models were identical to their gallery photos — congratulations on that. Thanks to Alina and Daria.",
   },
   {
     id: 3,
@@ -33,8 +33,8 @@ export const testimonials = [
     location_tr: "Londra",
     location_en: "London",
     rating: 5,
-    tr: "İngilizce iletişim, hızlı yanıt ve premium kalite. Girne'deki en profesyonel eskort ajansı. Victoria'yı tekrar rezerve edeceğim.",
-    en: "English communication, fast response, premium quality. The most professional escort agency in Kyrenia. I'll rebook Victoria.",
+    tr: "İngilizce iletişim, hızlı yanıt ve premium kalite. Girne'deki en profesyonel konsomatris ajansı. Victoria'yı tekrar rezerve edeceğim.",
+    en: "English communication, fast response, premium quality. The most professional hostess agency in Kyrenia. I'll rebook Victoria.",
   },
   {
     id: 5,

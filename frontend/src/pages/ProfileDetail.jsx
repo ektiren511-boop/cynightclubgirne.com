@@ -31,7 +31,7 @@ export default function ProfileDetail() {
   const languages = lang === "tr" ? g.languages_tr : g.languages_en;
   const bio = lang === "tr" ? g.bio_tr : g.bio_en;
 
-  const seoTitle = `${g.name} - ${nationality} ${lang === "tr" ? "Girne Kıbrıs Eskort" : "Kyrenia Cyprus Escort"}`;
+  const seoTitle = `${g.name} - ${nationality} ${lang === "tr" ? "Girne Kıbrıs Konsomatris" : "Kyrenia Cyprus Hostess"}`;
 
   return (
     <div className="pt-32 pb-24 bg-[#0A0A0B] min-h-screen" data-testid="profile-detail-page">
@@ -81,7 +81,7 @@ export default function ProfileDetail() {
               {g.name}
             </h1>
             <p className="text-[#E0BFB8] mt-3 text-xs uppercase tracking-[0.3em]">
-              {nationality} • {lang === "tr" ? "Girne Kıbrıs Eskort" : "Kyrenia Cyprus Escort"}
+              {nationality} • {lang === "tr" ? "Girne Kıbrıs Konsomatris" : "Kyrenia Cyprus Hostess"}
             </p>
 
             <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-5 py-8 border-y border-white/5">
@@ -98,15 +98,14 @@ export default function ProfileDetail() {
 
             <p className="text-white/65 leading-relaxed mt-8">{bio}</p>
 
-            <div className="mt-10 p-6 border border-[#D4AF37]/25 bg-gradient-to-b from-[#121214] to-[#0A0A0B]">
-              <p className="text-xs uppercase tracking-[0.25em] text-white/50">
-                {lang === "tr" ? "Saatlik" : "Hourly"}
+            <div className="mt-10 p-6 border border-[#B76E79]/25 bg-gradient-to-b from-[#121214] to-[#0A0A0B]">
+              <p className="text-xs uppercase tracking-[0.25em] text-[#E0BFB8]">
+                {lang === "tr" ? "Rezervasyon" : "Reservation"}
               </p>
-              <p className="font-serif text-5xl text-[#D4AF37] mt-2">{g.rate}</p>
-              <p className="text-xs text-white/40 mt-2">
+              <p className="text-white/70 text-sm mt-3 leading-relaxed">
                 {lang === "tr"
-                  ? "Paket fiyatları için WhatsApp'tan iletişime geçin."
-                  : "Contact us on WhatsApp for package prices."}
+                  ? "Fiyat ve müsaitlik bilgileri için WhatsApp üzerinden 30 saniyede iletişim kurun. Tüm rezervasyonlar %100 diskretlikle ele alınır."
+                  : "For pricing and availability, message us on WhatsApp in 30 seconds. Every reservation is handled with 100% discretion."}
               </p>
             </div>
 

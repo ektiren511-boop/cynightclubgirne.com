@@ -2,12 +2,13 @@
 export const translations = {
   tr: {
     brand: "Kıbrıs Night Club",
-    tagline: "Girne Kıbrıs'ın Lüks Eskort Deneyimi",
+    tagline: "Girne Kıbrıs'ın Lüks Konsomatris Deneyimi",
     nav: {
       home: "Anasayfa",
       gallery: "Galeri",
       services: "Hizmetler",
       pricing: "Fiyatlar",
+      booking: "Rezervasyon",
       faq: "S.S.S.",
       blog: "Blog",
       contact: "İletişim",
@@ -41,23 +42,23 @@ export const translations = {
       vip: "VIP",
     },
     home: {
-      heroEyebrow: "Girne • Kıbrıs • Eskort",
+      heroEyebrow: "Girne • Kıbrıs • Konsomatris",
       heroTitle: "Geceyi Unutulmaz Kıl",
       heroSubtitle:
-        "Girne Kıbrıs'ın en seçkin ve diskret eskort ajansı. 7/24 VIP hizmet, ayrıcalıklı modeller ve sınırsız zarafet.",
+        "Girne Kıbrıs'ın en seçkin ve diskret konsomatris ajansı. 7/24 VIP hizmet, ayrıcalıklı modeller ve sınırsız zarafet.",
       ctaPrimary: "Galeriyi Keşfet",
       ctaSecondary: "Hemen Ara",
       aboutEyebrow: "Hakkımızda",
       aboutTitle: "Girne'nin en seçkin gece deneyimi",
       aboutText:
-        "Kıbrıs Night Club, Girne'de premium eskort hizmeti sunan, diskretliği ve kaliteyi ön planda tutan butik bir ajanstır. Türkiye, Rusya, Ukrayna ve Avrupa'nın dört bir yanından özenle seçilmiş modellerimiz, sizin için eşsiz bir deneyim hazırlar. Otel ziyaretleri, akşam yemeği eşlikleri, gece kulübü partnerliği ve özel etkinlikler için 7/24 hizmetinizdeyiz.",
+        "Kıbrıs Night Club, Girne'de premium konsomatris hizmeti sunan, diskretliği ve kaliteyi ön planda tutan butik bir ajanstır. Türkiye, Rusya, Ukrayna ve Avrupa'nın dört bir yanından özenle seçilmiş modellerimiz, sizin için eşsiz bir deneyim hazırlar. Otel ziyaretleri, akşam yemeği eşlikleri, gece kulübü partnerliği ve özel etkinlikler için 7/24 hizmetinizdeyiz.",
       featuredEyebrow: "Modeller",
       featuredTitle: "Bu Haftanın Favorileri",
-      featuredSub: "Girne Kıbrıs eskort dünyasının en çekici yüzleri",
+      featuredSub: "Girne Kıbrıs konsomatris dünyasının en çekici yüzleri",
       servicesEyebrow: "Hizmetler",
       servicesTitle: "Ayrıcalıklı Deneyimler",
       whyEyebrow: "Neden Biz",
-      whyTitle: "Girne Kıbrıs'ta Lider Eskort Ajansı",
+      whyTitle: "Girne Kıbrıs'ta Lider Konsomatris Ajansı",
       whyItems: [
         {
           title: "%100 Diskret",
@@ -78,11 +79,11 @@ export const translations = {
       ],
       ctaBannerTitle: "Bu gece yalnız kalma.",
       ctaBannerText:
-        "Girne Kıbrıs eskort hizmetimizle unutulmaz bir gece için WhatsApp üzerinden hemen iletişime geç.",
+        "Girne Kıbrıs konsomatris hizmetimizle unutulmaz bir gece için WhatsApp üzerinden hemen iletişime geç.",
     },
     gallery: {
       title: "Galeri",
-      subtitle: "Girne Kıbrıs Eskort Modellerimiz",
+      subtitle: "Girne Kıbrıs Konsomatris Modellerimiz",
       filterAll: "Tümü",
       filterNew: "Yeni",
       filterVip: "VIP",
@@ -91,10 +92,10 @@ export const translations = {
     },
     services: {
       title: "Hizmetlerimiz",
-      subtitle: "Girne Kıbrıs eskort deneyimi için ayrıcalıklı paketler",
+      subtitle: "Girne Kıbrıs konsomatris deneyimi için ayrıcalıklı paketler",
       list: [
         {
-          name: "Otel Eskort",
+          name: "Otel Konsomatris",
           desc: "Girne'deki tüm 5 yıldızlı otellere diskret giriş-çıkışlarla otel odanızda lüks bir buluşma. Resepsiyon kaydı veya soru sorulmadan, doğrudan oda numaranıza ulaşan profesyonel hizmet.",
         },
         {
@@ -167,11 +168,11 @@ export const translations = {
     },
     faq: {
       title: "Sıkça Sorulan Sorular",
-      subtitle: "Girne Kıbrıs eskort hizmetimiz hakkında merak edilenler",
+      subtitle: "Girne Kıbrıs konsomatris hizmetimiz hakkında merak edilenler",
     },
     contact: {
       title: "İletişim",
-      subtitle: "Girne Kıbrıs eskort hizmeti için 7/24 ulaşılabiliriz.",
+      subtitle: "Girne Kıbrıs konsomatris hizmeti için 7/24 ulaşılabiliriz.",
       whatsappTitle: "WhatsApp ile Anında Yanıt",
       whatsappText:
         "En hızlı yanıt için WhatsApp üzerinden yazın. Tüm rezervasyonlar diskret ve özel olarak ele alınır.",
@@ -189,7 +190,7 @@ export const translations = {
     blog: {
       title: "Blog",
       subtitle:
-        "Girne Kıbrıs eskort dünyasından haberler, rehberler ve özel içerikler",
+        "Girne Kıbrıs konsomatris dünyasından haberler, rehberler ve özel içerikler",
       back: "Tüm yazılar",
       relatedTitle: "İlgili Yazılar",
     },
@@ -200,7 +201,7 @@ export const translations = {
       leave: "Hayır, çıkış yap",
     },
     footer: {
-      tagline: "Girne Kıbrıs'ın en seçkin eskort ajansı.",
+      tagline: "Girne Kıbrıs'ın en seçkin konsomatris ajansı.",
       quickLinks: "Hızlı Bağlantılar",
       services: "Hizmetler",
       contact: "İletişim",
@@ -211,12 +212,13 @@ export const translations = {
   },
   en: {
     brand: "Kıbrıs Night Club",
-    tagline: "The Luxury Escort Experience of Kyrenia Cyprus",
+    tagline: "The Luxury Hostess Experience of Kyrenia Cyprus",
     nav: {
       home: "Home",
       gallery: "Gallery",
       services: "Services",
       pricing: "Pricing",
+      booking: "Booking",
       faq: "FAQ",
       blog: "Blog",
       contact: "Contact",
@@ -250,24 +252,24 @@ export const translations = {
       vip: "VIP",
     },
     home: {
-      heroEyebrow: "Kyrenia • Cyprus • Escort",
+      heroEyebrow: "Kyrenia • Cyprus • Hostess",
       heroTitle: "Make The Night Unforgettable",
       heroSubtitle:
-        "The most exclusive and discreet escort agency in Kyrenia Cyprus. 24/7 VIP service, premium models and unparalleled elegance.",
+        "The most exclusive and discreet hostess agency in Kyrenia Cyprus. 24/7 VIP service, premium models and unparalleled elegance.",
       ctaPrimary: "Explore Gallery",
       ctaSecondary: "Call Now",
       aboutEyebrow: "About Us",
       aboutTitle: "Kyrenia's most exclusive night experience",
       aboutText:
-        "Kıbrıs Night Club is a boutique premium escort agency based in Kyrenia, Cyprus, with discretion and quality at the core of every booking. Our hand-picked models from Türkiye, Russia, Ukraine and across Europe craft a one-of-a-kind experience for you. We are available 24/7 for hotel visits, dinner dates, nightclub partnerships and private events.",
+        "Kıbrıs Night Club is a boutique premium hostess agency based in Kyrenia, Cyprus, with discretion and quality at the core of every booking. Our hand-picked models from Türkiye, Russia, Ukraine and across Europe craft a one-of-a-kind experience for you. We are available 24/7 for hotel visits, dinner dates, nightclub partnerships and private events.",
       featuredEyebrow: "Models",
       featuredTitle: "This Week's Favourites",
       featuredSub:
-        "The most captivating faces of the Kyrenia Cyprus escort scene",
+        "The most captivating faces of the Kyrenia Cyprus hostess scene",
       servicesEyebrow: "Services",
       servicesTitle: "Exclusive Experiences",
       whyEyebrow: "Why Us",
-      whyTitle: "Leading Escort Agency in Kyrenia Cyprus",
+      whyTitle: "Leading Hostess Agency in Kyrenia Cyprus",
       whyItems: [
         {
           title: "100% Discreet",
@@ -288,11 +290,11 @@ export const translations = {
       ],
       ctaBannerTitle: "Don't spend tonight alone.",
       ctaBannerText:
-        "Reach us on WhatsApp now for an unforgettable Kyrenia Cyprus escort experience.",
+        "Reach us on WhatsApp now for an unforgettable Kyrenia Cyprus hostess experience.",
     },
     gallery: {
       title: "Gallery",
-      subtitle: "Our Kyrenia Cyprus Escort Models",
+      subtitle: "Our Kyrenia Cyprus Hostess Models",
       filterAll: "All",
       filterNew: "New",
       filterVip: "VIP",
@@ -301,10 +303,10 @@ export const translations = {
     },
     services: {
       title: "Our Services",
-      subtitle: "Exclusive packages for your Kyrenia Cyprus escort experience",
+      subtitle: "Exclusive packages for your Kyrenia Cyprus hostess experience",
       list: [
         {
-          name: "Hotel Escort",
+          name: "Hotel Hostess",
           desc: "Discreet visits to any 5-star hotel in Kyrenia, straight to your room number — no reception checks, no questions asked.",
         },
         {
@@ -377,11 +379,11 @@ export const translations = {
     faq: {
       title: "Frequently Asked Questions",
       subtitle:
-        "Everything you need to know about our Kyrenia Cyprus escort service",
+        "Everything you need to know about our Kyrenia Cyprus hostess service",
     },
     contact: {
       title: "Contact",
-      subtitle: "Available 24/7 for your Kyrenia Cyprus escort booking.",
+      subtitle: "Available 24/7 for your Kyrenia Cyprus hostess booking.",
       whatsappTitle: "Instant Reply on WhatsApp",
       whatsappText:
         "For the fastest reply, message us on WhatsApp. Every booking is handled with full discretion.",
@@ -399,7 +401,7 @@ export const translations = {
     blog: {
       title: "Blog",
       subtitle:
-        "News, guides and exclusive content from the Kyrenia Cyprus escort scene",
+        "News, guides and exclusive content from the Kyrenia Cyprus hostess scene",
       back: "All posts",
       relatedTitle: "Related Posts",
     },
@@ -410,7 +412,7 @@ export const translations = {
       leave: "No, exit",
     },
     footer: {
-      tagline: "The most exclusive escort agency of Kyrenia Cyprus.",
+      tagline: "The most exclusive hostess agency of Kyrenia Cyprus.",
       quickLinks: "Quick Links",
       services: "Services",
       contact: "Contact",

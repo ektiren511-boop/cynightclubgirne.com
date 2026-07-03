@@ -38,7 +38,7 @@ export const ProfileCard = ({ g }) => {
       <div className="aspect-[3/4] overflow-hidden bg-black">
         <img
           src={g.cover}
-          alt={`${g.name} - ${nationality} ${lang === "tr" ? "Girne Kıbrıs Eskort" : "Kyrenia Cyprus Escort"}`}
+          alt={`${g.name} - ${nationality} ${lang === "tr" ? "Girne Kıbrıs Konsomatris" : "Kyrenia Cyprus Hostess"}`}
           loading="lazy"
           className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-[1200ms] ease-out"
         />
@@ -53,11 +53,6 @@ export const ProfileCard = ({ g }) => {
           {b.label}
         </div>
       )}
-
-      <div className="absolute right-4 top-4 bg-black/60 backdrop-blur-md border border-white/10 px-3 py-1 text-xs text-[#E0BFB8]">
-        {g.rate}
-        <span className="text-white/45">{t.common.perHour}</span>
-      </div>
 
       <div className="absolute inset-x-0 bottom-0 p-5">
         <h3 className="font-serif text-2xl md:text-3xl text-white tracking-tight">

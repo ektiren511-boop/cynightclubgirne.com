@@ -6,7 +6,7 @@ import { SITE } from "@/data/site";
 /**
  * SEO component - updates document title, meta tags, canonical URL,
  * hreflang, Open Graph, and injects JSON-LD (LocalBusiness by default).
- * Keeps "Girne Kıbrıs Eskort" / "Kyrenia Cyprus Escort" keywords prominent.
+ * Keeps "Girne Kıbrıs Konsomatris" / "Kyrenia Cyprus Hostess" keywords prominent.
  */
 export const SEO = ({
   titleKey,
@@ -21,7 +21,7 @@ export const SEO = ({
   useEffect(() => {
     const brand = t.brand;
     const seoKeyword =
-      lang === "tr" ? "Girne Kıbrıs Eskort" : "Kyrenia Cyprus Escort";
+      lang === "tr" ? "Girne Kıbrıs Konsomatris" : "Kyrenia Cyprus Hostess";
 
     const title = customTitle
       ? `${customTitle} | ${brand} - ${seoKeyword}`
@@ -31,8 +31,8 @@ export const SEO = ({
       customDesc ||
       descriptionKey ||
       (lang === "tr"
-        ? "Kıbrıs Night Club — Girne Kıbrıs eskort dünyasının en seçkin VIP ajansı. 7/24 diskret hizmet, gerçek fotoğraflar, 24 premium model. Otel-çağrı, VIP casino ve yat partileri."
-        : "Kıbrıs Night Club — the most exclusive VIP agency of the Kyrenia Cyprus escort scene. 24/7 discreet service, real photos, 24 premium models. Incall, VIP casino and yacht parties.");
+        ? "Kıbrıs Night Club — Girne Kıbrıs konsomatris dünyasının en seçkin VIP ajansı. 7/24 diskret hizmet, gerçek fotoğraflar, 24 premium model. Otel-çağrı, VIP casino ve yat partileri."
+        : "Kıbrıs Night Club — the most exclusive VIP agency of the Kyrenia Cyprus hostess scene. 24/7 discreet service, real photos, 24 premium models. Incall, VIP casino and yacht parties.");
 
     document.title = title;
 
@@ -56,8 +56,8 @@ export const SEO = ({
     setMeta(
       "keywords",
       lang === "tr"
-        ? "Girne Kıbrıs Eskort, Girne eskort, Kıbrıs eskort, Kıbrıs Night Club, Girne VIP eskort, Girne otel eskort, KKTC eskort, Kıbrıs Rus eskort, Kıbrıs Türk eskort, Cratos eskort, Merit eskort, Acapulco eskort, Girne casino eskort, Girne yat eskort"
-        : "Kyrenia Cyprus Escort, Kyrenia escort, Cyprus escort, Kıbrıs Night Club, Kyrenia VIP escort, Kyrenia hotel escort, TRNC escort, Russian escort Cyprus, Turkish escort Kyrenia, Cratos escort, Merit escort, Acapulco escort, Kyrenia casino escort, Kyrenia yacht escort",
+        ? "Girne Kıbrıs Konsomatris, Girne konsomatris, Kıbrıs konsomatris, Kıbrıs Night Club, Girne VIP konsomatris, Girne otel konsomatris, KKTC konsomatris, Kıbrıs Rus konsomatris, Kıbrıs Türk konsomatris, Cratos konsomatris, Merit konsomatris, Acapulco konsomatris, Girne casino konsomatris, Girne yat konsomatris"
+        : "Kyrenia Cyprus Hostess, Kyrenia hostess, Cyprus hostess, Kıbrıs Night Club, Kyrenia VIP hostess, Kyrenia hotel hostess, TRNC hostess, Russian hostess Cyprus, Turkish hostess Kyrenia, Cratos hostess, Merit hostess, Acapulco hostess, Kyrenia casino hostess, Kyrenia yacht hostess",
     );
 
     // Open Graph
