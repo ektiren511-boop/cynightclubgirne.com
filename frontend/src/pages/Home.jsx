@@ -148,7 +148,7 @@ export default function Home() {
             </p>
             <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
               {[
-                { n: "12+", l: lang === "tr" ? "Model" : "Models" },
+                { n: "24+", l: lang === "tr" ? "Model" : "Models" },
                 { n: "7/24", l: lang === "tr" ? "Hizmet" : "Service" },
                 { n: "100%", l: lang === "tr" ? "Diskret" : "Discreet" },
               ].map((s) => (
