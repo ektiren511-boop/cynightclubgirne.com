@@ -1,0 +1,22 @@
+{
+  "summary": "Sanity check after production deployment timeout. Preview app is fully healthy — all 7 requested checks pass. Safe to advise user to redeploy (failure appears infrastructural, not code).",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "test_report_links": ["/app/backend/tests/test_api.py", "/app/test_reports/pytest/pytest_results.xml"],
+  "action_items": ["Ask user to retry deployment — preview is healthy and no code blockers detected."],
+  "critical_code_review_comments": [],
+  "updated_files": [],
+  "success_rate": {"backend": "100% (7/7 pytest)", "frontend": "100% (7/7 sanity checks)"},
+  "checks_performed": {
+    "api_root_200_fast": "200 in 0.21s",
+    "api_contact_post_get": "PASSED (5 contact tests)",
+    "home_hero_and_age_modal": "Visible — 'Kıbrıs Night Club' + 18+ modal rendered",
+    "gtag_script_present": "TRUE — src contains gtag/js?id=AW-18318323179",
+    "booking_guide_page": "/nasil-rezervasyon loads (3924 chars, 32 links/buttons, digits 1-5 present)",
+    "sitemap_and_robots": "sitemap.xml=200, robots.txt=200",
+    "console_errors": "None on home page"
+  },
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Preview backend + frontend fully verified. Test file /app/backend/tests/test_api.py covers /api/, /api/contact CRUD (5 cases), /api/status. All pass in ~1.35s."
+}
