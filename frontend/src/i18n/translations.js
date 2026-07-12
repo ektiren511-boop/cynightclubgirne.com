@@ -51,7 +51,7 @@ export const translations = {
       aboutEyebrow: "Hakkımızda",
       aboutTitle: "Girne'nin en seçkin gece deneyimi",
       aboutText:
-        "Kıbrıs Night Club, Girne'de premium konsomatris hizmeti sunan, diskretliği ve kaliteyi ön planda tutan butik bir ajanstır. Türkiye, Rusya, Ukrayna ve Avrupa'nın dört bir yanından özenle seçilmiş modellerimiz, sizin için eşsiz bir deneyim hazırlar. Otel ziyaretleri, akşam yemeği eşlikleri, gece kulübü partnerliği ve özel etkinlikler için 7/24 hizmetinizdeyiz.",
+        "Kıbrıs Night Club, Girne'de premium konsomatris ev & otel servisi sunan, diskretliği ve kaliteyi ön planda tutan butik bir ajanstır. Türkiye, Rusya, Ukrayna ve Avrupa'nın dört bir yanından özenle seçilmiş 24 modelimiz, sizin için eşsiz bir deneyim hazırlar. 5 yıldızlı otel ziyaretleri, akşam yemeği eşlikleri, gece kulübü ve casino partnerlikleri, yat partileri ve özel etkinlikler için 7/24 hizmetinizdeyiz. Cratos, Merit, Acapulco ve tüm Girne otellerinde doğrudan oda-çağrı imkanı, %100 diskret transfer ve tam gizlilik garantisi ile Girne Kıbrıs konsomatris dünyasının en güvenilir adresidir.",
       featuredEyebrow: "Modeller",
       featuredTitle: "Bu Haftanın Favorileri",
       featuredSub: "Girne Kıbrıs konsomatris dünyasının en çekici yüzleri",
@@ -261,7 +261,7 @@ export const translations = {
       aboutEyebrow: "About Us",
       aboutTitle: "Kyrenia's most exclusive night experience",
       aboutText:
-        "Kıbrıs Night Club is a boutique premium hostess agency based in Kyrenia, Cyprus, with discretion and quality at the core of every booking. Our hand-picked models from Türkiye, Russia, Ukraine and across Europe craft a one-of-a-kind experience for you. We are available 24/7 for hotel visits, dinner dates, nightclub partnerships and private events.",
+        "Kıbrıs Night Club is a boutique premium hostess service agency based in Kyrenia, Northern Cyprus — where discretion and quality are the core of every booking. Our 24 hand-picked models from Türkiye, Russia, Ukraine and across Europe craft a one-of-a-kind home & hotel experience for you. We are available 24/7 for 5-star hotel visits, dinner dates, nightclub and casino companionship, yacht parties and private events. Direct room-call at Cratos, Merit, Acapulco and all Kyrenia hotels — 100% discreet transfer and full confidentiality make us the most trusted address of the Kyrenia Cyprus hostess scene.",
       featuredEyebrow: "Models",
       featuredTitle: "This Week's Favourites",
       featuredSub:

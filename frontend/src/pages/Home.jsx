@@ -166,6 +166,39 @@ export default function Home() {
         </div>
       </section>
 
+      {/* TRUST STRIP */}
+      <section className="bg-[#050505] border-y border-white/[0.05]" data-testid="trust-strip">
+        <div className="max-w-7xl mx-auto px-6 lg:px-10 py-8 md:py-10 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+          {[
+            {
+              n: "24",
+              l: lang === "tr" ? "Premium Model" : "Premium Models",
+            },
+            {
+              n: "10+",
+              l: lang === "tr" ? "Yıllık Deneyim" : "Years of Experience",
+            },
+            {
+              n: "500+",
+              l: lang === "tr" ? "Memnun Misafir" : "Happy Guests",
+            },
+            {
+              n: "%100",
+              l: lang === "tr" ? "Diskretlik" : "Discretion",
+            },
+          ].map((s) => (
+            <div key={s.l} className="flex items-baseline gap-3">
+              <span className="font-serif text-3xl md:text-4xl bg-gradient-to-b from-[#E0BFB8] to-[#D4AF37] bg-clip-text text-transparent">
+                {s.n}
+              </span>
+              <span className="text-[11px] md:text-xs uppercase tracking-[0.22em] text-white/55">
+                {s.l}
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* FEATURED PROFILES */}
       <section className="py-24 md:py-32 bg-[#0A0A0B] relative">
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#B76E79]/30 to-transparent" />
