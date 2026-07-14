@@ -29,7 +29,7 @@ export default function Home() {
         "@type": "LocalBusiness",
         "@id": `${SITE.url}#business`,
         name: SITE.name,
-        image: "https://images.unsplash.com/photo-1646977858731-ec11d66a1aaa?w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1200&q=80",
         url: SITE.url,
         telephone: SITE.phone,
         priceRange: "€€€",
@@ -73,7 +73,7 @@ export default function Home() {
       <section className="relative min-h-[100vh] flex items-end overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1646977858731-ec11d66a1aaa?w=1920&q=80"
+            src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1920&q=80"
             alt="Kıbrıs Night Club"
             className="w-full h-full object-cover"
           />
@@ -129,7 +129,7 @@ export default function Home() {
           <div className="lg:col-span-5">
             <div className="relative aspect-[4/5] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1671031990999-77f3bd7e9731?w=1200&q=80"
+                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80"
                 alt={lang === "tr" ? "Girne Kıbrıs Konsiyerj" : "Kyrenia Cyprus Concierge"}
                 className="w-full h-full object-cover"
               />

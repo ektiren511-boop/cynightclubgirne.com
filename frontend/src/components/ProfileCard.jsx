@@ -39,7 +39,7 @@ export const ProfileCard = ({ g }) => {
       <div className="aspect-[3/4] overflow-hidden bg-black">
         <img
           src={g.cover}
-          alt={`${g.name} - ${lang === "tr" ? "Girne VIP Konsiyerj Ekibi" : "Kyrenia VIP Concierge Team"}`}
+          alt={`${g.name} - ${lang === "tr" ? "Girne VIP Konsiyerj Servisi" : "Kyrenia VIP Concierge Service"}`}
           loading="lazy"
           className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-[1200ms] ease-out"
         />
@@ -66,7 +66,7 @@ export const ProfileCard = ({ g }) => {
           {languages}
         </p>
         <div className="mt-4 inline-flex items-center text-[11px] uppercase tracking-[0.22em] text-[#E0BFB8] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          {lang === "tr" ? "Profili Gör" : "View Profile"}
+          {lang === "tr" ? "Detayı Gör" : "View Details"}
           <span className="ml-2 inline-block w-6 h-px bg-[#E0BFB8]" />
         </div>
       </div>

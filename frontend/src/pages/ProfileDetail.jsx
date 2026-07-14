@@ -86,19 +86,19 @@ export default function ProfileDetail() {
 
             <div className="mt-8 grid grid-cols-1 gap-x-6 gap-y-5 py-8 border-y border-white/5">
               <Stat
-                label={t.common.nationality}
+                label={lang === "tr" ? "Kategori" : "Category"}
                 value={nationality}
               />
               <Stat
-                label={t.common.languages}
+                label={lang === "tr" ? "Özellikler" : "Features"}
                 value={languages}
               />
               <Stat
-                label={lang === "tr" ? "Uzmanlık" : "Specialty"}
+                label={lang === "tr" ? "Servis Türü" : "Service Type"}
                 value={
                   lang === "tr"
-                    ? "VIP Konsiyerj, Etkinlik & Tur Rehberliği"
-                    : "VIP Concierge, Event & Tour Guiding"
+                    ? "VIP Konsiyerj Koordinasyonu"
+                    : "VIP Concierge Coordination"
                 }
               />
             </div>

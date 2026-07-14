@@ -5,7 +5,7 @@ export const translations = {
     tagline: "Girne Kıbrıs'ın Lüks Konsiyerj Deneyimi",
     nav: {
       home: "Anasayfa",
-      gallery: "Galeri",
+      gallery: "Vitrin",
       services: "Hizmetler",
       pricing: "Fiyatlar",
       booking: "Rezervasyon",
@@ -46,16 +46,16 @@ export const translations = {
       heroTitle: "VIP Deneyimini Yaşa",
       heroSubtitle:
         "Girne Kıbrıs'ın en seçkin VIP konsiyerj, tur rehberliği ve etkinlik servisi. 7/24 çok dilli ekip, otel & restoran rezervasyonu, yat organizasyonu ve casino rehberliği.",
-      ctaPrimary: "Ekibimizi Keşfet",
+      ctaPrimary: "Hizmetleri Keşfet",
       ctaSecondary: "Bize Ulaş",
       aboutEyebrow: "Hakkımızda",
       aboutTitle: "Girne'nin premium konsiyerj ve etkinlik servisi",
       aboutText:
         "Kıbrıs Night Club, Girne'de VIP misafirlere yönelik konsiyerj, tur rehberliği ve etkinlik organizasyonu hizmeti veren butik bir servistir. Türkiye, Rusya, Ukrayna ve Avrupa'nın dört bir yanından çok dilli 24 profesyonel ekip üyemiz ile ziyaretinize eşsiz bir konfor katıyoruz. 5 yıldızlı otel rezervasyonu, restoran ve gece kulübü ayarlamaları, casino etiketi, yat kiralama, havalimanı transferi ve özel tur rehberliği için 7/24 hizmetinizdeyiz. Cratos, Merit, Acapulco ve tüm Girne otellerine profesyonel destek sunan Kuzey Kıbrıs'ın en güvenilir turizm konsiyerj adresidir.",
-      featuredEyebrow: "Ekibimiz",
-      featuredTitle: "Öne Çıkan Ekip Üyeleri",
+      featuredEyebrow: "Vitrin",
+      featuredTitle: "Öne Çıkan Hizmetlerimiz",
       featuredSub:
-        "Girne turizm ve etkinlik dünyasında size eşlik edecek çok dilli profesyonel ekip",
+        "Girne VIP konsiyerj hizmet paletimizden en çok tercih edilen paketler",
       servicesEyebrow: "Hizmetler",
       servicesTitle: "VIP Turizm ve Etkinlik Deneyimleri",
       whyEyebrow: "Neden Biz",
@@ -83,13 +83,13 @@ export const translations = {
         "Kıbrıs Night Club konsiyerj servisimizle otel, restoran, tur ve etkinlik organizasyonu için WhatsApp üzerinden anında iletişime geç.",
     },
     gallery: {
-      title: "Ekibimiz",
-      subtitle: "Girne VIP Konsiyerj & Etkinlik Ekibimiz",
+      title: "Hizmet Vitrini",
+      subtitle: "Girne VIP Konsiyerj Filomuz — Mercedes Transfer, Otel, Casino, Yat ve Dans",
       filterAll: "Tümü",
       filterNew: "Yeni",
       filterVip: "VIP",
       filterFeatured: "Öne Çıkanlar",
-      empty: "Bu kategoride henüz model yok.",
+      empty: "Bu kategoride henüz hizmet yok.",
     },
     services: {
       title: "Hizmetlerimiz",
@@ -213,7 +213,7 @@ export const translations = {
     tagline: "The Luxury Concierge Experience of Kyrenia Cyprus",
     nav: {
       home: "Home",
-      gallery: "Gallery",
+      gallery: "Showcase",
       services: "Services",
       pricing: "Pricing",
       booking: "Booking",
@@ -254,16 +254,16 @@ export const translations = {
       heroTitle: "Live The VIP Experience",
       heroSubtitle:
         "Kyrenia's most exclusive VIP concierge, tour guiding and event service. A 24/7 multilingual team for hotel & restaurant reservations, yacht organisation and casino etiquette.",
-      ctaPrimary: "Meet Our Team",
+      ctaPrimary: "Explore Services",
       ctaSecondary: "Contact Us",
       aboutEyebrow: "About Us",
       aboutTitle: "Kyrenia's premium concierge and event service",
       aboutText:
         "Kıbrıs Night Club is a boutique concierge, tour-guiding and event-organisation service for VIP visitors to Kyrenia, Northern Cyprus. Our 24 multilingual professional team members — from Türkiye, Russia, Ukraine and across Europe — add unmatched comfort to your visit. We are available 24/7 for 5-star hotel reservations, restaurant and nightclub arrangements, casino etiquette, yacht charter, airport transfers and private tour guiding. With professional support at Cratos, Merit, Acapulco and every Kyrenia hotel, we are Northern Cyprus's most trusted tourism concierge address.",
-      featuredEyebrow: "Our Team",
-      featuredTitle: "Featured Team Members",
+      featuredEyebrow: "Showcase",
+      featuredTitle: "Our Featured Services",
       featuredSub:
-        "Multilingual professionals to accompany you across Kyrenia's tourism and event scene",
+        "The most requested packages from our Kyrenia VIP concierge palette",
       servicesEyebrow: "Services",
       servicesTitle: "VIP Tourism & Event Experiences",
       whyEyebrow: "Why Us",
@@ -291,13 +291,13 @@ export const translations = {
         "Reach us on WhatsApp for hotel, restaurant, tour and event coordination with our concierge service.",
     },
     gallery: {
-      title: "Our Team",
-      subtitle: "Kyrenia VIP Concierge & Event Team",
+      title: "Service Showcase",
+      subtitle: "Our Kyrenia VIP Fleet — Mercedes Transfer, Hotels, Casino, Yacht and Nightlife",
       filterAll: "All",
       filterNew: "New",
       filterVip: "VIP",
       filterFeatured: "Featured",
-      empty: "No team members in this category yet.",
+      empty: "No services in this category yet.",
     },
     services: {
       title: "Our Services",

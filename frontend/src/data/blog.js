@@ -91,7 +91,7 @@ export const posts = [
   {
     slug: "neden-kibris-night-club",
     cover:
-      "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1600&q=80",
+      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1600&q=80",
     date: "2025-09-18",
     tr: {
       title: "Neden Kıbrıs Night Club? Girne'nin Lider Konsiyerj Servisi",
@@ -150,7 +150,7 @@ export const posts = [
   {
     slug: "kibris-rusca-ekibimiz",
     cover:
-      "https://images.unsplash.com/photo-1516726817505-f5ed825624d8?w=1600&q=80",
+      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
     date: "2025-11-25",
     tr: {
       title: "Kıbrıs'ta Rusça Konuşan Konsiyerj Ekibimiz",
@@ -232,7 +232,7 @@ export const posts = [
   {
     slug: "girne-turk-ekibimiz",
     cover:
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1600&q=80",
+      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1600&q=80",
     date: "2025-10-15",
     tr: {
       title: "Girne'de Türkçe Konuşan Konsiyerj Ekibimiz",
@@ -256,7 +256,7 @@ export const posts = [
   {
     slug: "girne-vip-konsiyerj-luxury-guide",
     cover:
-      "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=1600&q=80",
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80",
     date: "2025-09-30",
     tr: {
       title: "Girne VIP Konsiyerj: Lüks Rehber ve Elit Deneyim",

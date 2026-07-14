@@ -16,7 +16,7 @@ export const testimonials = [
     location_en: "Ankara",
     rating: 5,
     tr: "Acapulco Resort'ta bir haftalık aile tatilinde iki ayrı gün özel tur rehberi ayarlattım. Alina ve Daria harika bir rehberlik yaptı, ailem çok memnun kaldı.",
-    en: "During my one-week family stay at Acapulco Resort I booked private tour guides on two different days. Alina and Daria did an incredible job — my family loved it.",
+    en: "During my one-week family stay at Acapulco Resort I booked private tour guides on two different days. the concierge team did an incredible job — my family loved it.",
   },
   {
     id: 3,
@@ -24,8 +24,8 @@ export const testimonials = [
     location_tr: "Moskova",
     location_en: "Moscow",
     rating: 5,
-    tr: "Yat kiralama paketi harika bir deneyimdi. Şampanya, gün batımı, kaptan koordinasyonu — Valeria'nın Rusça rehberliği eşliğinde muhteşemdi.",
-    en: "The yacht charter package was an incredible experience. Champagne, sunset, captain coordination — combined with Valeria's Russian-language guidance, magnificent.",
+    tr: "Yat kiralama paketi harika bir deneyimdi. Şampanya, gün batımı, kaptan koordinasyonu — Rusça rehberlik desteği eşliğinde muhteşemdi.",
+    en: "The yacht charter package was an incredible experience. Champagne, sunset, captain coordination — combined with Russian-language guidance support, magnificent.",
   },
   {
     id: 4,
@@ -33,8 +33,8 @@ export const testimonials = [
     location_tr: "Londra",
     location_en: "London",
     rating: 5,
-    tr: "İngilizce iletişim, hızlı yanıt, premium kalite. Girne'de tanıştığım en profesyonel konsiyerj servisi. Victoria'nın etiket rehberliği paha biçilmezdi.",
-    en: "English communication, fast reply, premium quality. The most professional concierge service I've encountered in Kyrenia. Victoria's etiquette guidance was priceless.",
+    tr: "İngilizce iletişim, hızlı yanıt, premium kalite. Girne'de tanıştığım en profesyonel konsiyerj servisi. Etiket rehberliği paha biçilmezdi.",
+    en: "English communication, fast reply, premium quality. The most professional concierge service I've encountered in Kyrenia. The etiquette guidance was priceless.",
   },
   {
     id: 5,
@@ -42,8 +42,8 @@ export const testimonials = [
     location_tr: "Kiev",
     location_en: "Kyiv",
     rating: 5,
-    tr: "Kateryna'nın restoran rezervasyonu ve akşam yemeği koordinasyonu iş partnerlerimle görüşmemin ardından mükemmel bir kapanış oldu.",
-    en: "Kateryna's restaurant reservation and dinner coordination after my business meeting was the perfect closing.",
+    tr: "Restoran rezervasyonu ve akşam yemeği koordinasyonu iş partnerlerimle görüşmemin ardından mükemmel bir kapanış oldu.",
+    en: "The restaurant reservation and dinner coordination after my business meeting was the perfect closing.",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const testimonials = [
     location_tr: "Berlin",
     location_en: "Berlin",
     rating: 5,
-    tr: "Merit Crystal Cove'da 3 gece kaldım. Chloe ve Isabella'nın şehir turu ve casino etiket rehberliği çok değerliydi. %100 diskretlik.",
-    en: "I stayed 3 nights at Merit Crystal Cove. Chloe and Isabella's city tour and casino etiquette guidance were invaluable. 100% discretion.",
+    tr: "Merit Crystal Cove'da 3 gece kaldım. Konsiyerj ekibinin şehir turu ve casino etiket rehberliği çok değerliydi. %100 diskretlik.",
+    en: "I stayed 3 nights at Merit Crystal Cove. The concierge team's city tour and casino etiquette guidance were invaluable. 100% discretion.",
   },
 ];

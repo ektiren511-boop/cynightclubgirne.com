@@ -1,169 +1,164 @@
-// SEO landing pages — nationality & hotel concierge landings (Google Ads compliant)
+// Service-based landing pages (Google Ads compliant — no team/human framing)
 import { girls } from "./girls";
 
 export const landings = [
   {
-    slug: "rus-ekip",
-    type: "nationality",
-    matchTags: ["Rus", "Russian"],
-    hero: "https://images.unsplash.com/photo-1516726817505-f5ed825624d8?w=1920&q=80",
+    slug: "transfer-servisi",
+    type: "service",
+    matchTags: ["Transfer", "VIP Transfer", "Executive Transfer", "Grup Transfer", "Ultra Lüks Transfer", "SUV Transfer", "Business Transfer", "Ultra Luxury Transfer", "SUV Transfer", "Business Transfer"],
+    hero: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1920&q=80",
     tr: {
-      breadcrumb: "Rusça Konuşan Ekip",
-      h1: "Girne Rusça Konuşan Konsiyerj Ekibi",
-      subtitle: "Moskova, St. Petersburg ve Soçi kökenli çok dilli ekip",
+      breadcrumb: "Transfer Servisi",
+      h1: "Girne Mercedes VIP Transfer Servisi",
+      subtitle: "Ercan & Larnaka havalimanı — Girne otelleri arası lüks transfer",
       intro:
-        "Rusça konuşan misafirlerimize destek veren profesyonel konsiyerj ekibimiz. Havalimanı karşılamadan casino etiketine kadar tüm süreçlerde diline uygun asistan.",
+        "Mercedes S-Class, E-Class, V-Class, Maybach ve Range Rover araçlarımızla havalimanından otelinize kadar konforlu ve prestijli bir transfer.",
       seoParagraphs: [
-        "Girne'ye Rusya, Ukrayna, Belarus ve Kazakistan'dan gelen VIP misafirler her yıl artıyor. Çok dilli ekibimiz bu misafirlere ana dilde iletişim, kültürel yakınlık ve profesyonel rehberlik sağlar.",
-        "Ekibimizde Rusça, Ukraynaca ve İngilizce iletişim kurabilen üyeler yer alıyor. Özellikle Cratos ve Merit gibi lüks casino ortamlarında tercih edilirler.",
-        "Elena, Natasha, Valeria, Irina, Olga ve Nika — her biri profesyonel bir konsiyerj. WhatsApp üzerinden rezervasyon yapabilir, tercih ettiğiniz ekip üyesini önceden seçebilirsiniz.",
+        "Girne'ye Ercan veya Larnaka havalimanından gelen VIP misafirler için Mercedes ve BMW filomuz konforlu bir başlangıç sunar. Rezervasyon süreci basit: uçuş bilgilerinizi paylaşın, aracınız iniş saatinize göre hazır olsun.",
+        "Filomuzda: Mercedes-Benz S-Class (business VIP), E-Class (executive), V-Class (7 kişilik grup), Maybach S680 (ultra lüks), Range Rover Autobiography (SUV) ve BMW 7 Series (business alternatif). Her araç profesyonel şoförle koordine edilir.",
+        "Transfer paketleri havalimanı-otel, otel-havalimanı ve şehir turu opsiyonlarıyla sunulur. WhatsApp üzerinden özel teklif alın.",
       ],
     },
     en: {
-      breadcrumb: "Russian-Speaking Team",
-      h1: "Kyrenia Russian-Speaking Concierge Team",
-      subtitle:
-        "Multilingual team from Moscow, St. Petersburg and Sochi backgrounds",
+      breadcrumb: "Transfer Service",
+      h1: "Kyrenia Mercedes VIP Transfer Service",
+      subtitle: "Luxury transfer between Ercan / Larnaca airports and Kyrenia hotels",
       intro:
-        "Our professional concierge team supporting Russian-speaking guests. Native-language assistance throughout every process, from airport pickup to casino etiquette.",
+        "A comfortable and prestigious transfer from airport to hotel with our Mercedes S-Class, E-Class, V-Class, Maybach and Range Rover fleet.",
       seoParagraphs: [
-        "VIP guests from Russia, Ukraine, Belarus and Kazakhstan visiting Kyrenia grow every year. Our multilingual team provides native-language communication, cultural closeness and professional guidance.",
-        "Our team members communicate in Russian, Ukrainian and English. They are especially favoured in luxury casino settings like Cratos and Merit.",
-        "Elena, Natasha, Valeria, Irina, Olga and Nika — each a professional concierge. Reserve via WhatsApp and pick your preferred team member in advance.",
+        "Our Mercedes and BMW fleet offers a comfortable start for VIP guests arriving in Kyrenia via Ercan or Larnaca airport. The booking process is simple: share your flight details and your car is ready at landing.",
+        "Our fleet: Mercedes-Benz S-Class (business VIP), E-Class (executive), V-Class (7-guest group), Maybach S680 (ultra luxury), Range Rover Autobiography (SUV) and BMW 7 Series (business alternative). Every vehicle is coordinated with a professional driver.",
+        "Transfer packages come in airport-hotel, hotel-airport and city-tour options. Request a bespoke quote on WhatsApp.",
       ],
     },
   },
   {
-    slug: "turk-ekip",
-    type: "nationality",
-    matchTags: ["Türk", "Turkish", "Türk-Arap", "Turkish-Arab"],
-    hero: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1920&q=80",
+    slug: "otel-servisi",
+    type: "service",
+    matchTags: ["5★ Otel", "Villa", "Resort", "5★ Hotel"],
+    hero: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80",
     tr: {
-      breadcrumb: "Türkçe Konuşan Ekip",
-      h1: "Girne Türkçe Konuşan Konsiyerj Ekibi",
-      subtitle: "İstanbul, İzmir, Ankara ve Antalya kökenli yerel ekip",
+      breadcrumb: "Otel Servisi",
+      h1: "Girne 5 Yıldızlı Otel Rezervasyon Servisi",
+      subtitle: "Cratos, Merit, Acapulco, Concorde, Lord's Palace",
       intro:
-        "Türkçe konuşan konsiyerj ekip üyelerimizle kültürel yakınlık, dil rahatlığı ve yerel bilgi.",
+        "Girne'nin premium otellerinde rezervasyon önceliği, oda upgrade koordinasyonu ve VIP karşılama.",
       seoParagraphs: [
-        "Türk misafirlerimiz için Türkçe konuşan ekip seçeneği en çok tercih edilen segmenttir. Ana dilde iletişim, kültürel kod uyumu ve yerel bilgi bu tercihin arkasındaki nedenler.",
-        "Ekip üyelerimiz Türkiye'nin farklı bölgelerinden — İstanbul'un moda çevresinden, İzmir'in güneşinden, Ankara'nın klasik zerafetinden ve Antalya'nın turizm dünyasından.",
-        "Alina, Lara, Daria, Yasmine, Serena, Melissa, Zara ve Emily — her biri profesyonel bir yerel rehber. Rezervasyon için WhatsApp üzerinden bize ulaşın.",
+        "Cratos Premium, Merit Crystal Cove, Acapulco Resort, Concorde Luxury ve Lord's Palace gibi 5 yıldızlı Girne otelleriyle güçlü işbirliğimiz sayesinde misafirlerimize rezervasyon önceliği sunuyoruz.",
+        "Deniz manzaralı süitler, kral daireleri, özel plaj villaları ve tema resort odaları — bütçenize ve tarzınıza uygun konaklama seçenekleri.",
+        "Bal ayı, doğum günü ve özel kutlama misafirlerimize ekstra ikramlar organize edilir. WhatsApp üzerinden özel teklif alın.",
       ],
     },
     en: {
-      breadcrumb: "Turkish-Speaking Team",
-      h1: "Kyrenia Turkish-Speaking Concierge Team",
-      subtitle: "Local team from Istanbul, Izmir, Ankara and Antalya",
+      breadcrumb: "Hotel Service",
+      h1: "Kyrenia 5-Star Hotel Booking Service",
+      subtitle: "Cratos, Merit, Acapulco, Concorde, Lord's Palace",
       intro:
-        "Cultural closeness, language ease and local knowledge with our Turkish-speaking concierge team members.",
+        "Reservation priority, room-upgrade coordination and VIP welcome at Kyrenia's premium hotels.",
       seoParagraphs: [
-        "For Turkish guests, the Turkish-speaking team option is the most requested segment. Native-language communication, cultural-code compatibility and local knowledge drive this preference.",
-        "Our team members come from different regions of Türkiye — Istanbul's fashion scene, Izmir's sunshine, Ankara's classic grace and Antalya's tourism world.",
-        "Alina, Lara, Daria, Yasmine, Serena, Melissa, Zara and Emily — each a professional local guide. Reserve via WhatsApp.",
+        "Thanks to our strong partnerships with 5-star Kyrenia hotels such as Cratos Premium, Merit Crystal Cove, Acapulco Resort, Concorde Luxury and Lord's Palace, we secure reservation priority for our guests.",
+        "Sea-view suites, presidential suites, private beach villas and themed resort rooms — accommodation options for every budget and style.",
+        "Extra touches are arranged for honeymoon, birthday and celebration guests. Request a bespoke quote on WhatsApp.",
       ],
     },
   },
   {
-    slug: "ukraynali-ekip",
-    type: "nationality",
-    matchTags: ["Ukraynalı", "Ukrainian"],
-    hero: "https://images.unsplash.com/photo-1509305717900-84f40e786d82?w=1920&q=80",
-    tr: {
-      breadcrumb: "Ukraynaca Konuşan Ekip",
-      h1: "Girne Ukraynaca Konuşan Konsiyerj Ekibi",
-      subtitle: "Kiev, Odessa ve Lviv kökenli çok dilli konsiyerj profesyonelleri",
-      intro:
-        "Ukraynaca konuşan misafirlerimize destek veren ekibimiz. Havalimanı, otel, restoran ve tur rehberliğinde ana dilde asistan.",
-      seoParagraphs: [
-        "Ukraynalı misafirlerimiz Girne'ye artan bir yoğunlukla geliyor. Ekibimiz özellikle beach club, restoran ve şehir turlarında bu misafirlere destek verir.",
-        "Kiev, Odessa, Lviv ve Kharkiv kökenli ekip üyelerimiz Ukraynaca, Rusça, İngilizce ve genellikle bir Avrupa dili daha bilir.",
-        "Kateryna ve Natasha en talep edilenler arasında. WhatsApp üzerinden hemen rezervasyon yapabilirsiniz.",
-      ],
-    },
-    en: {
-      breadcrumb: "Ukrainian-Speaking Team",
-      h1: "Kyrenia Ukrainian-Speaking Concierge Team",
-      subtitle:
-        "Multilingual concierge professionals from Kyiv, Odessa and Lviv",
-      intro:
-        "Our team supporting Ukrainian-speaking guests. Native-language assistance for airport, hotel, restaurant and tour guidance.",
-      seoParagraphs: [
-        "Ukrainian guests visit Kyrenia in growing numbers. Our team especially supports these guests at beach clubs, restaurants and city tours.",
-        "Our team members from Kyiv, Odessa, Lviv and Kharkiv speak Ukrainian, Russian, English and often another European language.",
-        "Kateryna and Natasha are among the most requested. Reserve immediately on WhatsApp.",
-      ],
-    },
-  },
-  {
-    slug: "cratos-konsiyerj",
-    type: "hotel",
+    slug: "casino-servisi",
+    type: "service",
+    matchTags: ["Casino"],
     hero: "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=1920&q=80",
     tr: {
-      breadcrumb: "Cratos Konsiyerj",
-      h1: "Cratos Casino Girne Konsiyerj Servisi",
-      subtitle: "Kuzey Kıbrıs'ın en büyük casinosunda VIP koordinasyon",
+      breadcrumb: "Casino Servisi",
+      h1: "Girne Casino Rehberliği ve VIP Salon Koordinasyonu",
+      subtitle: "Cratos, Merit, Acapulco — VIP salon erişimi ve etiket rehberi",
       intro:
-        "Cratos Premium Hotel & Casino ziyaretinizde otel rezervasyon önceliği, casino etiket rehberliği ve VIP salon koordinasyonu.",
+        "Kuzey Kıbrıs'ın en prestijli casinolarında yüksek limitli salon erişimi, etiket rehberliği ve masa rezervasyonu.",
       seoParagraphs: [
-        "Cratos Premium, Girne'nin en büyük casino kompleksi — dünya çapında poker turnuvalarına ev sahipliği yapıyor. Bu ortamda konsiyerj destek büyük fark yaratır.",
-        "Cratos'ta konsiyerj hizmetimizle oda upgrade koordinasyonu, VIP salon davetleri, çok dilli tercüme ve casino etiket rehberliği alırsınız.",
-        "Frekvens ile tercih edilen ekip üyeleri: Elena, Valeria, Isabella, Diana, Victoria. Rezervasyon için WhatsApp üzerinden ulaşın.",
+        "Cratos Premium, Merit Crystal Cove ve Acapulco Resort casinolarında ilk kez oynayanlara etiket rehberliği, oyun kuralları anlatımı ve çok dilli tercüme desteği veriyoruz.",
+        "Blackjack, rulet, poker, baccarat ve slot bölümlerinde masa rezervasyonu. Yüksek limitli oyunculara özel VIP salon erişimi ve şef koordinasyonu.",
+        "Uluslararası poker turnuvaları için kayıt ve rebuy planlaması yapıyoruz. WhatsApp üzerinden koordinasyon.",
       ],
     },
     en: {
-      breadcrumb: "Cratos Concierge",
-      h1: "Cratos Casino Kyrenia Concierge Service",
-      subtitle:
-        "VIP coordination at Northern Cyprus's largest casino",
+      breadcrumb: "Casino Service",
+      h1: "Kyrenia Casino Guide & VIP Salon Coordination",
+      subtitle: "Cratos, Merit, Acapulco — VIP salon access and etiquette guide",
       intro:
-        "Reservation priority, casino etiquette guidance and VIP salon coordination for your visit to Cratos Premium Hotel & Casino.",
+        "High-limit salon access, etiquette guidance and table reservations at Northern Cyprus's most prestigious casinos.",
       seoParagraphs: [
-        "Cratos Premium is Kyrenia's largest casino complex, hosting world-class poker tournaments. Concierge support makes a huge difference in this environment.",
-        "At Cratos, our concierge service secures room-upgrade coordination, VIP salon invitations, multilingual translation and casino etiquette guidance.",
-        "Frequently requested team members: Elena, Valeria, Isabella, Diana, Victoria. Reserve on WhatsApp.",
+        "We provide etiquette guidance, rules explanation and multilingual translation support for first-time players at Cratos Premium, Merit Crystal Cove and Acapulco Resort casinos.",
+        "Table reservations across blackjack, roulette, poker, baccarat and slots. Private VIP salon access and chef coordination for high-limit players.",
+        "For international poker tournaments we handle registration and rebuy planning. Coordinate on WhatsApp.",
       ],
     },
   },
   {
-    slug: "merit-konsiyerj",
-    type: "hotel",
-    hero: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1920&q=80",
+    slug: "yat-servisi",
+    type: "service",
+    matchTags: ["Yat / Deniz", "Yacht / Sea"],
+    hero: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1920&q=80",
     tr: {
-      breadcrumb: "Merit Konsiyerj",
-      h1: "Merit Crystal Cove Girne Konsiyerj Servisi",
-      subtitle: "Sahil kenarı lüks otel deneyimi için profesyonel destek",
+      breadcrumb: "Yat Servisi",
+      h1: "Girne Yat Kiralama ve Karpaz Tur Organizasyonu",
+      subtitle: "Gün batımı, yarım gün ve tam gün yat paketleri",
       intro:
-        "Merit Crystal Cove Hotel & Casino'da premium konsiyerj koordinasyonu. Casino, spa ve deniz manzaralı odalar.",
+        "Girne Yat Limanı'ndan kalkışlı lüks yat kiralama, kaptan koordinasyonu, catering ve şampanya servisi.",
       seoParagraphs: [
-        "Merit Crystal Cove, Girne'nin en romantik konumdaki lüks otellerinden biri. Deniz manzaralı süitleri, spa merkezi ve casinosuyla klas bir konaklama.",
-        "Konsiyerj hizmetimizle Merit'te oda upgrade koordinasyonu, restoran-casino koordinasyonu ve şehir turu düzenlemesi yapılır.",
-        "Bal ayı ve özel kutlama misafirlerimiz için ekstra ikramlar sunuyoruz. WhatsApp üzerinden özel paket alabilirsiniz.",
+        "Girne'nin denizi Akdeniz'in en güzel yat rotalarından birini sunar. Karpaz kıyılarında mavi bayrak plajları, sessiz koylar ve gün batımı manzaraları.",
+        "Yat kiralama paketimiz 2-12 kişi kapasitesinde, catering ve kaptan koordinasyonu dahil. Bekarlığa veda ve doğum günü kutlamaları için popüler seçim.",
+        "3 saatlik gün batımı turu, 6 saatlik yarım gün ve tam gün paketleri mevcut. WhatsApp üzerinden özel teklif.",
       ],
     },
     en: {
-      breadcrumb: "Merit Concierge",
-      h1: "Merit Crystal Cove Kyrenia Concierge Service",
-      subtitle:
-        "Professional support for a seafront luxury hotel experience",
+      breadcrumb: "Yacht Service",
+      h1: "Kyrenia Yacht Charter & Karpaz Tour Organisation",
+      subtitle: "Sunset, half-day and full-day yacht packages",
       intro:
-        "Premium concierge coordination at Merit Crystal Cove Hotel & Casino — the casino, spa and sea-view rooms.",
+        "Luxury yacht charter from Kyrenia Marina — captain coordination, catering and champagne service.",
       seoParagraphs: [
-        "Merit Crystal Cove is one of Kyrenia's most romantically located luxury hotels. Sea-view suites, a spa centre and its own casino for an upscale stay.",
-        "Our concierge service coordinates room upgrades, restaurant / casino arrangements and city tours at Merit.",
-        "We offer special touches for honeymoon and celebration guests. Request a bespoke package on WhatsApp.",
+        "Kyrenia's sea offers one of the Mediterranean's most beautiful yacht routes. Blue-flag beaches, silent coves and sunset vistas along the Karpaz coast.",
+        "Our yacht package supports 2–12 guests with catering and captain coordination included. A popular pick for bachelor and birthday celebrations.",
+        "3-hour sunset, 6-hour half-day and full-day packages available. Request a bespoke quote on WhatsApp.",
+      ],
+    },
+  },
+  {
+    slug: "dans-vip-servisi",
+    type: "service",
+    matchTags: ["Dans / Gece", "Dance / Nightlife", "Bar / Terrace"],
+    hero: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1920&q=80",
+    tr: {
+      breadcrumb: "VIP Dans & Gece",
+      h1: "Girne VIP Dans, Gece Kulübü ve Cocktail Bar Servisi",
+      subtitle: "Beach club, VIP masa, rooftop bar ve dans pisti koordinasyonu",
+      intro:
+        "Girne'nin en populer gece kulüplerinde VIP masa, öncelikli giriş ve bottle service koordinasyonu.",
+      seoParagraphs: [
+        "Girne'nin gece hayatı Akdeniz'in en canlı sahnelerinden biridir. Beach club'lar, rooftop bar'lar ve gece kulüpleri her zevke hitap eder.",
+        "VIP masa rezervasyonu, öncelikli giriş, DJ set koordinasyonu ve bottle service konularında ekibimiz sizi destekler. Bekarlığa veda ve doğum günü kutlamaları için özel paketlerimiz vardır.",
+        "24 saat önceden yapılan rezervasyonlarda esnek iptal. WhatsApp üzerinden özel teklif alın.",
+      ],
+    },
+    en: {
+      breadcrumb: "VIP Dance & Nightlife",
+      h1: "Kyrenia VIP Nightlife, Cocktail Bar & Dance Service",
+      subtitle: "Beach club, VIP table, rooftop bar and dance-floor coordination",
+      intro:
+        "VIP tables, priority entry and bottle-service coordination at Kyrenia's most popular nightclubs.",
+      seoParagraphs: [
+        "Kyrenia's nightlife is one of the Mediterranean's most vibrant scenes. Beach clubs, rooftop bars and nightclubs cover every taste.",
+        "Our team supports you with VIP table reservations, priority entry, DJ-set coordination and bottle service. Bespoke packages available for bachelor and birthday celebrations.",
+        "Flexible cancellation with 24-hour advance notice. Request a bespoke quote on WhatsApp.",
       ],
     },
   },
 ];
 
-// Helper — filter girls for a landing
+// Helper — filter items for a landing by category (nationality field now holds category)
 export const landingGirls = (landing) => {
-  if (landing.type === "nationality") {
-    return girls.filter(
-      (g) =>
-        landing.matchTags.includes(g.nationality_tr) ||
-        landing.matchTags.includes(g.nationality_en),
-    );
-  }
-  return girls.slice(0, 8);
+  return girls.filter(
+    (g) =>
+      landing.matchTags.includes(g.nationality_tr) ||
+      landing.matchTags.includes(g.nationality_en),
+  );
 };

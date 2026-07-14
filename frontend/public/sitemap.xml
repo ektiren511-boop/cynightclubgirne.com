@@ -6,25 +6,24 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://cynightclubgirne.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://cynightclubgirne.com/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://cynightclubgirne.com/" />
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <changefreq>daily</changefreq><priority>1.0</priority>
   </url>
-  <url><loc>https://cynightclubgirne.com/galeri</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
-  <url><loc>https://cynightclubgirne.com/hizmetler</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://cynightclubgirne.com/hizmetler</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://cynightclubgirne.com/fiyatlar</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://cynightclubgirne.com/nasil-rezervasyon</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://cynightclubgirne.com/sss</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://cynightclubgirne.com/iletisim</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://cynightclubgirne.com/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 
-  <!-- Landings -->
-  <url><loc>https://cynightclubgirne.com/rus-ekip</loc><priority>0.85</priority></url>
-  <url><loc>https://cynightclubgirne.com/turk-ekip</loc><priority>0.85</priority></url>
-  <url><loc>https://cynightclubgirne.com/ukraynali-ekip</loc><priority>0.85</priority></url>
-  <url><loc>https://cynightclubgirne.com/cratos-konsiyerj</loc><priority>0.85</priority></url>
-  <url><loc>https://cynightclubgirne.com/merit-konsiyerj</loc><priority>0.85</priority></url>
+  <!-- Service Landings -->
+  <url><loc>https://cynightclubgirne.com/transfer-servisi</loc><priority>0.9</priority></url>
+  <url><loc>https://cynightclubgirne.com/otel-servisi</loc><priority>0.9</priority></url>
+  <url><loc>https://cynightclubgirne.com/casino-servisi</loc><priority>0.9</priority></url>
+  <url><loc>https://cynightclubgirne.com/yat-servisi</loc><priority>0.9</priority></url>
+  <url><loc>https://cynightclubgirne.com/dans-vip-servisi</loc><priority>0.9</priority></url>
 
-  <!-- Blog posts -->
+  <!-- Blog -->
   <url><loc>https://cynightclubgirne.com/blog/girne-vip-turizm-rehberi</loc><priority>0.8</priority></url>
   <url><loc>https://cynightclubgirne.com/blog/girne-5-yildizli-otel-rehberi</loc><priority>0.8</priority></url>
   <url><loc>https://cynightclubgirne.com/blog/girne-gece-hayati-rehberi</loc><priority>0.8</priority></url>
@@ -36,29 +35,29 @@
   <url><loc>https://cynightclubgirne.com/blog/girne-turk-ekibimiz</loc><priority>0.8</priority></url>
   <url><loc>https://cynightclubgirne.com/blog/girne-vip-konsiyerj-luxury-guide</loc><priority>0.8</priority></url>
 
-  <!-- Team profile pages -->
-  <url><loc>https://cynightclubgirne.com/galeri/elena</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/ayla</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/natasha</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/sofia</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/lara</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/milena</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/valeria</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/defne</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/anna</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/yasmin</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/klara</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/selin</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/irina</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/olga</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/kateryna</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/melis</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/chloe</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/zeynep</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/diana</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/amina</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/isabella</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/nika</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/elif</loc><priority>0.6</priority></url>
-  <url><loc>https://cynightclubgirne.com/galeri/victoria</loc><priority>0.6</priority></url>
+  <!-- Service detail pages -->
+  <url><loc>https://cynightclubgirne.com/galeri/mercedes-s-class</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/mercedes-e-class</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/mercedes-v-class</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/maybach-vip</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/range-rover-vip</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/bmw-7</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/cratos-suite</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/merit-seaview</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/acapulco-beach</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/concorde-luxe</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/lords-palace</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/kaya-artemis-vip</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/cratos-blackjack</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/merit-roulette</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/poker-tournament</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/high-limit-baccarat</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/casino-vip-lounge</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/casino-slots-tour</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/beach-club-day</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/vip-nightclub-table</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/dance-floor-experience</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/cocktail-bar</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/yacht-party-sunset</loc><priority>0.7</priority></url>
+  <url><loc>https://cynightclubgirne.com/galeri/private-yacht-full</loc><priority>0.7</priority></url>
 </urlset>

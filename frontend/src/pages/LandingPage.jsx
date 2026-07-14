@@ -57,7 +57,7 @@ export default function LandingPage() {
             </div>
             <div className="inline-flex items-center gap-2 border border-[#D4AF37]/40 px-3 py-1 text-[10px] uppercase tracking-[0.3em] text-[#D4AF37] mb-6">
               <Sparkles size={12} />
-              {landing.type === "hotel" ? (lang === "tr" ? "Otel" : "Hotel") : (lang === "tr" ? "Milliyet" : "Nationality")}
+              {landing.type === "hotel" ? (lang === "tr" ? "Otel" : "Hotel") : (lang === "tr" ? "Servis" : "Service")}
             </div>
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white leading-[1.02] tracking-tight">
               {item.h1}
@@ -77,7 +77,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex items-end justify-between flex-wrap gap-4 mb-10">
             <h2 className="font-serif text-3xl md:text-4xl text-white tracking-tight">
-              {lang === "tr" ? "Bu Kategorideki Modeller" : "Models in This Category"}
+              {lang === "tr" ? "Bu Kategorideki Hizmetler" : "Services in This Category"}
             </h2>
             <a
               href={waLink(lang)}
