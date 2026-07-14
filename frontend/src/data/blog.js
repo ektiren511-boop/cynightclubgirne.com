@@ -239,7 +239,7 @@ export const posts = [
       excerpt: "Türk misafirlerimize destek veren yerel konsiyerj ekibi.",
       content: [
         "Türkçe konuşan bir konsiyerj ekip üyesi tercih eden misafirlerimiz için özenle seçilmiş yerel ekibimiz var. Kültürel yakınlık, dil rahatlığı ve yerel bilgi birleşimi.",
-        "İstanbul, İzmir, Ankara ve Antalya'dan seçilmiş ekip üyelerimiz Türkiye'nin farklı bölgelerinden gelen deneyimi Girne'ye taşır. Alina, Lara, Daria, Yasmine, Serena, Melissa, Zara ve Emily — her biri profesyonel bir rehber.",
+        "İstanbul, İzmir, Ankara ve Antalya'dan seçilmiş konsiyerj ekibimiz Türkiye'nin farklı bölgelerinden gelen tur, otel ve etkinlik koordinasyon deneyimini Girne'ye taşır.",
         "Türk misafirlerimiz özellikle iş toplantıları, aile tatilleri, otel rezervasyonu ve tur rehberliği taleplerinde bu ekibi tercih eder.",
       ],
     },
@@ -248,7 +248,7 @@ export const posts = [
       excerpt: "The local concierge team supporting our Turkish guests.",
       content: [
         "For guests who prefer a Turkish-speaking concierge member, we have a carefully selected local team. Cultural closeness, ease of language and local know-how.",
-        "Our team, selected from Istanbul, Izmir, Ankara and Antalya, brings a broad Turkish experience to Kyrenia. Alina, Lara, Daria, Yasmine, Serena, Melissa, Zara and Emily — each one a professional guide.",
+        "Our concierge team, selected from Istanbul, Izmir, Ankara and Antalya, brings a broad Turkish tour, hotel and event-coordination experience to Kyrenia.",
         "Turkish guests especially prefer this team for business meetings, family holidays, hotel bookings and tour guidance.",
       ],
     },

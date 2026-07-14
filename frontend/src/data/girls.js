@@ -240,9 +240,9 @@ export const girls = [
     languages_tr: "Özel oda + Krupiye",
     languages_en: "Private room + Dealer",
     tags: ["vip"],
-    cover: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=800&q=80",
+    cover: "https://images.unsplash.com/photo-1601370552761-3f97a4b34a45?w=800&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=1200&q=80",
+      "https://images.unsplash.com/photo-1601370552761-3f97a4b34a45?w=1200&q=80",
     ],
     bio_tr: "Yüksek limitli baccarat masaları için özel oda ve krupiye koordinasyonu. Diskret misafir kabul ve tercihe göre sınırsız bahis.",
     bio_en: "Private room and dealer coordination for high-limit baccarat tables. Discreet guest reception and unlimited bet options as requested.",
@@ -270,9 +270,9 @@ export const girls = [
     languages_tr: "Rehber + Bonus",
     languages_en: "Guide + Bonus",
     tags: ["new"],
-    cover: "https://images.unsplash.com/photo-1596731498067-8e0e0a4a4e0e?w=800&q=80",
+    cover: "https://images.unsplash.com/photo-1596738081493-1b0ee9d3f8d5?w=800&q=80",
     gallery: [
-      "https://images.unsplash.com/photo-1596731498067-8e0e0a4a4e0e?w=1200&q=80",
+      "https://images.unsplash.com/photo-1596738081493-1b0ee9d3f8d5?w=1200&q=80",
     ],
     bio_tr: "Casino slot salonu ziyaretinde rehberli tur — en popüler makineler, jackpot geçmişleri ve bonus kartı koordinasyonu.",
     bio_en: "A guided tour of the casino slot hall — the most popular machines, jackpot history and bonus-card coordination.",

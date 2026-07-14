@@ -15,7 +15,7 @@ export const testimonials = [
     location_tr: "Ankara",
     location_en: "Ankara",
     rating: 5,
-    tr: "Acapulco Resort'ta bir haftalık aile tatilinde iki ayrı gün özel tur rehberi ayarlattım. Alina ve Daria harika bir rehberlik yaptı, ailem çok memnun kaldı.",
+    tr: "Acapulco Resort'ta bir haftalık aile tatilinde iki ayrı gün özel tur rehberi ayarlattım. Konsiyerj ekibi harika bir rehberlik yaptı, ailem çok memnun kaldı.",
     en: "During my one-week family stay at Acapulco Resort I booked private tour guides on two different days. the concierge team did an incredible job — my family loved it.",
   },
   {

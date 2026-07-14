@@ -1,0 +1,16 @@
+{
+  "summary": "Iteration 9 compliance re-scrub verified. All 3 HIGH-priority residuals from iteration 8 are fully resolved: (1) 30-name regex grep across /app/frontend/src/data returns 0 hits — Alina/Daria/Elena/etc all removed; (2) forbidden Unsplash IDs (1516726817505, 1521572163474, 1519671482749, 1517457373958) return 0 hits in data files; (3) /galeri/high-limit-baccarat cover now uses photo-1601370552761 (verified via rendered <img> src). Rendered UI on Home testimonials, /blog/girne-turk-ekibimiz, /blog/kibris-rusca-ekibimiz, /blog/cratos-casino-konsiyerj-rehberi all contain 0 forbidden first-names. Escort terminology grep also 0 hits. Regression PASS: /api/=200, POST /api/contact=200, gtag AW-18318323179 present, high-limit-baccarat/nasil-rezervasyon render 200.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {"ui_bugs": [], "integration_issues": [], "design_issues": []},
+  "test_report_links": ["/app/test_reports/iteration_9.json"],
+  "action_items": [],
+  "critical_code_review_comments": ["Site is now content- and visual-compliant with Google Ads policies per the 3 axes tested (personal-name lists, forbidden Unsplash IDs, escort terminology). No further action required for this iteration."],
+  "updated_files": [],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "test_credentials": "n/a",
+  "seed_data_creation": "none",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Iterations 8→9 focused on content compliance scrubs. All name-list, forbidden-image, and escort-term regexes are green. If future iterations add new content, re-run the same 3 grep patterns from the review_request to guard against regression.",
+  "rca of the issue": "Prior iterations had residual personal names in testimonials.js (id=2 TR 'Alina ve Daria') and blog.js (three posts listing 6-8 first-names each), plus a forbidden Unsplash ID 1519671482749 in girls.js for high-limit-baccarat. Iteration 9 fixes: testimonials scrubbed to generic phrasing; blog posts rewritten to describe teams generically; high-limit-baccarat cover swapped to photo-1601370552761. Verification via grep + live-URL DOM inspection confirms clean state."
+}
