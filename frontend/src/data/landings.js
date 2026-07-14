@@ -1,161 +1,156 @@
-// SEO landing pages: hotel-based + nationality-based
-// Each landing filters gallery via nationality or hotel keyword
+// SEO landing pages — nationality & hotel concierge landings (Google Ads compliant)
 import { girls } from "./girls";
 
 export const landings = [
-  // NATIONALITY LANDINGS
   {
-    slug: "rus-konsomatris",
+    slug: "rus-ekip",
     type: "nationality",
     matchTags: ["Rus", "Russian"],
     hero: "https://images.unsplash.com/photo-1516726817505-f5ed825624d8?w=1920&q=80",
     tr: {
-      breadcrumb: "Rus Konsomatris",
-      h1: "Girne Rus Konsomatris",
-      subtitle: "Moskova, St. Petersburg ve Soçi'den seçilmiş VIP modeller",
+      breadcrumb: "Rusça Konuşan Ekip",
+      h1: "Girne Rusça Konuşan Konsiyerj Ekibi",
+      subtitle: "Moskova, St. Petersburg ve Soçi kökenli çok dilli ekip",
       intro:
-        "Girne'de Rus konsomatris tercih edenler için özel portföyümüz. Uzun boylu, sofistike ve genellikle çok dilli Rus modellerimiz Cratos ve Merit gibi lüks casino ortamlarında en çok tercih edilenlerdir.",
+        "Rusça konuşan misafirlerimize destek veren profesyonel konsiyerj ekibimiz. Havalimanı karşılamadan casino etiketine kadar tüm süreçlerde diline uygun asistan.",
       seoParagraphs: [
-        "Girne Kıbrıs konsomatris dünyasında Rus modellerin özel bir yeri vardır. Klasik Slav güzelliği, zarif duruş ve iş dünyasına aşinalık bu tercihi belirleyen ana faktörlerdir. Portföyümüzde Moskova, St. Petersburg, Soçi, Kazan ve Yekaterinburg'dan gelen modeller yer alıyor.",
-        "Rus modellerimiz genellikle 25-29 yaş aralığında, 172-178 cm boyunda ve profesyonel model geçmişine sahiptir. Rusça, İngilizce ve çoğunlukla ikinci bir Avrupa dili konuşurlar. VIP kazino gecelerinde, iş yemeklerinde ve yat partilerinde en çok talep edilen segmenttir.",
-        "Elena, Natasha, Valeria, Irina, Olga ve Nika — her biri kendi hikayesi ve stiliyle. WhatsApp üzerinden rezervasyon yapabilir, tercih ettiğiniz modeli önceden seçebilirsiniz. Girne Kıbrıs Rus konsomatris deneyimi, Cratos Casino ve Merit Crystal Cove gibi lüks lokasyonlarda üst düzey bir tercihtir.",
+        "Girne'ye Rusya, Ukrayna, Belarus ve Kazakistan'dan gelen VIP misafirler her yıl artıyor. Çok dilli ekibimiz bu misafirlere ana dilde iletişim, kültürel yakınlık ve profesyonel rehberlik sağlar.",
+        "Ekibimizde Rusça, Ukraynaca ve İngilizce iletişim kurabilen üyeler yer alıyor. Özellikle Cratos ve Merit gibi lüks casino ortamlarında tercih edilirler.",
+        "Elena, Natasha, Valeria, Irina, Olga ve Nika — her biri profesyonel bir konsiyerj. WhatsApp üzerinden rezervasyon yapabilir, tercih ettiğiniz ekip üyesini önceden seçebilirsiniz.",
       ],
     },
     en: {
-      breadcrumb: "Russian Hostess",
-      h1: "Russian Hostess Kyrenia Cyprus",
-      subtitle: "Hand-picked VIP models from Moscow, St. Petersburg and Sochi",
+      breadcrumb: "Russian-Speaking Team",
+      h1: "Kyrenia Russian-Speaking Concierge Team",
+      subtitle:
+        "Multilingual team from Moscow, St. Petersburg and Sochi backgrounds",
       intro:
-        "Our dedicated portfolio for those preferring a Russian hostess in Kyrenia. Tall, sophisticated and often multilingual, our Russian models are the top choice at luxury casinos like Cratos and Merit.",
+        "Our professional concierge team supporting Russian-speaking guests. Native-language assistance throughout every process, from airport pickup to casino etiquette.",
       seoParagraphs: [
-        "Russian models hold a special place in the Kyrenia Cyprus hostess scene. Classic Slavic beauty, elegant posture and familiarity with the business world drive this preference. Our roster includes models from Moscow, St. Petersburg, Sochi, Kazan and Yekaterinburg.",
-        "Our Russian models are typically aged 25–29, stand 172–178 cm tall and have a professional modelling background. They speak Russian, English and often a second European language. The most requested segment for VIP casino nights, business dinners and yacht parties.",
-        "Elena, Natasha, Valeria, Irina, Olga and Nika — each with her own story and style. Reserve on WhatsApp and pick your preferred companion in advance. A Russian hostess experience in Kyrenia Cyprus is the elite pick at luxury venues like Cratos Casino and Merit Crystal Cove.",
+        "VIP guests from Russia, Ukraine, Belarus and Kazakhstan visiting Kyrenia grow every year. Our multilingual team provides native-language communication, cultural closeness and professional guidance.",
+        "Our team members communicate in Russian, Ukrainian and English. They are especially favoured in luxury casino settings like Cratos and Merit.",
+        "Elena, Natasha, Valeria, Irina, Olga and Nika — each a professional concierge. Reserve via WhatsApp and pick your preferred team member in advance.",
       ],
     },
   },
   {
-    slug: "turk-konsomatris",
+    slug: "turk-ekip",
     type: "nationality",
     matchTags: ["Türk", "Turkish", "Türk-Arap", "Turkish-Arab"],
     hero: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1920&q=80",
     tr: {
-      breadcrumb: "Türk Konsomatris",
-      h1: "Girne Türk Konsomatris",
-      subtitle: "İstanbul, İzmir, Ankara ve Antalya'dan yerel güzellikler",
+      breadcrumb: "Türkçe Konuşan Ekip",
+      h1: "Girne Türkçe Konuşan Konsiyerj Ekibi",
+      subtitle: "İstanbul, İzmir, Ankara ve Antalya kökenli yerel ekip",
       intro:
-        "Türkçe konuşan bir partner tercih edenler için özenle seçilmiş Türk konsomatris portföyümüz. Kültürel yakınlık, dil rahatlığı ve yerel zerafet.",
+        "Türkçe konuşan konsiyerj ekip üyelerimizle kültürel yakınlık, dil rahatlığı ve yerel bilgi.",
       seoParagraphs: [
-        "Girne'ye gelen Türk misafirlerimiz için Türk konsomatris seçeneği en çok tercih edilen segmenttir. Ana dilde iletişim, kültürel kod uyumu ve klasik Türk zerafeti bu tercihin arkasındaki temel faktörlerdir.",
-        "Portföyümüzde İstanbul'un moda çevresinden, İzmir'in güneşinden, Ankara'nın klasik zerafetinden ve Antalya'nın turizm dünyasından gelen modeller var. Alina, Lara, Daria, Yasmine, Serena, Melissa, Zara ve Emily — her biri kendi hikayesiyle.",
-        "Türk modellerimiz özellikle iş yemekleri, gece kulübü partnerliği ve otel konsomatris taleplerinde ön plana çıkar. Girne Kıbrıs konsomatris dünyasında %30-40 gibi büyük bir talebi bu segment karşılıyor. Rezervasyon için WhatsApp üzerinden bize ulaşın.",
+        "Türk misafirlerimiz için Türkçe konuşan ekip seçeneği en çok tercih edilen segmenttir. Ana dilde iletişim, kültürel kod uyumu ve yerel bilgi bu tercihin arkasındaki nedenler.",
+        "Ekip üyelerimiz Türkiye'nin farklı bölgelerinden — İstanbul'un moda çevresinden, İzmir'in güneşinden, Ankara'nın klasik zerafetinden ve Antalya'nın turizm dünyasından.",
+        "Alina, Lara, Daria, Yasmine, Serena, Melissa, Zara ve Emily — her biri profesyonel bir yerel rehber. Rezervasyon için WhatsApp üzerinden bize ulaşın.",
       ],
     },
     en: {
-      breadcrumb: "Turkish Hostess",
-      h1: "Turkish Hostess Kyrenia Cyprus",
-      subtitle: "Local beauties from Istanbul, Izmir, Ankara and Antalya",
+      breadcrumb: "Turkish-Speaking Team",
+      h1: "Kyrenia Turkish-Speaking Concierge Team",
+      subtitle: "Local team from Istanbul, Izmir, Ankara and Antalya",
       intro:
-        "A curated Turkish hostess portfolio for those preferring a Turkish-speaking partner. Cultural closeness, language ease and local elegance.",
+        "Cultural closeness, language ease and local knowledge with our Turkish-speaking concierge team members.",
       seoParagraphs: [
-        "For Turkish guests visiting Kyrenia, the Turkish hostess option is the most requested segment. Native-language communication, cultural-code compatibility and classic Turkish elegance drive this preference.",
-        "Our roster spans Istanbul's fashion circles, Izmir's sunshine, Ankara's classic grace and Antalya's tourism world. Alina, Lara, Daria, Yasmine, Serena, Melissa, Zara and Emily — each with her own story.",
-        "Our Turkish models are especially popular for business dinners, nightclub companionship and hotel hostess requests. In the Kyrenia Cyprus hostess scene, this segment represents 30–40% of overall demand. Reserve via WhatsApp.",
+        "For Turkish guests, the Turkish-speaking team option is the most requested segment. Native-language communication, cultural-code compatibility and local knowledge drive this preference.",
+        "Our team members come from different regions of Türkiye — Istanbul's fashion scene, Izmir's sunshine, Ankara's classic grace and Antalya's tourism world.",
+        "Alina, Lara, Daria, Yasmine, Serena, Melissa, Zara and Emily — each a professional local guide. Reserve via WhatsApp.",
       ],
     },
   },
   {
-    slug: "ukraynali-konsomatris",
+    slug: "ukraynali-ekip",
     type: "nationality",
     matchTags: ["Ukraynalı", "Ukrainian"],
     hero: "https://images.unsplash.com/photo-1509305717900-84f40e786d82?w=1920&q=80",
     tr: {
-      breadcrumb: "Ukraynalı Konsomatris",
-      h1: "Girne Ukraynalı Konsomatris",
-      subtitle: "Kiev, Odessa ve Lviv'den zarif Slav modelleri",
+      breadcrumb: "Ukraynaca Konuşan Ekip",
+      h1: "Girne Ukraynaca Konuşan Konsiyerj Ekibi",
+      subtitle: "Kiev, Odessa ve Lviv kökenli çok dilli konsiyerj profesyonelleri",
       intro:
-        "Ukraynalı konsomatris deneyimi arayanlar için özel portföy. Genç, taze ve enerjik Slav güzellikleri Girne'nin favorileri arasında.",
+        "Ukraynaca konuşan misafirlerimize destek veren ekibimiz. Havalimanı, otel, restoran ve tur rehberliğinde ana dilde asistan.",
       seoParagraphs: [
-        "Ukraynalı modeller Girne Kıbrıs konsomatris sahnesinde son yılların yükselen segmenti. Doğal güzelliği, doğal enerjisi ve genç yaş ortalamasıyla özellikle beach club ve gece kulübü misafirlerinin favorisi.",
-        "Portföyümüzde Kiev, Odessa, Lviv ve Kharkiv'den gelen modeller bulunur. Ukraynaca, Rusça, İngilizce ve genellikle bir Avrupa dili daha bilirler. Kateryna ve Natasha en talep edilenler arasında.",
-        "Ukraynalı konsomatris paketimiz için ortalama fiyatlandırma €250-€300 arasındadır. VIP ve tüm gece paketleri de mevcuttur. WhatsApp üzerinden hemen rezervasyon yapabilirsiniz.",
+        "Ukraynalı misafirlerimiz Girne'ye artan bir yoğunlukla geliyor. Ekibimiz özellikle beach club, restoran ve şehir turlarında bu misafirlere destek verir.",
+        "Kiev, Odessa, Lviv ve Kharkiv kökenli ekip üyelerimiz Ukraynaca, Rusça, İngilizce ve genellikle bir Avrupa dili daha bilir.",
+        "Kateryna ve Natasha en talep edilenler arasında. WhatsApp üzerinden hemen rezervasyon yapabilirsiniz.",
       ],
     },
     en: {
-      breadcrumb: "Ukrainian Hostess",
-      h1: "Ukrainian Hostess Kyrenia Cyprus",
-      subtitle: "Elegant Slavic models from Kyiv, Odessa and Lviv",
+      breadcrumb: "Ukrainian-Speaking Team",
+      h1: "Kyrenia Ukrainian-Speaking Concierge Team",
+      subtitle:
+        "Multilingual concierge professionals from Kyiv, Odessa and Lviv",
       intro:
-        "A dedicated portfolio for the Ukrainian hostess experience. Young, fresh and energetic Slavic beauties among Kyrenia's favourites.",
+        "Our team supporting Ukrainian-speaking guests. Native-language assistance for airport, hotel, restaurant and tour guidance.",
       seoParagraphs: [
-        "Ukrainian models are a rising segment in the Kyrenia Cyprus hostess scene. Natural beauty, natural energy and a younger average age make them favourites among beach-club and nightclub guests in particular.",
-        "Our roster includes models from Kyiv, Odessa, Lviv and Kharkiv. They speak Ukrainian, Russian, English and often another European language. Kateryna and Natasha are among the most requested.",
-        "Average pricing for our Ukrainian hostess package is €250–€300. VIP and all-night packages are also available. Reserve immediately on WhatsApp.",
+        "Ukrainian guests visit Kyrenia in growing numbers. Our team especially supports these guests at beach clubs, restaurants and city tours.",
+        "Our team members from Kyiv, Odessa, Lviv and Kharkiv speak Ukrainian, Russian, English and often another European language.",
+        "Kateryna and Natasha are among the most requested. Reserve immediately on WhatsApp.",
       ],
     },
   },
-  // HOTEL LANDINGS
   {
-    slug: "cratos-konsomatris",
+    slug: "cratos-konsiyerj",
     type: "hotel",
     hero: "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=1920&q=80",
     tr: {
-      breadcrumb: "Cratos Konsomatris",
-      h1: "Cratos Casino Girne Konsomatris",
-      subtitle: "Kuzey Kıbrıs'ın en görkemli casinosunda VIP partnerlik",
+      breadcrumb: "Cratos Konsiyerj",
+      h1: "Cratos Casino Girne Konsiyerj Servisi",
+      subtitle: "Kuzey Kıbrıs'ın en büyük casinosunda VIP koordinasyon",
       intro:
-        "Cratos Premium Hotel & Casino'da otel-çağrı hizmeti. Blackjack ve rulet masalarında yanınızda zarafetle duran, gecenizi taçlandıran partner.",
+        "Cratos Premium Hotel & Casino ziyaretinizde otel rezervasyon önceliği, casino etiket rehberliği ve VIP salon koordinasyonu.",
       seoParagraphs: [
-        "Cratos Premium, Girne'nin en yüksek tavanlı casinosu — dünya çapında poker turnuvalarına ev sahipliği yapıyor. Bu ortamda tek başına oynamak yerine, yanınızda bir Girne Kıbrıs konsomatris partneri bulundurmak hem sosyal hem stratejik bir tercih.",
-        "Cratos'ta otel-çağrı süreci son derece basit: WhatsApp üzerinden oda numaranızı paylaşırsınız, modelimiz doğrudan asansöre yönelir. Otel personeline hiçbir soru sorulmaz, hiçbir kayıt yapılmaz.",
-        "Cratos konsomatris paketimiz genellikle 3 saatlik VIP paketimiz veya tüm gece paketimizle sunulur. Şampanya servisi, akşam yemeği koordinasyonu ve casino masalarında modelin uygun eşliği dahildir.",
-        "Sıklıkla tercih edilen modeller: Elena, Valeria, Isabella, Diana, Victoria. Rezervasyon için WhatsApp üzerinden ulaşın; genellikle 30 dakikada modeliniz kapınızda olur.",
+        "Cratos Premium, Girne'nin en büyük casino kompleksi — dünya çapında poker turnuvalarına ev sahipliği yapıyor. Bu ortamda konsiyerj destek büyük fark yaratır.",
+        "Cratos'ta konsiyerj hizmetimizle oda upgrade koordinasyonu, VIP salon davetleri, çok dilli tercüme ve casino etiket rehberliği alırsınız.",
+        "Frekvens ile tercih edilen ekip üyeleri: Elena, Valeria, Isabella, Diana, Victoria. Rezervasyon için WhatsApp üzerinden ulaşın.",
       ],
     },
     en: {
-      breadcrumb: "Cratos Hostess",
-      h1: "Cratos Casino Kyrenia Hostess",
+      breadcrumb: "Cratos Concierge",
+      h1: "Cratos Casino Kyrenia Concierge Service",
       subtitle:
-        "VIP companionship at Northern Cyprus's most magnificent casino",
+        "VIP coordination at Northern Cyprus's largest casino",
       intro:
-        "Incall service at Cratos Premium Hotel & Casino. A partner who stands with grace beside you at the blackjack and roulette tables — crowning your night.",
+        "Reservation priority, casino etiquette guidance and VIP salon coordination for your visit to Cratos Premium Hotel & Casino.",
       seoParagraphs: [
-        "Cratos Premium is Kyrenia's highest-ceiling casino — hosting world-class poker tournaments. Rather than playing alone, having a Kyrenia Cyprus hostess partner beside you here is both a social and a strategic choice.",
-        "The incall process at Cratos is straightforward: share your room number on WhatsApp, our model heads straight to the elevator. No question asked at the front desk, no registration made.",
-        "Our Cratos hostess package is typically offered with the 3-hour VIP or all-night option. Champagne service, dinner coordination and the model's appropriate companionship at the casino tables are included.",
-        "Frequently requested models: Elena, Valeria, Isabella, Diana, Victoria. Reserve on WhatsApp — your companion is usually at your door within 30 minutes.",
+        "Cratos Premium is Kyrenia's largest casino complex, hosting world-class poker tournaments. Concierge support makes a huge difference in this environment.",
+        "At Cratos, our concierge service secures room-upgrade coordination, VIP salon invitations, multilingual translation and casino etiquette guidance.",
+        "Frequently requested team members: Elena, Valeria, Isabella, Diana, Victoria. Reserve on WhatsApp.",
       ],
     },
   },
   {
-    slug: "merit-konsomatris",
+    slug: "merit-konsiyerj",
     type: "hotel",
     hero: "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=1920&q=80",
     tr: {
-      breadcrumb: "Merit Konsomatris",
-      h1: "Merit Crystal Cove Girne Konsomatris",
-      subtitle: "Sahil kenarında lüks otel deneyimi ve elit partnerlik",
+      breadcrumb: "Merit Konsiyerj",
+      h1: "Merit Crystal Cove Girne Konsiyerj Servisi",
+      subtitle: "Sahil kenarı lüks otel deneyimi için profesyonel destek",
       intro:
-        "Merit Crystal Cove Hotel & Casino'da premium otel-çağrı. Casino, spa ve deniz manzaralı odalarda diskret servis.",
+        "Merit Crystal Cove Hotel & Casino'da premium konsiyerj koordinasyonu. Casino, spa ve deniz manzaralı odalar.",
       seoParagraphs: [
-        "Merit Crystal Cove, Girne'nin en romantik konumdaki lüks otellerinden biri. Deniz manzaralı süitleri, spa merkezi ve casinosuyla klas bir konaklama deneyimi sunar.",
-        "Merit'te konsomatris hizmetimiz özellikle çift kişilik lüks süitlerdeki misafirlerimiz için ideal. Modelimiz otel resepsiyonundan geçmez, direkt oda numaranıza ulaşır. Merit'in geniş odaları, uzun süreli görüşmeler için de mükemmel bir ortam yaratır.",
-        "Merit konsomatris paketimizi 3 saatlik VIP paket veya tüm gece paketi olarak seçebilirsiniz. Tüm gece paketinde şampanya, akşam yemeği ve isteğe bağlı casino gecesi dahildir.",
-        "Girne Kıbrıs konsomatris dünyasında Merit, en romantik lokasyon olarak öne çıkar. Bal ayı ve özel kutlama misafirleri için özel ikramlar sunuyoruz.",
+        "Merit Crystal Cove, Girne'nin en romantik konumdaki lüks otellerinden biri. Deniz manzaralı süitleri, spa merkezi ve casinosuyla klas bir konaklama.",
+        "Konsiyerj hizmetimizle Merit'te oda upgrade koordinasyonu, restoran-casino koordinasyonu ve şehir turu düzenlemesi yapılır.",
+        "Bal ayı ve özel kutlama misafirlerimiz için ekstra ikramlar sunuyoruz. WhatsApp üzerinden özel paket alabilirsiniz.",
       ],
     },
     en: {
-      breadcrumb: "Merit Hostess",
-      h1: "Merit Crystal Cove Kyrenia Hostess",
+      breadcrumb: "Merit Concierge",
+      h1: "Merit Crystal Cove Kyrenia Concierge Service",
       subtitle:
-        "Seafront luxury hotel experience with elite companionship",
+        "Professional support for a seafront luxury hotel experience",
       intro:
-        "Premium incall at Merit Crystal Cove Hotel & Casino. Discreet service across the casino, spa and sea-view suites.",
+        "Premium concierge coordination at Merit Crystal Cove Hotel & Casino — the casino, spa and sea-view rooms.",
       seoParagraphs: [
-        "Merit Crystal Cove is one of Kyrenia's most romantically located luxury hotels. Sea-view suites, a spa centre and its own casino make for a truly upscale stay.",
-        "Our Merit hostess service is especially suited for guests in the deluxe double suites. Our model never crosses reception — she goes directly to your room number. Merit's spacious rooms also make a perfect setting for extended bookings.",
-        "Choose our Merit hostess package as the 3-hour VIP or all-night option. The all-night package includes champagne, dinner and an optional casino night.",
-        "Merit stands out as the most romantic location in the Kyrenia Cyprus hostess scene. We offer special touches for honeymoon and celebration guests.",
+        "Merit Crystal Cove is one of Kyrenia's most romantically located luxury hotels. Sea-view suites, a spa centre and its own casino for an upscale stay.",
+        "Our concierge service coordinates room upgrades, restaurant / casino arrangements and city tours at Merit.",
+        "We offer special touches for honeymoon and celebration guests. Request a bespoke package on WhatsApp.",
       ],
     },
   },
@@ -170,6 +165,5 @@ export const landingGirls = (landing) => {
         landing.matchTags.includes(g.nationality_en),
     );
   }
-  // hotel landings show all girls (all can go to any hotel)
   return girls.slice(0, 8);
 };

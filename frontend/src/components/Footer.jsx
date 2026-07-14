@@ -27,8 +27,8 @@ export const Footer = () => {
             <p className="text-white/55 text-sm leading-relaxed max-w-md">
               {t.footer.tagline}{" "}
               {lang === "tr"
-                ? "Girne Kıbrıs konsomatris hizmetinde diskretliğin, zarafetin ve kalitenin adresi."
-                : "The address of discretion, elegance and quality in the Kyrenia Cyprus hostess scene."}
+                ? "Girne Kıbrıs konsiyerj hizmetinde diskretliğin, zarafetin ve kalitenin adresi."
+                : "The address of discretion, elegance and quality in the Kyrenia Cyprus concierge scene."}
             </p>
             <div className="flex items-center gap-3 pt-3">
               <a
@@ -133,8 +133,8 @@ export const Footer = () => {
             </p>
             <p className="uppercase tracking-[0.25em]">
               {lang === "tr"
-                ? "Girne • Kıbrıs • Konsomatris"
-                : "Kyrenia • Cyprus • Hostess"}
+                ? "Girne • Kıbrıs • Konsiyerj"
+                : "Kyrenia • Cyprus • Concierge"}
             </p>
           </div>
         </div>

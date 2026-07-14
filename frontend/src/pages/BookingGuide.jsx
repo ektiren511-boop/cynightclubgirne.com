@@ -17,9 +17,9 @@ const CONTENT = {
     eyebrow: "Rehber",
     h1: "Nasıl Rezervasyon Yapılır?",
     subtitle:
-      "Girne Kıbrıs Konsomatris hizmetimiz için adım adım rezervasyon süreci",
+      "Girne Kıbrıs Konsiyerj hizmetimiz için adım adım rezervasyon süreci",
     intro:
-      "Kıbrıs Night Club rezervasyon süreci son derece basit ve tamamen diskret olacak şekilde tasarlanmıştır. Aşağıdaki adımları takip ederek, 30 saniye içinde konsomatris ev & otel servisi rezervasyonunuzu tamamlayabilirsiniz.",
+      "Kıbrıs Night Club rezervasyon süreci son derece basit ve tamamen diskret olacak şekilde tasarlanmıştır. Aşağıdaki adımları takip ederek, 30 saniye içinde konsiyerj ev & otel servisi rezervasyonunuzu tamamlayabilirsiniz.",
     steps: [
       {
         n: "01",
@@ -44,7 +44,7 @@ const CONTENT = {
       {
         n: "05",
         title: "Zamanınızın tadını çıkarın",
-        desc: "Kararlaştırılan sürede, seçtiğiniz lokasyonda (otel odası, villa, yat) tam diskret ve profesyonel bir konsomatris deneyimi yaşayın. Görüşme sonrası ödeme nakit olarak yapılır.",
+        desc: "Kararlaştırılan sürede, seçtiğiniz lokasyonda (otel odası, villa, yat) tam diskret ve profesyonel bir konsiyerj deneyimi yaşayın. Görüşme sonrası ödeme nakit olarak yapılır.",
       },
     ],
     what: {
@@ -108,9 +108,9 @@ const CONTENT = {
     eyebrow: "Guide",
     h1: "How to Book",
     subtitle:
-      "A step-by-step booking flow for our Kyrenia Cyprus Hostess Service",
+      "A step-by-step booking flow for our Kyrenia Cyprus Concierge Service",
     intro:
-      "The Kıbrıs Night Club booking process is designed to be extremely simple and fully discreet. Follow the steps below and complete your hostess service reservation in 30 seconds.",
+      "The Kıbrıs Night Club booking process is designed to be extremely simple and fully discreet. Follow the steps below and complete your concierge service reservation in 30 seconds.",
     steps: [
       {
         n: "01",
@@ -135,7 +135,7 @@ const CONTENT = {
       {
         n: "05",
         title: "Enjoy your time",
-        desc: "Enjoy a fully discreet, professional hostess experience at your chosen location (hotel room, villa, yacht) for the agreed duration. Payment is made in cash after the session begins.",
+        desc: "Enjoy a fully discreet, professional concierge experience at your chosen location (hotel room, villa, yacht) for the agreed duration. Payment is made in cash after the session begins.",
       },
     ],
     what: {

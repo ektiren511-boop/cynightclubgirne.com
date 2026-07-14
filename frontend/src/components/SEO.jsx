@@ -6,7 +6,7 @@ import { SITE } from "@/data/site";
 /**
  * SEO component - updates document title, meta tags, canonical URL,
  * hreflang, Open Graph, and injects JSON-LD (LocalBusiness by default).
- * Keeps "Girne Kıbrıs Konsomatris" / "Kyrenia Cyprus Hostess" keywords prominent.
+ * Keeps "Girne Kıbrıs Konsiyerj" / "Kyrenia Cyprus Concierge" keywords prominent.
  */
 export const SEO = ({
   titleKey,
@@ -21,7 +21,7 @@ export const SEO = ({
   useEffect(() => {
     const brand = t.brand;
     const seoKeyword =
-      lang === "tr" ? "Girne Kıbrıs Konsomatris" : "Kyrenia Cyprus Hostess";
+      lang === "tr" ? "Girne VIP Konsiyerj" : "Kyrenia VIP Concierge";
 
     const title = customTitle
       ? `${customTitle} | ${brand} - ${seoKeyword}`
@@ -31,8 +31,8 @@ export const SEO = ({
       customDesc ||
       descriptionKey ||
       (lang === "tr"
-        ? "Kıbrıs Night Club — Girne Kıbrıs konsomatris dünyasının en seçkin VIP ajansı. 7/24 diskret hizmet, gerçek fotoğraflar, 24 premium model. Otel-çağrı, VIP casino ve yat partileri."
-        : "Kıbrıs Night Club — the most exclusive VIP agency of the Kyrenia Cyprus hostess scene. 24/7 discreet service, real photos, 24 premium models. Incall, VIP casino and yacht parties.");
+        ? "Kıbrıs Night Club — Girne'nin lider VIP konsiyerj ve turizm servisi. Otel, restoran, casino ve yat rezervasyonu, çok dilli tur rehberliği, havalimanı transferi ve etkinlik organizasyonu."
+        : "Kıbrıs Night Club — Kyrenia's leading VIP concierge and tourism service. Hotel, restaurant, casino and yacht bookings, multilingual tour guidance, airport transfer and event organisation.");
 
     document.title = title;
 
@@ -56,8 +56,8 @@ export const SEO = ({
     setMeta(
       "keywords",
       lang === "tr"
-        ? "Girne Kıbrıs Konsomatris, Girne konsomatris, Kıbrıs konsomatris, Kıbrıs Night Club, Girne VIP konsomatris, Girne otel konsomatris, KKTC konsomatris, Kıbrıs Rus konsomatris, Kıbrıs Türk konsomatris, Cratos konsomatris, Merit konsomatris, Acapulco konsomatris, Girne casino konsomatris, Girne yat konsomatris"
-        : "Kyrenia Cyprus Hostess, Kyrenia hostess, Cyprus hostess, Kıbrıs Night Club, Kyrenia VIP hostess, Kyrenia hotel hostess, TRNC hostess, Russian hostess Cyprus, Turkish hostess Kyrenia, Cratos hostess, Merit hostess, Acapulco hostess, Kyrenia casino hostess, Kyrenia yacht hostess",
+        ? "Girne VIP konsiyerj, Kıbrıs konsiyerj servisi, Girne turizm rehberi, Kıbrıs Night Club, otel rezervasyon Girne, casino rehberi Kıbrıs, yat kiralama Girne, havalimanı transferi Girne, tur rehberliği Kıbrıs, etkinlik organizasyonu Girne, Cratos konsiyerj, Merit konsiyerj, Acapulco konsiyerj"
+        : "Kyrenia VIP concierge, Cyprus concierge service, Kyrenia tourism guide, Kıbrıs Night Club, Kyrenia hotel booking, Cyprus casino guide, Kyrenia yacht charter, Kyrenia airport transfer, Cyprus tour guide, Kyrenia event organisation, Cratos concierge, Merit concierge, Acapulco concierge",
     );
 
     // Open Graph

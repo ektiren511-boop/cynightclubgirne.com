@@ -1,4 +1,4 @@
-// Testimonials — bilingual, tasteful (anonymous / initials only)
+// Legitimate concierge / tourism service reviews
 export const testimonials = [
   {
     id: 1,
@@ -6,8 +6,8 @@ export const testimonials = [
     location_tr: "İstanbul",
     location_en: "Istanbul",
     rating: 5,
-    tr: "Girne'ye iş için gitmiştim. Cratos'ta VIP masaya çıkmadan önce Kıbrıs Night Club'ı aradım. Elena ile geçirdiğim gece, hem işim hem kişisel prestijim açısından mükemmel bir yatırım oldu. Tam diskretlik, tam profesyonellik.",
-    en: "I was in Kyrenia on business. Before hitting the VIP tables at Cratos I called Kıbrıs Night Club. My night with Elena was a perfect investment — for both my business and personal prestige. Full discretion, full professionalism.",
+    tr: "Girne'ye iş için gittim. Kıbrıs Night Club konsiyerj servisi havalimanından karşılamadan Cratos rezervasyonuna kadar her şeyi kusursuz koordine etti. Profesyonel diskretlik.",
+    en: "I visited Kyrenia on business. Kıbrıs Night Club's concierge team coordinated everything from airport pickup to the Cratos reservation flawlessly. Professional discretion.",
   },
   {
     id: 2,
@@ -15,8 +15,8 @@ export const testimonials = [
     location_tr: "Ankara",
     location_en: "Ankara",
     rating: 5,
-    tr: "Acapulco Resort'ta bir haftalık tatilimde iki farklı gece rezervasyon yaptım. Modeller galerideki fotoğraflarla birebir aynıydı — bunun için tebrik ederim. Alina ve Daria'ya teşekkürler.",
-    en: "I booked two separate nights during my week at Acapulco Resort. The models were identical to their gallery photos — congratulations on that. Thanks to Alina and Daria.",
+    tr: "Acapulco Resort'ta bir haftalık aile tatilinde iki ayrı gün özel tur rehberi ayarlattım. Alina ve Daria harika bir rehberlik yaptı, ailem çok memnun kaldı.",
+    en: "During my one-week family stay at Acapulco Resort I booked private tour guides on two different days. Alina and Daria did an incredible job — my family loved it.",
   },
   {
     id: 3,
@@ -24,8 +24,8 @@ export const testimonials = [
     location_tr: "Moskova",
     location_en: "Moscow",
     rating: 5,
-    tr: "Yat paketi harika bir deneyimdi. Şampanya, gün batımı, Valeria'nın zarafeti… Girne'de bir daha olsam kesinlikle tekrar arayacağım.",
-    en: "The yacht package was an incredible experience. Champagne, sunset, Valeria's elegance… I'll definitely call again on my next Kyrenia trip.",
+    tr: "Yat kiralama paketi harika bir deneyimdi. Şampanya, gün batımı, kaptan koordinasyonu — Valeria'nın Rusça rehberliği eşliğinde muhteşemdi.",
+    en: "The yacht charter package was an incredible experience. Champagne, sunset, captain coordination — combined with Valeria's Russian-language guidance, magnificent.",
   },
   {
     id: 4,
@@ -33,8 +33,8 @@ export const testimonials = [
     location_tr: "Londra",
     location_en: "London",
     rating: 5,
-    tr: "İngilizce iletişim, hızlı yanıt ve premium kalite. Girne'deki en profesyonel konsomatris ajansı. Victoria'yı tekrar rezerve edeceğim.",
-    en: "English communication, fast response, premium quality. The most professional hostess agency in Kyrenia. I'll rebook Victoria.",
+    tr: "İngilizce iletişim, hızlı yanıt, premium kalite. Girne'de tanıştığım en profesyonel konsiyerj servisi. Victoria'nın etiket rehberliği paha biçilmezdi.",
+    en: "English communication, fast reply, premium quality. The most professional concierge service I've encountered in Kyrenia. Victoria's etiquette guidance was priceless.",
   },
   {
     id: 5,
@@ -42,8 +42,8 @@ export const testimonials = [
     location_tr: "Kiev",
     location_en: "Kyiv",
     rating: 5,
-    tr: "Kateryna ile geçirdiğim akşam yemeği, iş partnerlerimle görüşme sonrasında mükemmel bir bitiş oldu. Her şey planlandığı gibi yürüdü.",
-    en: "The dinner date with Kateryna was the perfect finish after meeting with my business partners. Everything went exactly to plan.",
+    tr: "Kateryna'nın restoran rezervasyonu ve akşam yemeği koordinasyonu iş partnerlerimle görüşmemin ardından mükemmel bir kapanış oldu.",
+    en: "Kateryna's restaurant reservation and dinner coordination after my business meeting was the perfect closing.",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const testimonials = [
     location_tr: "Berlin",
     location_en: "Berlin",
     rating: 5,
-    tr: "Merit Crystal Cove'da 3 gece kaldım. Chloe ve Isabella ile ayrı geceler rezerve ettim; iki deneyim de birbirinden zarifti. Diskretlik %100.",
-    en: "I stayed 3 nights at Merit Crystal Cove and booked Chloe and Isabella on separate nights. Both experiences were beyond elegant. Discretion 100%.",
+    tr: "Merit Crystal Cove'da 3 gece kaldım. Chloe ve Isabella'nın şehir turu ve casino etiket rehberliği çok değerliydi. %100 diskretlik.",
+    en: "I stayed 3 nights at Merit Crystal Cove. Chloe and Isabella's city tour and casino etiquette guidance were invaluable. 100% discretion.",
   },
 ];

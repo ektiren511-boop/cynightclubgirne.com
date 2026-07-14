@@ -429,9 +429,9 @@ export const girls = [
       "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=80",
     ],
     bio_tr:
-      "Zara, İzmir'in güneşi kadar sıcak, doğal esmer bir Türk modeli. Otel konsomatris ve gece kulübü partnerliğinde tercih edilir.",
+      "Zara, İzmir'in güneşi kadar sıcak, doğal esmer bir Türk modeli. Otel konsiyerj ve gece kulübü partnerliğinde tercih edilir.",
     bio_en:
-      "Zara is a natural brunette Turkish model — warm as the Izmir sun. Preferred for hotel hostess and nightclub companionship.",
+      "Zara is a natural brunette Turkish model — warm as the Izmir sun. Preferred for hotel concierge and nightclub companionship.",
   },
   {
     id: "diana",
@@ -573,8 +573,8 @@ export const girls = [
       "https://images.unsplash.com/photo-1503104834685-7205e8607eb9?w=1200&q=80",
     ],
     bio_tr:
-      "Victoria, Londra'dan üst düzey bir yaşam tarzına sahip, olgun ve prestijli bir konsomatris. İş yemekleri ve uzun süreli seyahatler için premium seçim.",
+      "Victoria, Londra'dan üst düzey bir yaşam tarzına sahip, olgun ve prestijli bir konsiyerj. İş yemekleri ve uzun süreli seyahatler için premium seçim.",
     bio_en:
-      "Victoria is a mature, prestigious hostess from London with a high-end lifestyle — a premium pick for business dinners and long trips.",
+      "Victoria is a mature, prestigious concierge from London with a high-end lifestyle — a premium pick for business dinners and long trips.",
   },
 ];

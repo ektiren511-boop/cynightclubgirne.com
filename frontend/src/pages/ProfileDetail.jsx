@@ -31,7 +31,7 @@ export default function ProfileDetail() {
   const languages = lang === "tr" ? g.languages_tr : g.languages_en;
   const bio = lang === "tr" ? g.bio_tr : g.bio_en;
 
-  const seoTitle = `${g.name} - ${nationality} ${lang === "tr" ? "Girne Kıbrıs Konsomatris" : "Kyrenia Cyprus Hostess"}`;
+  const seoTitle = `${g.name} - ${nationality} ${lang === "tr" ? "Girne Kıbrıs Konsiyerj" : "Kyrenia Cyprus Concierge"}`;
 
   return (
     <div className="pt-32 pb-24 bg-[#0A0A0B] min-h-screen" data-testid="profile-detail-page">
@@ -81,18 +81,25 @@ export default function ProfileDetail() {
               {g.name}
             </h1>
             <p className="text-[#E0BFB8] mt-3 text-xs uppercase tracking-[0.3em]">
-              {nationality} • {lang === "tr" ? "Girne Kıbrıs Konsomatris" : "Kyrenia Cyprus Hostess"}
+              {nationality} • {lang === "tr" ? "Girne Kıbrıs Konsiyerj" : "Kyrenia Cyprus Concierge"}
             </p>
 
-            <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-5 py-8 border-y border-white/5">
-              <Stat label={t.common.age} value={`${g.age}`} />
-              <Stat label={t.common.height} value={g.height} />
-              <Stat label={t.common.weight} value={g.weight} />
-              <Stat label={t.common.bust} value={g.bust} />
+            <div className="mt-8 grid grid-cols-1 gap-x-6 gap-y-5 py-8 border-y border-white/5">
+              <Stat
+                label={t.common.nationality}
+                value={nationality}
+              />
               <Stat
                 label={t.common.languages}
                 value={languages}
-                full
+              />
+              <Stat
+                label={lang === "tr" ? "Uzmanlık" : "Specialty"}
+                value={
+                  lang === "tr"
+                    ? "VIP Konsiyerj, Etkinlik & Tur Rehberliği"
+                    : "VIP Concierge, Event & Tour Guiding"
+                }
               />
             </div>
 

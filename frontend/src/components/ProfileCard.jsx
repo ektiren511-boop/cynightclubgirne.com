@@ -5,23 +5,24 @@ import { Crown, Sparkle, Star } from "lucide-react";
 export const ProfileCard = ({ g }) => {
   const { lang, t } = useLang();
   const nationality = lang === "tr" ? g.nationality_tr : g.nationality_en;
+  const languages = lang === "tr" ? g.languages_tr : g.languages_en;
 
   const badge = () => {
     if (g.tags.includes("vip"))
       return {
-        label: t.common.vip,
+        label: lang === "tr" ? "VIP" : "VIP",
         icon: Crown,
         cls: "bg-[#D4AF37] text-black",
       };
     if (g.tags.includes("new"))
       return {
-        label: t.common.new,
+        label: lang === "tr" ? "Yeni" : "New",
         icon: Sparkle,
         cls: "bg-[#B76E79] text-white",
       };
     if (g.tags.includes("featured"))
       return {
-        label: t.common.featured,
+        label: lang === "tr" ? "Öne Çıkan" : "Featured",
         icon: Star,
         cls: "bg-white/10 text-white",
       };
@@ -38,7 +39,7 @@ export const ProfileCard = ({ g }) => {
       <div className="aspect-[3/4] overflow-hidden bg-black">
         <img
           src={g.cover}
-          alt={`${g.name} - ${nationality} ${lang === "tr" ? "Girne Kıbrıs Konsomatris" : "Kyrenia Cyprus Hostess"}`}
+          alt={`${g.name} - ${lang === "tr" ? "Girne VIP Konsiyerj Ekibi" : "Kyrenia VIP Concierge Team"}`}
           loading="lazy"
           className="w-full h-full object-cover scale-100 group-hover:scale-110 transition-transform duration-[1200ms] ease-out"
         />
@@ -58,15 +59,14 @@ export const ProfileCard = ({ g }) => {
         <h3 className="font-serif text-2xl md:text-3xl text-white tracking-tight">
           {g.name}
         </h3>
-        <div className="flex items-center gap-3 mt-2 text-[11px] text-white/65 uppercase tracking-[0.18em]">
-          <span>{g.age}y</span>
-          <span className="w-1 h-1 bg-white/30" />
-          <span>{g.height}</span>
-          <span className="w-1 h-1 bg-white/30" />
-          <span>{nationality}</span>
-        </div>
+        <p className="text-[11px] text-[#E0BFB8] uppercase tracking-[0.18em] mt-2">
+          {nationality}
+        </p>
+        <p className="text-[11px] text-white/55 mt-1.5 line-clamp-1">
+          {languages}
+        </p>
         <div className="mt-4 inline-flex items-center text-[11px] uppercase tracking-[0.22em] text-[#E0BFB8] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          {t.common.viewProfile}
+          {lang === "tr" ? "Profili Gör" : "View Profile"}
           <span className="ml-2 inline-block w-6 h-px bg-[#E0BFB8]" />
         </div>
       </div>

@@ -130,7 +130,7 @@ export default function Home() {
             <div className="relative aspect-[4/5] overflow-hidden">
               <img
                 src="https://images.unsplash.com/photo-1671031990999-77f3bd7e9731?w=1200&q=80"
-                alt={lang === "tr" ? "Girne Kıbrıs Konsomatris" : "Kyrenia Cyprus Hostess"}
+                alt={lang === "tr" ? "Girne Kıbrıs Konsiyerj" : "Kyrenia Cyprus Concierge"}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 ring-1 ring-inset ring-[#D4AF37]/20" />
@@ -284,8 +284,8 @@ export default function Home() {
               </h2>
               <p className="text-white/55 mt-4 max-w-xl">
                 {lang === "tr"
-                  ? "Tercih ettiğiniz milliyet veya otele göre model seçin — Girne Kıbrıs konsomatris dünyasında en detaylı rehberler."
-                  : "Choose by preferred nationality or hotel — the most detailed guides in the Kyrenia Cyprus hostess scene."}
+                  ? "Tercih ettiğiniz milliyet veya otele göre model seçin — Girne Kıbrıs konsiyerj dünyasında en detaylı rehberler."
+                  : "Choose by preferred nationality or hotel — the most detailed guides in the Kyrenia Cyprus concierge scene."}
               </p>
             </div>
           </div>

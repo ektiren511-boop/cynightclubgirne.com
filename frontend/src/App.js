@@ -4,7 +4,6 @@ import { LanguageProvider } from "@/i18n/LanguageContext";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloatingButton } from "@/components/WhatsAppFloatingButton";
-import { AgeVerificationModal } from "@/components/AgeVerificationModal";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Toaster } from "@/components/ui/sonner";
 
@@ -26,7 +25,6 @@ function App() {
       <LanguageProvider>
         <BrowserRouter>
           <ScrollToTop />
-          <AgeVerificationModal />
           <Navbar />
           <main>
             <Routes>
