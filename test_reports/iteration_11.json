@@ -1,0 +1,30 @@
+{
+  "summary": "Frontend regression for iteration 11 (editorial redesign + Google Ads compliance + trackConversion). Tested Home, Services, Pricing, BookingGuide (/nasil-rezervasyon), Contact, Blog, Gallery, FAQ across TR/EN. All new editorial layouts render correctly, gallery has 24 cards with first 6 items swapped to stage/DJ/bottle/laser/vocals, contact form submits + toast shows + form clears, language switcher works, all trackConversion data-testids present. One Google Ads compliance violation found: Home hero marquee still contains 'MERCEDES · YAT · CASINO' / 'MERCEDES · YACHT · CASINO' (both TR & EN). data/landings.js still contains extensive Mercedes/BMW/Maybach/Range Rover content which is reachable via /:slug catch-all route.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "Home marquee ticker", "issue": "Marquee still contains 'MERCEDES · YAT · CASINO' (TR) and 'MERCEDES · YACHT · CASINO' (EN) — violates test criterion #2 (no vehicle brand names on any page). Located in /app/frontend/src/pages/Home.jsx lines 39 & 47.", "selector": "home marquee items array", "priority": "HIGH"},
+      {"component": "data/landings.js", "issue": "Landing page data still contains 'Girne Mercedes VIP Transfer Servisi' with Mercedes S-Class, E-Class, V-Class, Maybach, Range Rover, BMW 7 Series references. Reachable via /:slug route (e.g., /mercedes-transfer). Violates Google Ads compliance criterion #1 & #2.", "selector": "/mercedes-transfer landing", "priority": "HIGH"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "/blog featured card", "issues": ["First blog card (blog-card-girne-vip-turizm-rehberi) className does NOT include 'md:col-span-2' — check if it should visually span 2 cols per test criterion #7. Currently uses hotel/lounge Kyrenia image (photo-1566073771259) which is on-brand and passes the 'no houseplants/library' check."]}
+    ]
+  },
+  "test_report_links": [],
+  "action_items": [
+    "Remove 'MERCEDES · YAT · CASINO' and 'MERCEDES · YACHT · CASINO' from Home.jsx marqueeItems (lines 39, 47). Suggested replacement: 'SAHNE · YAT · CASINO' / 'STAGE · YACHT · CASINO'.",
+    "Sanitize /app/frontend/src/data/landings.js — remove Mercedes / BMW / Maybach / Range Rover names from the mercedes-transfer landing (or delete/rename the entire landing). This is reachable via /:slug catch-all and violates Google Ads compliance.",
+    "Verify featured blog card (blog-card-girne-vip-turizm-rehberi) has md:col-span-2 class applied — currently missing per DOM inspection."
+  ],
+  "critical_code_review_comments": [
+    "The /:slug catch-all in App.js line 43 renders LandingPage for any unknown path (returns 'landing-not-found' skeleton). This masked our initial confusion when /rezervasyon (which doesn't exist as a route — actual route is /nasil-rezervasyon) rendered a blank page. Consider adding a proper 404 component or aliasing common expected paths."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "not tested (skip per request)", "frontend": "85%"},
+  "seed_data_creation": "none",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Verified: editorial redesigns render on /hizmetler, /fiyatlar, /nasil-rezervasyon, /iletisim, /blog. Contact form POST /api/contact returns success (toast 'Mesajınız başarıyla gönderildi' shown, inputs clear). Language switcher works page-wide (TR<->EN). Gallery has 24 cards, first 6 = cabaret-show, aerial-performance, live-dj-set, vip-bottle-service, laser-stage-experience, live-vocals-night. Gallery filters use data-testid='gallery-filter-{all|new|vip|featured}' (not filter-*). trackConversion is wired on hero-cta-call, cta-banner-wa, floating-whatsapp-btn, pricing-cta-0..2, pricing-custom-cta, services-cta-wa, booking-cta-wa, booking-cta-call, contact-wa-card CTAs, contact-call-card CTAs (via onclick handlers on the <a> tags around them), contact-submit — no console errors from tracker (safe no-op). Home hero background image = nightclub crowd + laser (photo-1516450360452) ✓. Only outstanding issues are the Mercedes references listed in ui_bugs.",
+  "rca of the issue": "Home marquee ticker text array in Home.jsx was not updated when other pages were cleansed. data/landings.js was not touched in this iteration but contains SEO landing content for a Mercedes transfer page still reachable via the /:slug LandingPage catch-all route."
+}

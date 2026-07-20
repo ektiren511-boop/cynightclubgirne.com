@@ -84,7 +84,7 @@ export const translations = {
     },
     gallery: {
       title: "Hizmet Vitrini",
-      subtitle: "Girne VIP Konsiyerj Filomuz — Mercedes Transfer, Otel, Casino, Yat ve Dans",
+      subtitle: "Girne VIP Konsiyerj Vitrini — Sahne, Kulüp, Otel, Casino ve Yat",
       filterAll: "Tümü",
       filterNew: "Yeni",
       filterVip: "VIP",
@@ -292,7 +292,7 @@ export const translations = {
     },
     gallery: {
       title: "Service Showcase",
-      subtitle: "Our Kyrenia VIP Fleet — Mercedes Transfer, Hotels, Casino, Yacht and Nightlife",
+      subtitle: "Our Kyrenia VIP Showcase — Stage, Club, Hotels, Casino and Yacht",
       filterAll: "All",
       filterNew: "New",
       filterVip: "VIP",

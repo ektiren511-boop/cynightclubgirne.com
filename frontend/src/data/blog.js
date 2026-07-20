@@ -3,7 +3,7 @@ export const posts = [
   {
     slug: "girne-vip-turizm-rehberi",
     cover:
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1600&q=80",
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80",
     date: "2025-11-12",
     tr: {
       title: "Girne VIP Turizm Rehberi: Konsiyerj Hizmeti Nedir?",
@@ -232,7 +232,7 @@ export const posts = [
   {
     slug: "girne-turk-ekibimiz",
     cover:
-      "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1600&q=80",
+      "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1600&q=80",
     date: "2025-10-15",
     tr: {
       title: "Girne'de Türkçe Konuşan Konsiyerj Ekibimiz",

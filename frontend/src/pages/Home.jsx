@@ -12,6 +12,7 @@ import { Marquee } from "@/components/Marquee";
 import { Reveal, MaskReveal } from "@/components/Reveal";
 import { landings } from "@/data/landings";
 import { waLink, SITE } from "@/data/site";
+import { trackConversion } from "@/lib/ads";
 import { ArrowUpRight, Phone, MessageCircle } from "lucide-react";
 
 export default function Home() {
@@ -56,7 +57,7 @@ export default function Home() {
         "@id": `${SITE.url}#business`,
         name: SITE.name,
         image:
-          "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1200&q=80",
+          "https://images.unsplash.com/photo-1571266028243-e4bfc5c1f31d?w=1200&q=80",
         url: SITE.url,
         telephone: SITE.phone,
         priceRange: "€€€",
@@ -103,8 +104,8 @@ export default function Home() {
           style={{ y: bgY, scale: bgScale }}
         >
           <img
-            src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=2400&q=85"
-            alt="Girne VIP Konsiyerj"
+            src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=2400&q=85"
+            alt="Girne VIP Konsiyerj Gece Kulübü"
             className="w-full h-full object-cover"
           />
         </motion.div>
@@ -223,6 +224,7 @@ export default function Home() {
                 </Link>
                 <a
                   href={`tel:${SITE.phone}`}
+                  onClick={() => trackConversion("call", { source: "hero" })}
                   data-testid="hero-cta-call"
                   className="group inline-flex items-center justify-between gap-4 border border-white/25 text-white px-6 py-4 text-[11px] uppercase tracking-[0.28em] font-medium hover:border-[#D4AF37] hover:text-[#D4AF37] transition-colors duration-500 flex-1"
                 >
@@ -594,6 +596,7 @@ export default function Home() {
                 href={waLink(lang)}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackConversion("whatsapp", { source: "cta_banner" })}
                 data-testid="cta-banner-wa"
                 className="group inline-flex items-center justify-center gap-4 bg-[#25D366] text-white px-10 py-5 uppercase tracking-[0.28em] text-[11px] font-medium hover:brightness-110 transition-all"
               >
