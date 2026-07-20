@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloatingButton } from "@/components/WhatsAppFloatingButton";
 import { ScrollToTop } from "@/components/ScrollToTop";
+import { SmoothScroll } from "@/components/SmoothScroll";
 import { Toaster } from "@/components/ui/sonner";
 
 import Home from "@/pages/Home";
@@ -21,9 +22,10 @@ import LandingPage from "@/pages/LandingPage";
 
 function App() {
   return (
-    <div className="App bg-[#0A0A0B] text-white antialiased">
+    <div className="App grain bg-[#0A0A0B] text-white antialiased">
       <LanguageProvider>
         <BrowserRouter>
+          <SmoothScroll />
           <ScrollToTop />
           <Navbar />
           <main>

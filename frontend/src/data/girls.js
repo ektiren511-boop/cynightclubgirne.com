@@ -14,6 +14,7 @@ export const girls = [
     gallery: [
       "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1200&q=80",
       "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=80",
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1200&q=80",
     ],
     bio_tr: "Mercedes-Benz S-Class VIP transfer aracımız, Ercan ve Larnaka havalimanlarından otelinize kadar konforlu ve prestijli bir yolculuk sunar. Deri döşeme, klima, WiFi ve isteğe bağlı ikram servisi dahildir. Business & VIP misafirlerin tercihidir.",
     bio_en: "Our Mercedes-Benz S-Class VIP transfer offers a comfortable and prestigious ride from Ercan and Larnaca airports to your hotel. Leather upholstery, climate control, WiFi and optional refreshment service included. The pick for business & VIP guests.",
@@ -106,6 +107,7 @@ export const girls = [
     cover: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80",
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80",
     ],
     bio_tr: "Cratos Premium Hotel Suite — Girne'nin en büyük casino kompleksinde deniz manzaralı, geniş süit. Executive kat erişimi, VIP karşılama ve oda upgrade koordinasyonu paketimizle dahildir.",
     bio_en: "Cratos Premium Hotel Suite — a spacious sea-view suite at Kyrenia's largest casino complex. Executive floor access, VIP welcome and room-upgrade coordination included in our package.",
@@ -121,6 +123,7 @@ export const girls = [
     cover: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=80",
+      "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=1200&q=80",
     ],
     bio_tr: "Merit Crystal Cove — Girne'nin sahil kenarı en romantik lüks otel süiti. Deniz manzarası, jakuzi ve balkon. Bal ayı ve özel kutlamalar için tercih.",
     bio_en: "Merit Crystal Cove — Kyrenia's most romantic seafront luxury suite. Sea view, jacuzzi and balcony. Preferred for honeymoons and special celebrations.",
@@ -198,6 +201,8 @@ export const girls = [
     cover: "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=1200&q=80",
+      "https://images.unsplash.com/photo-1518895312237-a9e23508077d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1541278107931-e006523892df?w=1200&q=80",
     ],
     bio_tr: "Cratos Casino'nun yüksek limitli blackjack masaları için VIP koordinasyon. Yüksek limitli oyunculara özel salon erişimi ve masa rezervasyonu.",
     bio_en: "VIP coordination for the high-limit blackjack tables at Cratos Casino. Private salon access and table reservations for high-limit players.",
@@ -213,6 +218,7 @@ export const girls = [
     cover: "https://images.unsplash.com/photo-1518895312237-a9e23508077d?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1518895312237-a9e23508077d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=1200&q=80",
     ],
     bio_tr: "Merit Crystal Cove Casino'nun rulet salonu — Amerikan ve Avrupa ruleti. Çok dilli krupiye ve VIP bar servisi.",
     bio_en: "Merit Crystal Cove Casino roulette hall — American and European roulette. Multilingual dealers and VIP bar service.",
@@ -258,6 +264,7 @@ export const girls = [
     cover: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&q=80",
+      "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1200&q=80",
     ],
     bio_tr: "Casino VIP salonuna erişim: ayrı bar, konforlu kanepeler ve özel gece atıştırmalıkları. Sadece davetli.",
     bio_en: "Access to a casino VIP lounge: private bar, comfortable sofas and exclusive late-night bites. Invitation only.",
@@ -290,6 +297,8 @@ export const girls = [
     cover: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80",
+      "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=80",
+      "https://images.unsplash.com/photo-1571266028243-e4bfc5c1f31d?w=1200&q=80",
     ],
     bio_tr: "Acapulco ve diğer beach club'larda gündüz partileri: havuz kenarı DJ setleri, cocktail servisi ve VIP masa rezervasyonu.",
     bio_en: "Daytime parties at Acapulco and other beach clubs: poolside DJ sets, cocktail service and VIP table reservations.",
@@ -305,6 +314,8 @@ export const girls = [
     cover: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=1200&q=80",
+      "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=80",
+      "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1200&q=80",
     ],
     bio_tr: "Girne'nin en populer gece kulüplerinde VIP masa: Şampanya servisi, öncelikli giriş ve bottle service koordinasyonu.",
     bio_en: "VIP table at Kyrenia's most popular nightclubs: champagne service, priority entry and bottle-service coordination.",
@@ -320,6 +331,8 @@ export const girls = [
     cover: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=80",
+      "https://images.unsplash.com/photo-1571266028243-e4bfc5c1f31d?w=1200&q=80",
+      "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=80",
     ],
     bio_tr: "Gece kulüplerinde canlı DJ setleri, lazer show ve dans pisti deneyimi. Grup rezervasyonlarına özel indirim.",
     bio_en: "Live DJ sets, laser shows and dance-floor experience at nightclubs. Special discount for group reservations.",
@@ -350,6 +363,7 @@ export const girls = [
     cover: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80",
     gallery: [
       "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&q=80",
+      "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=1200&q=80",
     ],
     bio_tr: "Girne Yat Limanı'ndan kalkışlı lüks yatlarla gün batımı turu. Şampanya, catering ve kaptan koordinasyonu dahil.",
     bio_en: "Sunset cruises on luxury yachts departing from Kyrenia Marina. Champagne, catering and captain coordination included.",

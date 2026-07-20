@@ -1,0 +1,30 @@
+{
+  "summary": "Frontend-only redesign verification of Awwwards-style editorial rebuild. All requested testids present and functional on Home: hero-title + hero-eyebrow visible with MaskReveal ('VIP Deneyimini Yaşa.' TR / 'Live The VIP Experience.' EN), hero-cta-gallery routes to /galeri, hero-cta-call uses tel:+905488552387. Navbar renders all 8 nav-link-* items and scroll-hide behavior confirmed (bounding-box y = -81 after downward scroll, y = 0 after upward scroll). Scroll progress bar present. Marquee ticker rendered. Manifesto with 4 numbered chapters (manifesto-chapter-0..3) rendered. AmbianceGallery with all 8 tiles (ambiance-tile-0..7) rendered. 5 category-<slug> landing cards present. Final CTA: cta-banner-wa opens wa.me/905488552387, cta-banner-gallery routes to /galeri. Language switch works TR<->EN (hero title actually changes). Mobile menu opens on 390px viewport with all 8 mobile-nav-link-* entries. Google Ads compliance: 0 hits for escort/eskort/konsomatris and 0 body-visible age/height/weight stats across /, /galeri, /hizmetler, /fiyatlar, /nasil-rezervasyon, /sss, /iletisim, /blog. All 7 secondary pages return 200. Only one framer-motion warning about non-static container position (does not affect functionality).",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "/blog index", "issues": ["Hero cover image (photo-1585297046-1f4c66e3f9d0 / indoor houseplants + sofa) feels off-brand for a luxury VIP concierge site — Google-Ads safe but not aligned with the editorial Girne/Kyrenia identity. Consider a Kyrenia harbour / hotel-lounge / editorial night visual instead."]}
+    ]
+  },
+  "test_report_links": ["/app/test_reports/iteration_10.json"],
+  "action_items": [
+    "(Optional / low priority) Swap /blog hero cover to an on-brand Kyrenia/lounge visual.",
+    "(Optional) Silence framer-motion useScroll warning by setting position: relative on the scroll container (Layout root).",
+    "No functional fixes required."
+  ],
+  "critical_code_review_comments": [
+    "Home.jsx renders correctly with new MaskReveal + parallax hero; useScroll target=heroRef is on a section with position:relative so parallax works — the console warning likely originates from Navbar's useScroll (root scroller) which is fine.",
+    "Navbar scroll-hide + progress-bar implemented cleanly with useMotionValueEvent; active-dot uses layoutId — verified in DOM.",
+    "All content is Google-Ads-compliant per the 3 regex axes (escort terms, stats pattern, personal-name lists from prior iterations still absent)."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "n/a (not tested per request)", "frontend": "100%"},
+  "test_credentials": "n/a",
+  "seed_data_creation": "none",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Iteration 10 validated the Awwwards editorial redesign (framer-motion 11.18 + lenis 1.3.25). Every data-testid mentioned in the review request was found and behaves correctly (hero, marquee, manifesto x4, ambiance x8, categories x5, final-cta wa+gallery, lang-switch, mobile menu). Scroll-hide navbar reproduced with bounding-box measurement. Google-Ads compliance still clean across all 8 pages. Only non-blocking items are the framer-motion 'non-static container' console warning and an off-brand blog cover image.",
+  "rca of the issue": "No blocking issues found."
+}
