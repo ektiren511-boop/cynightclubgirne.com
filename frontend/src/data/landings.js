@@ -3,32 +3,32 @@ import { girls } from "./girls";
 
 export const landings = [
   {
-    slug: "transfer-servisi",
+    slug: "sahne-servisi",
     type: "service",
-    matchTags: ["Transfer", "VIP Transfer", "Executive Transfer", "Grup Transfer", "Ultra Lüks Transfer", "SUV Transfer", "Business Transfer", "Ultra Luxury Transfer", "SUV Transfer", "Business Transfer"],
-    hero: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1920&q=80",
+    matchTags: ["Sahne / Show", "Stage / Show"],
+    hero: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1920&q=80",
     tr: {
-      breadcrumb: "Transfer Servisi",
-      h1: "Girne Mercedes VIP Transfer Servisi",
-      subtitle: "Ercan & Larnaka havalimanı — Girne otelleri arası lüks transfer",
+      breadcrumb: "Sahne & Show",
+      h1: "Girne Sahne, Kabare ve Gece Kulübü Show Servisi",
+      subtitle: "Cabaret, aerial silk, DJ set, canlı vokal ve lazer sahne organizasyonu",
       intro:
-        "Mercedes S-Class, E-Class, V-Class, Maybach ve Range Rover araçlarımızla havalimanından otelinize kadar konforlu ve prestijli bir transfer.",
+        "Girne'nin lisanslı sahne kulüplerinde kabare stili şov geceleri, aerial silk performansları, canlı DJ setleri ve lazer sahne organizasyonu.",
       seoParagraphs: [
-        "Girne'ye Ercan veya Larnaka havalimanından gelen VIP misafirler için Mercedes ve BMW filomuz konforlu bir başlangıç sunar. Rezervasyon süreci basit: uçuş bilgilerinizi paylaşın, aracınız iniş saatinize göre hazır olsun.",
-        "Filomuzda: Mercedes-Benz S-Class (business VIP), E-Class (executive), V-Class (7 kişilik grup), Maybach S680 (ultra lüks), Range Rover Autobiography (SUV) ve BMW 7 Series (business alternatif). Her araç profesyonel şoförle koordine edilir.",
-        "Transfer paketleri havalimanı-otel, otel-havalimanı ve şehir turu opsiyonlarıyla sunulur. WhatsApp üzerinden özel teklif alın.",
+        "Girne'nin gece sahnesi Akdeniz'in en canlı ve profesyonel şov ekosistemidir. Cabaret & Stage Show, Aerial Silk & Pole Performance, Live DJ Night, VIP Bottle & Champagne, Laser & Stage Experience ve Live Vocals & Piano paketleriyle her misafiri farklı bir atmosferle karşılıyoruz.",
+        "Kabare geceleri koreografi, canlı sahne performansı ve konser hissi veren ışık şovlarıyla; DJ geceleri ise house, techno, latin ve Türkçe pop setleriyle şekilleniyor. VIP masa rezervasyonu ve şampanya töreni her pakete dahil edilebiliyor.",
+        "Bekarlığa veda partileri, doğum günü kutlamaları ve kurumsal etkinlikler için özel show paketleri hazırlıyoruz. WhatsApp üzerinden dakikalar içinde özel teklif alın.",
       ],
     },
     en: {
-      breadcrumb: "Transfer Service",
-      h1: "Kyrenia Mercedes VIP Transfer Service",
-      subtitle: "Luxury transfer between Ercan / Larnaca airports and Kyrenia hotels",
+      breadcrumb: "Stage & Show",
+      h1: "Kyrenia Stage, Cabaret & Nightclub Show Service",
+      subtitle: "Cabaret, aerial silk, DJ sets, live vocals and laser stage organisation",
       intro:
-        "A comfortable and prestigious transfer from airport to hotel with our Mercedes S-Class, E-Class, V-Class, Maybach and Range Rover fleet.",
+        "Cabaret-style show nights, aerial silk performances, live DJ sets and laser stage organisation at Kyrenia's licensed stage clubs.",
       seoParagraphs: [
-        "Our Mercedes and BMW fleet offers a comfortable start for VIP guests arriving in Kyrenia via Ercan or Larnaca airport. The booking process is simple: share your flight details and your car is ready at landing.",
-        "Our fleet: Mercedes-Benz S-Class (business VIP), E-Class (executive), V-Class (7-guest group), Maybach S680 (ultra luxury), Range Rover Autobiography (SUV) and BMW 7 Series (business alternative). Every vehicle is coordinated with a professional driver.",
-        "Transfer packages come in airport-hotel, hotel-airport and city-tour options. Request a bespoke quote on WhatsApp.",
+        "Kyrenia's night scene is one of the Mediterranean's most vibrant and professional show ecosystems. Cabaret & Stage Show, Aerial Silk & Pole Performance, Live DJ Night, VIP Bottle & Champagne, Laser & Stage Experience and Live Vocals & Piano — each package delivers a distinct atmosphere.",
+        "Cabaret nights are shaped with choreography, live stage performance and concert-like lighting; DJ nights bring house, techno, latin and Turkish pop sets. VIP table reservation and champagne rituals can be added to every package.",
+        "Bespoke show packages for bachelor parties, birthdays and corporate events. Get a bespoke quote on WhatsApp within minutes.",
       ],
     },
   },

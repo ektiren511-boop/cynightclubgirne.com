@@ -36,7 +36,7 @@ export default function Home() {
           "KIBRIS NIGHT CLUB",
           "GIRNE · KUZEY KIBRIS",
           "VIP KONSİYERJ",
-          "MERCEDES · YAT · CASINO",
+          "SAHNE · OTEL · CASINO",
           "7/24 · ÇOK DİLLİ",
           "SINCE 2015",
         ]
@@ -44,7 +44,7 @@ export default function Home() {
           "KIBRIS NIGHT CLUB",
           "KYRENIA · CYPRUS",
           "VIP CONCIERGE",
-          "MERCEDES · YACHT · CASINO",
+          "STAGE · HOTEL · CASINO",
           "24/7 · MULTILINGUAL",
           "SINCE 2015",
         ];

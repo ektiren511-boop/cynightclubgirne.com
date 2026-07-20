@@ -1,0 +1,33 @@
+{
+  "summary": "Regression test for iteration 11 HIGH bugs (marquee vehicle content + /transfer-servisi Mercedes landing). Both fixes verified. Full sanity check passed on all Turkish-slug routes, blog featured card md:col-span-2 confirmed, Google Ads gtag present, POST /api/contact returned 200 with success toast.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "App.js uses Turkish slugs (/iletisim, /galeri, /hizmetler, /fiyatlar, /nasil-rezervasyon, /sss). English paths like /contact, /gallery etc. fall through to /:slug LandingPage which renders 'landing-not-found'. This is by design but note for future testers.",
+    "The old slug /transfer-servisi no longer exists in landings.js — visiting it correctly renders the LandingPage's 'not-found' state (no vehicle content leaked). Consider adding a 301 redirect from /transfer-servisi -> /sahne-servisi to preserve SEO if the old URL was indexed."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped per request)", "frontend": "100%"},
+  "test_credentials": "N/A",
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Router uses Turkish slugs only: /iletisim (Contact), /galeri (Gallery), /hizmetler (Services), /fiyatlar (Pricing), /nasil-rezervasyon (BookingGuide), /sss (FAQ), /blog, /blog/:slug, /:slug (Landing catch-all). Do NOT test /contact, /gallery, /services etc. — they route to LandingPage not-found. Home marquee = 'SAHNE · OTEL · CASINO' (TR) / 'STAGE · HOTEL · CASINO' (EN). Contact form testids: contact-name, contact-phone, contact-message, contact-submit (no 'contact-name-input'). Categories on Home: category-sahne-servisi, category-otel-servisi, category-casino-servisi, category-yat-servisi, category-dans-vip-servisi.",
+  "verification_details": {
+    "marquee_text": "KIBRIS NIGHT CLUB · GIRNE · KUZEY KIBRIS · VIP KONSİYERJ · SAHNE · OTEL · CASINO · 7/24 · ÇOK DİLLİ · SINCE 2015 (no Mercedes/BMW/Maybach)",
+    "sahne_servisi_landing": "H1 'Girne Sahne, Kabare ve Gece Kulübü Show Servisi' present, zero vehicle references",
+    "transfer_servisi_removed": "Slug no longer in landings.js, page returns SPA 200 with landing-not-found (no leaked vehicle content)",
+    "category_first_card_href": "/sahne-servisi (correct)",
+    "blog_featured_card": "wrapper motion.div parent className includes 'md:col-span-2' (confirmed via DOM inspection)",
+    "google_ads": "window.gtag defined on Home (typeof function)",
+    "contact_form": "POST /api/contact -> 200, success toast 'Mesajınız başarıyla gönderildi.' displayed",
+    "grep_src": "0 matches for mercedes|maybach|BMW|Range Rover|1618843479313 across /app/frontend/src/",
+    "pages_status": {"/": 200, "/hizmetler": 200, "/fiyatlar": 200, "/nasil-rezervasyon": 200, "/iletisim": 200, "/blog": 200, "/galeri": 200, "/sss": 200}
+  }
+}
