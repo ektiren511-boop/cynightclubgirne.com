@@ -7,6 +7,7 @@ import { SEO } from "@/components/SEO";
 import { ProfileCard } from "@/components/ProfileCard";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { AmbianceGallery } from "@/components/AmbianceGallery";
+import { StageHighlights } from "@/components/StageHighlights";
 import { Manifesto } from "@/components/Manifesto";
 import { Marquee } from "@/components/Marquee";
 import { Reveal, MaskReveal } from "@/components/Reveal";
@@ -57,7 +58,7 @@ export default function Home() {
         "@id": `${SITE.url}#business`,
         name: SITE.name,
         image:
-          "https://images.unsplash.com/photo-1571266028243-e4bfc5c1f31d?w=1200&q=80",
+          "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&q=80",
         url: SITE.url,
         telephone: SITE.phone,
         priceRange: "€€€",
@@ -263,6 +264,9 @@ export default function Home() {
           separator="◆"
         />
       </section>
+
+      {/* ═══════════════ STAGE HIGHLIGHTS — 3 signature scenes ═══════════════ */}
+      <StageHighlights />
 
       {/* ═══════════════ ABOUT / EDITORIAL ═══════════════ */}
       <section className="py-28 md:py-40 bg-[#0A0A0B] relative overflow-hidden">

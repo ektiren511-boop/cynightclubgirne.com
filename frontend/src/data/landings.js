@@ -6,7 +6,7 @@ export const landings = [
     slug: "sahne-servisi",
     type: "service",
     matchTags: ["Sahne / Show", "Stage / Show"],
-    hero: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1920&q=80",
+    hero: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=1920&q=85",
     tr: {
       breadcrumb: "Sahne & Show",
       h1: "Girne Sahne, Kabare ve Gece Kulübü Show Servisi",

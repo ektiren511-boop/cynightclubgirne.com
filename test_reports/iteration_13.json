@@ -1,0 +1,39 @@
+{
+  "summary": "Frontend-only regression for iteration 13 (StageHighlights, AmbianceGallery 12 tiles, expanded girls.js galleries, Google Ads compliance). Tested on public preview URL across 13 routes + 6 profile-detail pages. All new features work: StageHighlights renders 3 frames in correct Home order (HERO->MARQUEE->STAGE-HIGHLIGHTS->...->AMBIANCE->FINAL-CTA) with working /sahne-servisi CTAs; AmbianceGallery shows exactly 12 tiles labelled PL/01..12; /galeri lists 24 profiles with the 6 stage services first; profile details load 4-5 gallery images; contact form POSTs 200 + toast + clears; TR<->EN switch works; window.gtag is a function and no console/page errors on any CTA click. Google Ads keyword scan (eskort/escort/konsomatris/Mercedes/BMW/Maybach/Range Rover) = 0 hits in src and 0 hits in rendered text on all 13 routes. Blockers found: 2 dead Unsplash IDs (HTTP 404) and several irrelevant/duplicate images.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [
+      {"component": "girls.js / Gallery + /casino-servisi", "issue": "2 Unsplash IDs return HTTP 404 -> broken image tiles showing alt text on black: 'high-limit-baccarat' (photo-1601370552761-3f97a4b34a45) and 'casino-slots-tour' (photo-1596738081493-1b0ee9d3f8d5). Affects cover + gallery on /galeri, /galeri/high-limit-baccarat, /galeri/casino-slots-tour and /casino-servisi.", "selector": "[data-testid^='profile-card-']", "priority": "HIGH"},
+      {"component": "girls.js - casino-vip-lounge", "issue": "Cover photo-1560472354-b33ff0c44a43 renders an SEO/analytics dashboard screenshot (graphs, 'Total impressions 17.6K'), completely unrelated to a Casino VIP Lounge. Same image also used on a /blog card.", "selector": "[data-testid='profile-card-casino-vip-lounge']", "priority": "MEDIUM"},
+      {"component": "girls.js - yacht/sunset item", "issue": "'Yat Gun Batimi Turu' card uses an underwater scuba-diver/fish photo; unrelated to a sunset yacht tour. Same diving image also appears on /blog.", "selector": "[data-testid^='profile-card-']", "priority": "MEDIUM"},
+      {"component": "girls.js - live-vocals-night", "issue": "Gallery array has photo-1574391884720 twice as items 1 and 2 -> detail page shows 4 images but only 3 unique (verified in DOM: imgCount 4, unique 3).", "selector": "[data-testid='profile-detail-page'] img", "priority": "MEDIUM"},
+      {"component": "AmbianceGallery.jsx", "issue": "Duplicate images inside the 12-tile grid: tile 06 and tile 10 both use photo-1459749411175; tile 11 ('Cabaret gecesi') and tile 12 ('Gece atmosferi') both use photo-1493676304819 and sit side-by-side, so the last row shows the identical picture twice with different captions.", "selector": "[data-testid='ambiance-tile-10'], [data-testid='ambiance-tile-11']", "priority": "MEDIUM"},
+      {"component": "AmbianceGallery.jsx tile 09", "issue": "'Neon & muzik' uses photo-1508700115892 which is a neon typography sign ('you are what you listen to'), not a stage/crowd/DJ/laser frame as the section promises.", "selector": "[data-testid='ambiance-tile-8']", "priority": "LOW"},
+      {"component": "App.js routing", "issue": "No catch-all 404 route. Any unmatched multi-segment URL (e.g. /vitrin/cabaret-show) renders only navbar + footer with an empty body (body text length 626, no h1). Single-segment unknown slugs fall into LandingPage.", "selector": "n/a", "priority": "MEDIUM"}
+    ],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Home / AmbianceGallery", "issues": ["12-tile masonry with col-span-2 items leaves the final row half-empty (2 tiles under a 4-col grid), creating an unbalanced trailing gap."]}
+    ]
+  },
+  "test_report_links": [],
+  "action_items": [
+    "Replace the two dead Unsplash IDs photo-1601370552761-3f97a4b34a45 (high-limit-baccarat) and photo-1596738081493-1b0ee9d3f8d5 (casino-slots-tour) in /app/frontend/src/data/girls.js with verified-200 casino images.",
+    "Replace casino-vip-lounge cover (photo-1560472354-b33ff0c44a43 = analytics dashboard screenshot) and the scuba-diving image used for the yacht/sunset item; also audit /blog cover images for the same two files.",
+    "De-duplicate AmbianceGallery tiles 6/10 and 11/12, and swap tile 09 (neon sign) for a stage/crowd frame.",
+    "Fix live-vocals-night gallery: first two entries are the same photo (photo-1574391884720).",
+    "Add a catch-all <Route path='*'> 404 page so unknown URLs like /vitrin/... do not render a blank body (also relevant for Google Ads landing-page quality)."
+  ],
+  "critical_code_review_comments": [
+    "Add a build-time/CI check (simple HEAD request script) over all Unsplash URLs in data/*.js — two 404 IDs shipped again this iteration.",
+    "girls.js is a flat 407-line literal with repeated image IDs; extract a shared IMAGES map with named constants to make duplicate/dead references obvious.",
+    "AmbianceGallery tiles use array index as React key and testid; fine today but any reorder will silently break existing testids — prefer a stable id field."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "not tested (frontend-only request)", "frontend": "90%"},
+  "seed_data_creation": "One TEST_ contact submission posted to POST /api/contact (mocked endpoint, returned 200).",
+  "should_call_test_agent_after_fix": true,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Profile detail route is /galeri/:id (NOT /vitrin/:id as stated in the review request) - verified working with 4-5 images for all 6 stage services. Verified-passing this round: Google Ads keyword compliance (src grep + rendered text on 13 routes), Home section order, stage-highlights 3 frames + CTAs -> /sahne-servisi, ambiance 12 tiles PL/01..12, 24 gallery profiles, editorial pages /hizmetler /fiyatlar /nasil-rezervasyon /iletisim /blog /sss, contact form 200+toast+clear, TR/EN switch, window.gtag typeof function, zero console/page errors. Re-test after image fixes: run a HEAD-status sweep on every unsplash URL in src, then re-check /galeri and /casino-servisi for naturalWidth===0 images.",
+  "rca_of_the_issue": "Broken tiles are caused by two Unsplash photo IDs that no longer resolve (HTTP 404 confirmed via curl on images.unsplash.com). Irrelevant/duplicate imagery is a content-curation gap: several IDs were reused across components without visual verification, so the same picture appears under different captions (ambiance tiles 11/12) and unrelated stock (analytics dashboard, scuba diver) is presented as casino/yacht content."
+}

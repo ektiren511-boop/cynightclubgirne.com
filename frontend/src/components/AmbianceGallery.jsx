@@ -3,55 +3,55 @@ import { motion } from "framer-motion";
 import { useLang } from "@/i18n/LanguageContext";
 import { Reveal } from "@/components/Reveal";
 
-// Ambiance gallery — night club atmosphere, casino tables, hotel suites
-// All images are venue/scene focused, NOT individual portraits.
+// Ambiance gallery — Kyrenia night-life stage & club scene.
+// All imagery: distant crowd, aerial silk, stage laser, silhouettes — Google Ads safe.
 const AMBIANCE = [
   {
-    src: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1400&q=85",
-    alt_tr: "Girne gece kulübü dans pisti",
-    alt_en: "Kyrenia nightclub dance floor",
-    tag_tr: "Dans",
-    tag_en: "Dance",
+    src: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=1600&q=85",
+    alt_tr: "Sahne şovu — lazer & duman",
+    alt_en: "Stage show — laser & smoke",
+    tag_tr: "Sahne",
+    tag_en: "Stage",
     span: "col-span-2 row-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1200&q=85",
-    alt_tr: "Rulet masası",
-    alt_en: "Roulette table",
-    tag_tr: "Casino",
-    tag_en: "Casino",
+    src: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=85",
+    alt_tr: "Gece kulübü dans pisti",
+    alt_en: "Nightclub dance floor",
+    tag_tr: "Dans",
+    tag_en: "Dance",
     span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=85",
-    alt_tr: "5 yıldızlı otel süiti",
-    alt_en: "5-star hotel suite",
-    tag_tr: "Otel",
-    tag_en: "Hotel",
+    src: "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=1200&q=85",
+    alt_tr: "Aerial silk performansı",
+    alt_en: "Aerial silk performance",
+    tag_tr: "Aerial",
+    tag_en: "Aerial",
     span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1571266028243-e4bfc5c1f31d?w=1400&q=85",
-    alt_tr: "DJ set gecesi",
-    alt_en: "DJ night",
+    src: "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=1400&q=85",
+    alt_tr: "Konser geçesi kalabalık",
+    alt_en: "Concert night crowd",
     tag_tr: "Gece",
     tag_en: "Night",
     span: "col-span-2",
   },
   {
     src: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1200&q=85",
-    alt_tr: "Şampanya servisi",
-    alt_en: "Champagne service",
+    alt_tr: "VIP masa & şampanya",
+    alt_en: "VIP table & champagne",
     tag_tr: "VIP",
     tag_en: "VIP",
     span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1518895312237-a9e23508077d?w=1200&q=85",
-    alt_tr: "Blackjack masası",
-    alt_en: "Blackjack table",
-    tag_tr: "Casino",
-    tag_en: "Casino",
+    src: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1200&q=85",
+    alt_tr: "Lazer sahne ışıkları",
+    alt_en: "Laser stage lights",
+    tag_tr: "Lazer",
+    tag_en: "Laser",
     span: "",
   },
   {
@@ -63,11 +63,43 @@ const AMBIANCE = [
     span: "col-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=1200&q=85",
-    alt_tr: "Deniz manzaralı süit",
-    alt_en: "Sea-view suite",
-    tag_tr: "Otel",
-    tag_en: "Hotel",
+    src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&q=85",
+    alt_tr: "Sahne silüetleri",
+    alt_en: "Stage silhouettes",
+    tag_tr: "Silüet",
+    tag_en: "Silhouette",
+    span: "",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=1200&q=85",
+    alt_tr: "Neon & müzik",
+    alt_en: "Neon & music",
+    tag_tr: "Neon",
+    tag_en: "Neon",
+    span: "",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1400&q=85",
+    alt_tr: "Sahne ışıkları & duman",
+    alt_en: "Stage lights & smoke",
+    tag_tr: "Show",
+    tag_en: "Show",
+    span: "col-span-2",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=1200&q=85",
+    alt_tr: "Cabaret gecesi",
+    alt_en: "Cabaret night",
+    tag_tr: "Cabaret",
+    tag_en: "Cabaret",
+    span: "",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=1200&q=85",
+    alt_tr: "Gece atmosferi",
+    alt_en: "Night atmosphere",
+    tag_tr: "Gece",
+    tag_en: "Night",
     span: "",
   },
 ];
@@ -85,19 +117,23 @@ export const AmbianceGallery = () => {
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 mb-16 md:mb-20 items-end">
           <Reveal className="lg:col-span-7">
             <p className="text-[10px] uppercase tracking-[0.5em] text-[#B76E79] mb-6 font-mono">
-              — {lang === "tr" ? "AMBİYANS" : "AMBIANCE"} · 008 PLATES
+              — {lang === "tr" ? "SAHNE & AMBİYANS" : "STAGE & AMBIANCE"} · 012 PLATES
             </p>
             <h2 className="font-editorial text-4xl md:text-6xl lg:text-7xl text-white tracking-tight leading-[0.95]">
               {lang === "tr" ? (
                 <>
                   Girne&apos;nin{" "}
-                  <em className="italic text-[#E0BFB8]">gece</em>{" "}
+                  <em className="italic text-[#E0BFB8]">sahne</em>{" "}
+                  &{" "}
+                  <em className="italic text-[#D4AF37]">gece</em>{" "}
                   ambiyansı.
                 </>
               ) : (
                 <>
                   The Kyrenia{" "}
-                  <em className="italic text-[#E0BFB8]">night</em>{" "}
+                  <em className="italic text-[#E0BFB8]">stage</em>{" "}
+                  &{" "}
+                  <em className="italic text-[#D4AF37]">night</em>{" "}
                   ambiance.
                 </>
               )}
@@ -106,12 +142,12 @@ export const AmbianceGallery = () => {
           <Reveal className="lg:col-span-5" delay={0.1}>
             <p className="text-white/55 leading-[1.7] text-base md:text-lg">
               {lang === "tr"
-                ? "Dans pistleri, rulet masaları, 5 yıldızlı süitler ve şampanya servisi — bir gecede yaşayacaklarınızın önizlemesi."
-                : "Dance floors, roulette tables, 5-star suites and champagne service — a preview of what your night holds."}
+                ? "Sahne şovları, aerial silk performansları, lazer geceleri ve VIP masa hizmeti — bir gecede yaşayacaklarınızın önizlemesi. 12 kadraj, tek bir Girne gecesi."
+                : "Stage shows, aerial silk performances, laser nights and VIP bottle service — a preview of what your night holds. 12 frames, one Kyrenia evening."}
             </p>
             <div className="flex items-center gap-4 mt-6 text-[10px] uppercase tracking-[0.32em] text-white/40 font-mono">
               <span className="w-8 h-px bg-white/30" />
-              <span>N° 008 / VIII</span>
+              <span>N° 012 / XII</span>
             </div>
           </Reveal>
         </div>
@@ -122,9 +158,9 @@ export const AmbianceGallery = () => {
           viewport={{ once: true, margin: "-80px" }}
           variants={{
             hidden: {},
-            show: { transition: { staggerChildren: 0.08 } },
+            show: { transition: { staggerChildren: 0.06 } },
           }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[180px] md:auto-rows-[240px]"
+          className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[180px] md:auto-rows-[220px]"
           onMouseLeave={() => setHovered(null)}
         >
           {AMBIANCE.map((img, i) => {
@@ -166,13 +202,11 @@ export const AmbianceGallery = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
 
-                {/* Plate number */}
                 <div className="absolute top-3 left-3 text-[9px] uppercase tracking-[0.32em] text-white/70 font-mono flex items-center gap-2">
                   <span className="w-4 h-px bg-white/60" />
                   PL / {String(i + 1).padStart(2, "0")}
                 </div>
 
-                {/* Caption */}
                 <figcaption className="absolute inset-x-0 bottom-0 p-4 md:p-5 flex items-end justify-between gap-3">
                   <p className="text-white text-xs md:text-sm font-medium tracking-wide leading-tight">
                     {lang === "tr" ? img.alt_tr : img.alt_en}
@@ -182,7 +216,6 @@ export const AmbianceGallery = () => {
                   </span>
                 </figcaption>
 
-                {/* Corner marks (only when active) */}
                 <div className="absolute inset-3 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   {["top-0 left-0", "top-0 right-0", "bottom-0 left-0", "bottom-0 right-0"].map(
                     (pos, j) => (
