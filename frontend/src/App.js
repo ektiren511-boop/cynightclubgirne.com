@@ -19,6 +19,7 @@ import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import BookingGuide from "@/pages/BookingGuide";
 import LandingPage from "@/pages/LandingPage";
+import NotFound from "@/pages/NotFound";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/:slug" element={<LandingPage />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />

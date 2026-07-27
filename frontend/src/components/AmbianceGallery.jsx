@@ -5,14 +5,14 @@ import { Reveal } from "@/components/Reveal";
 
 // Ambiance gallery — Kyrenia night-life stage & club scene.
 // All imagery: distant crowd, aerial silk, stage laser, silhouettes — Google Ads safe.
+// 12 unique tiles, uniform 1×1 layout for a clean 4-column grid.
 const AMBIANCE = [
   {
-    src: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=1600&q=85",
+    src: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=1200&q=85",
     alt_tr: "Sahne şovu — lazer & duman",
     alt_en: "Stage show — laser & smoke",
     tag_tr: "Sahne",
     tag_en: "Stage",
-    span: "col-span-2 row-span-2",
   },
   {
     src: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=85",
@@ -20,7 +20,6 @@ const AMBIANCE = [
     alt_en: "Nightclub dance floor",
     tag_tr: "Dans",
     tag_en: "Dance",
-    span: "",
   },
   {
     src: "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=1200&q=85",
@@ -28,15 +27,13 @@ const AMBIANCE = [
     alt_en: "Aerial silk performance",
     tag_tr: "Aerial",
     tag_en: "Aerial",
-    span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=1400&q=85",
+    src: "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=1200&q=85",
     alt_tr: "Konser geçesi kalabalık",
     alt_en: "Concert night crowd",
     tag_tr: "Gece",
     tag_en: "Night",
-    span: "col-span-2",
   },
   {
     src: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1200&q=85",
@@ -44,23 +41,20 @@ const AMBIANCE = [
     alt_en: "VIP table & champagne",
     tag_tr: "VIP",
     tag_en: "VIP",
-    span: "",
   },
   {
     src: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1200&q=85",
-    alt_tr: "Lazer sahne ışıkları",
-    alt_en: "Laser stage lights",
+    alt_tr: "Lazer sahne şovu",
+    alt_en: "Laser stage show",
     tag_tr: "Lazer",
     tag_en: "Laser",
-    span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1400&q=85",
+    src: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=85",
     alt_tr: "Kalabalık dans pisti",
     alt_en: "Crowded dance floor",
     tag_tr: "Dans",
     tag_en: "Dance",
-    span: "col-span-2",
   },
   {
     src: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&q=85",
@@ -68,39 +62,34 @@ const AMBIANCE = [
     alt_en: "Stage silhouettes",
     tag_tr: "Silüet",
     tag_en: "Silhouette",
-    span: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=1200&q=85",
-    alt_tr: "Neon & müzik",
-    alt_en: "Neon & music",
-    tag_tr: "Neon",
-    tag_en: "Neon",
-    span: "",
+    src: "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1200&q=85",
+    alt_tr: "Rooftop lounge",
+    alt_en: "Rooftop lounge",
+    tag_tr: "Lounge",
+    tag_en: "Lounge",
   },
   {
-    src: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1400&q=85",
-    alt_tr: "Sahne ışıkları & duman",
-    alt_en: "Stage lights & smoke",
-    tag_tr: "Show",
-    tag_en: "Show",
-    span: "col-span-2",
+    src: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&q=85",
+    alt_tr: "DJ ekipmanları",
+    alt_en: "DJ equipment",
+    tag_tr: "DJ",
+    tag_en: "DJ",
   },
   {
-    src: "https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=1200&q=85",
-    alt_tr: "Cabaret gecesi",
-    alt_en: "Cabaret night",
-    tag_tr: "Cabaret",
-    tag_en: "Cabaret",
-    span: "",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=1200&q=85",
-    alt_tr: "Gece atmosferi",
-    alt_en: "Night atmosphere",
+    src: "https://images.unsplash.com/photo-1574391884720-bbc3740c59d1?w=1200&q=85",
+    alt_tr: "Loş gece atmosferi",
+    alt_en: "Dim night atmosphere",
     tag_tr: "Gece",
     tag_en: "Night",
-    span: "",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?w=1200&q=85",
+    alt_tr: "DJ booth performansı",
+    alt_en: "DJ booth performance",
+    tag_tr: "DJ",
+    tag_en: "DJ",
   },
 ];
 
@@ -160,7 +149,7 @@ export const AmbianceGallery = () => {
             hidden: {},
             show: { transition: { staggerChildren: 0.06 } },
           }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[180px] md:auto-rows-[220px]"
+          className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4"
           onMouseLeave={() => setHovered(null)}
         >
           {AMBIANCE.map((img, i) => {
@@ -192,7 +181,7 @@ export const AmbianceGallery = () => {
                     : "grayscale(60%) brightness(0.55)",
                 }}
                 transition={{ duration: 0.6, ease: [0.19, 1, 0.22, 1] }}
-                className={`group relative overflow-hidden bg-black border border-white/[0.05] ${img.span}`}
+                className="group relative overflow-hidden bg-black border border-white/[0.05] aspect-[4/5]"
               >
                 <img
                   src={img.src}

@@ -150,7 +150,7 @@ export const posts = [
   {
     slug: "kibris-rusca-ekibimiz",
     cover:
-      "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1600&q=80",
+      "https://images.unsplash.com/photo-1518895312237-a9e23508077d?w=1600&q=80",
     date: "2025-11-25",
     tr: {
       title: "Kıbrıs'ta Rusça Konuşan Konsiyerj Ekibimiz",
@@ -204,7 +204,7 @@ export const posts = [
   {
     slug: "girne-yat-turu-organizasyonu",
     cover:
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1600&q=80",
+      "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=1600&q=80",
     date: "2025-11-10",
     tr: {
       title: "Girne Yat Turu Organizasyonu",

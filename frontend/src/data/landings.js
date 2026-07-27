@@ -96,7 +96,7 @@ export const landings = [
     slug: "yat-servisi",
     type: "service",
     matchTags: ["Yat / Deniz", "Yacht / Sea"],
-    hero: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1920&q=80",
+    hero: "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=1920&q=80",
     tr: {
       breadcrumb: "Yat Servisi",
       h1: "Girne Yat Kiralama ve Karpaz Tur Organizasyonu",

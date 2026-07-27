@@ -22,6 +22,21 @@
   - `POST /api/contact` mock success, `GET /api/contact`
 - **Data files**: `/data/girls.js` (24 VIP showcase items), `/data/blog.js` (10 posts), `/data/faq.js`, `/data/landings.js` (5 category landings)
 
+### 2026-02-c — More stage-show imagery (Google-Ads-safe)
+- **StageHighlights** — yeni Home bölümü: 3 signature scene (aerial silk / laser stage / cabaret champagne) editorial layout, MaskReveal, /sahne-servisi CTA'lar
+- **AmbianceGallery** — 8 → **12 tile**, uniform 4-col grid (design bug fixed), all stage/dance/DJ/laser/silhouette imagery, 0 duplicates
+- **girls.js sahne servisleri**: 6 kaydın galerisi 2 → 4-5 image'a genişletildi (Cabaret, Aerial, DJ, Bottle, Laser, Vocals)
+- **Broken/wrong Unsplash IDs purged (tümü test edildi ve doğrulandı):**
+  - `1601370552761` (baccarat 404) → `1541278107931` (poker chips ✓)
+  - `1596738081493` (slots 404) → `1596838132731` (slot machines ✓)
+  - `1560472354` (analytics dashboard!) → `1518895312237` (roulette ✓)
+  - `1544551763` (scuba diver!) → `1567899378494` (yacht sunset ✓)
+  - `1502672260266` (orange sofa!) → `1540946485063` (sailboat ✓ for beach-club-day)
+  - `1615671524827` (seedling), `1519708227418` (food), `1504609773096` (compass), `1571266028243` (dead), `1533174072545` (dead), `1511671782779` (dead) — hepsi kaldırıldı
+- **live-vocals-night** gallery duplicate fixed
+- **404 catch-all route** eklendi: `<Route path="*" element={<NotFound />}>` — editorial "Bu sahne kapalı." sayfası, /vitrin/... gibi geçersiz URL'lerde artık boş sayfa yerine 404 render ediliyor (Google Ads landing-page kalitesi için önemli)
+- **Testing**: iteration_13 → 90% (image bug'ları), iteration follow-up → **0 broken images across all 24 gallery cards + all landing pages**
+
 ## What's Been Implemented
 
 ### 2025-12 — Initial build
