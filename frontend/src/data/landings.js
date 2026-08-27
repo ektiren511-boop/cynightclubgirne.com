@@ -152,6 +152,103 @@ export const landings = [
       ],
     },
   },
+  // ═══ NEW SEO LANDINGS — nightlife, entertainment guide, residence ═══
+  {
+    slug: "kibris-gece-hayati",
+    type: "guide",
+    matchTags: ["Sahne / Show", "Stage / Show", "Dans / Gece", "Dance / Nightlife"],
+    hero: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1920&q=85",
+    tr: {
+      breadcrumb: "Kıbrıs Gece Hayatı",
+      h1: "Kıbrıs & Girne Gece Hayatı Rehberi — Night Club, Cabaret, Sahne Şovu",
+      subtitle: "Akdeniz'in en canlı gece sahnesi: night club, cabaret, direk dansı ambiyansı ve VIP masa koordinasyonu",
+      intro:
+        "Kıbrıs gece hayatı, Girne başta olmak üzere Akdeniz'in en zengin ve profesyonel eğlence sahnelerinden biridir. Cabaret, aerial silk, sahne şovu, direk dansı ambiyansı, lazer geceleri ve canlı DJ setleri.",
+      seoParagraphs: [
+        "Girne night club sahnesi hem yerel hem de uluslararası ziyaretçiler için özel olarak konumlanmış bir eğlence hattıdır. Cratos, Merit ve Acapulco gibi büyük otel-kompleksleri kendi lisanslı sahnelerine sahip; şehir merkezinde ise butik nightclub'lar, cabaret salonları ve rooftop bar'lar bulunuyor.",
+        "Kıbrıs Night Club'un rolü, sizi doğrudan doğru mekana yönlendirmek, VIP masa rezervasyonunu koordine etmek ve şampanya bottle service (Dom Pérignon, Cristal, Moët Rose) düzenlemektir. Cabaret & aerial silk gösterileri, direk dansı ambiyansı sunan lazer sahne şovları ve klasik canlı DJ geceleri için özel paketlerimiz mevcuttur.",
+        "Bekarlığa veda geceleri, doğum günleri, kurumsal etkinlikler ve VIP misafir grupları için kişiye özel gece hayatı paketleri hazırlıyoruz. Havalimanından direkt night club transferi + otel/rezidans check-in + sahne şovu + geri dönüş: tek WhatsApp mesajı ile tüm süreç ekibimiz tarafından koordine ediliyor.",
+        "Girne dışında Lefkoşa ve Gazimağusa gece hayatı için de rezervasyon ve transfer sağlıyoruz. 7 dilde (TR, EN, RU, DE, FR, IT, AR) hizmet.",
+      ],
+    },
+    en: {
+      breadcrumb: "Cyprus Nightlife",
+      h1: "Cyprus & Kyrenia Nightlife Guide — Nightclub, Cabaret, Stage Show",
+      subtitle: "The Mediterranean's most vibrant night scene: nightclub, cabaret, pole-dance ambiance and VIP table coordination",
+      intro:
+        "Cyprus nightlife, led by Kyrenia, is one of the Mediterranean's richest and most professional entertainment scenes. Cabaret, aerial silk, stage show, pole-dance ambiance, laser nights and live DJ sets.",
+      seoParagraphs: [
+        "The Kyrenia night club scene is positioned for both local and international visitors. Cratos, Merit and Acapulco hotel complexes host their own licensed stage venues; downtown offers boutique nightclubs, cabaret rooms and rooftop bars.",
+        "Kıbrıs Night Club's role is to route you to the right venue, coordinate the VIP table reservation and arrange the champagne bottle service (Dom Pérignon, Cristal, Moët Rose). Bespoke packages for cabaret & aerial silk shows, pole-dance ambiance laser nights and classic live DJ evenings.",
+        "Bespoke nightlife packages for bachelor parties, birthdays, corporate events and VIP guest groups. Airport-direct-nightclub transfer + hotel/residence check-in + stage show + return: coordinated end-to-end via a single WhatsApp message.",
+        "Beyond Kyrenia, we support Nicosia and Famagusta nightlife with reservations and transfers. 7-language service (TR, EN, RU, DE, FR, IT, AR).",
+      ],
+    },
+  },
+  {
+    slug: "kibris-eglence-rehberi",
+    type: "guide",
+    matchTags: ["Sahne / Show", "Stage / Show", "Dans / Gece", "Dance / Nightlife", "Casino", "Yat / Deniz", "Yacht / Sea", "Bar / Terrace"],
+    hero: "https://images.unsplash.com/photo-1518895312237-a9e23508077d?w=1920&q=85",
+    tr: {
+      breadcrumb: "Kıbrıs Eğlence Rehberi",
+      h1: "Kıbrıs Eğlence Rehberi — Aktivite, Casino, Yat, Night Club & Tur",
+      subtitle: "Girne, Lefkoşa ve Karpaz'da yapılabilecek her şey — tek rehberde",
+      intro:
+        "Kıbrıs eğlence sahnesi bir gün-gece döngüsüdür: gündüz beach club, yat & Karpaz turu; akşam 5 yıldızlı otel süiti, casino ve fine-dining; gece night club, cabaret sahnesi ve rooftop bar.",
+      seoParagraphs: [
+        "Girne eğlence rehberimiz; günün her saatine göre 25+ deneyim ve aktiviteyi kapsar. Gündüz: Acapulco Beach Club havuz partileri, Karpaz Ada turu, glass-bottom tekne, dalış, ATV safari ve yat kiralama. Akşam: 5 yıldızlı otel süit check-in, Michelin-yıldızlı seviyede fine dining, cocktail bar ve rooftop terrace.",
+        "Kıbrıs casino sahnesi Akdeniz'in en gelişmiş hattıdır — Cratos, Merit Crystal Cove, Acapulco, Grand Pasha, Lord's Palace, Kaya Artemis ve Elexus dahil 20+ 5 yıldızlı casino. Blackjack, rulet, baccarat, poker turnuvaları ve slot salonları. VIP salon erişimi ve masa rezervasyonu ekibimizle.",
+        "Gece hayatı bloğunda: night club VIP masa, cabaret & sahne şovları, aerial silk & direk dansı ambiyansı, canlı DJ setleri ve şampanya bottle service. Her etkinlik için havalimanı-otel-mekan-rezidans transferi lüks araç filosu ile.",
+        "Kıbrıs Night Club, 2015'ten beri Girne'de faaliyet gösteren, 7 dilli ekibiyle bu 25+ deneyimi tek WhatsApp mesajıyla planlayabilen VIP konsiyerj servisidir. Talep edin, ekibimiz dakikalar içinde kişiye özel teklifle döner.",
+      ],
+    },
+    en: {
+      breadcrumb: "Cyprus Entertainment Guide",
+      h1: "Cyprus Entertainment Guide — Activity, Casino, Yacht, Nightclub & Tour",
+      subtitle: "Everything to do in Kyrenia, Nicosia and Karpaz — in one guide",
+      intro:
+        "The Cyprus entertainment scene is a day-to-night cycle: daytime beach club, yacht & Karpaz tour; evening 5-star hotel suite, casino and fine dining; night nightclub, cabaret stage and rooftop bar.",
+      seoParagraphs: [
+        "Our Kyrenia entertainment guide covers 25+ experiences and activities for every hour of the day. Daytime: Acapulco Beach Club pool parties, Karpaz Peninsula tour, glass-bottom boat, diving, ATV safari and yacht charter. Evening: 5-star suite check-in, Michelin-level fine dining, cocktail bar and rooftop terrace.",
+        "The Cyprus casino scene is the Mediterranean's most developed corridor — 20+ 5-star casinos including Cratos, Merit Crystal Cove, Acapulco, Grand Pasha, Lord's Palace, Kaya Artemis and Elexus. Blackjack, roulette, baccarat, poker tournaments and slot rooms. VIP lounge access and table reservations with our team.",
+        "For nightlife: nightclub VIP table, cabaret & stage shows, aerial silk & pole-dance ambiance, live DJ sets and champagne bottle service. Airport-hotel-venue-residence transfer with luxury car fleet for every event.",
+        "Kıbrıs Night Club, operating in Kyrenia since 2015 with its 7-language team, is the VIP concierge that plans these 25+ experiences via a single WhatsApp message. Request now and we return with a bespoke quote within minutes.",
+      ],
+    },
+  },
+  {
+    slug: "girne-rezidans-hizmeti",
+    type: "service",
+    matchTags: ["5★ Otel", "5-star Hotel", "Villa", "Resort"],
+    hero: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=85",
+    tr: {
+      breadcrumb: "Girne Rezidans",
+      h1: "Girne Rezidans, Konsept Ev & VIP Kalış Hizmeti",
+      subtitle: "Kısa & uzun dönem rezidans, deniz manzaralı villa ve konsept ev kiralama koordinasyonu",
+      intro:
+        "Girne'de otel dışında bir alternatif arayan VIP misafirlere yönelik özel rezidans, konsept ev ve villa kiralama koordinasyonu. Tam donanımlı, günlük temizlik ve concierge dahil.",
+      seoParagraphs: [
+        "Otel süiti bazen yetmez. Yat limanına 3 dakika yürüme mesafesindeki deniz manzaralı rezidanslardan, Karaoğlanoğlu ve Alsancak bölgesindeki 2-6 yatak odalı konsept evlere ve özel havuzlu villalara kadar tüm alternatiflerde Kıbrıs Night Club rezervasyon koordinasyonu sağlar.",
+        "Ne dahil: Tam donanımlı mutfak, günlük ev temizliği, taze havlu ve nevresim değişimi, WiFi 500 Mbps, klima, akıllı TV ve Netflix, özel park yeri. VIP paketlerde: özel şef, günlük çiçek servisi, şampanya karşılaması ve yat/casino transfer talebi.",
+        "Süre esnektir — minimum 3 gece, uzun süreli aylık kiralama seçenekleri de mevcut. Airbnb/Booking'de listelenmeyen özel havuz villaları için de erişimimiz vardır. Konsept ev, apart-otel ve rezidans arasındaki farkı size özel gösterip en uygun seçeneği öneririz.",
+        "Sadece kalış değil, bir kalış deneyimi: rezidans check-in ile beraber restoran rezervasyonu, night club VIP masa, casino koordinasyonu ve Karpaz yat turu tek paket olarak planlanabilir. WhatsApp'tan iletişime geçin, ekibimiz dakikalar içinde kişiye özel bir teklifle döner.",
+      ],
+    },
+    en: {
+      breadcrumb: "Kyrenia Residence",
+      h1: "Kyrenia Residence, Concept House & VIP Stay Service",
+      subtitle: "Short & long-term residence, sea-view villa and concept-house rental coordination",
+      intro:
+        "Bespoke residence, concept house and villa rental coordination for VIP guests seeking an alternative to hotels in Kyrenia. Fully equipped, daily cleaning and concierge included.",
+      seoParagraphs: [
+        "A hotel suite isn't always enough. From sea-view residences three minutes walking from Kyrenia marina, to 2–6-bedroom concept houses in Karaoğlanoğlu and Alsancak, and private-pool villas — Kıbrıs Night Club coordinates reservations across every alternative.",
+        "Included: fully equipped kitchen, daily housekeeping, fresh towels and linens, 500 Mbps WiFi, air conditioning, smart TV with Netflix, private parking. VIP packages add: private chef, daily flower service, champagne welcome and yacht/casino transfer on request.",
+        "Duration is flexible — minimum 3 nights, monthly long-term rental also available. We also have access to private-pool villas not listed on Airbnb/Booking. We'll walk you through the differences between concept house, apart-hotel and residence, and recommend the fit.",
+        "Not just a stay — a stay experience: with the residence check-in we can bundle restaurant reservation, nightclub VIP table, casino coordination and Karpaz yacht tour into a single package. Message us on WhatsApp and we return with a bespoke quote within minutes.",
+      ],
+    },
+  },
 ];
 
 // Helper — filter items for a landing by category (nationality field now holds category)

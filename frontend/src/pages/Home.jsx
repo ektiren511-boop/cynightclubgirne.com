@@ -469,7 +469,7 @@ export default function Home() {
               hidden: {},
               show: { transition: { staggerChildren: 0.06 } },
             }}
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-5"
           >
             {landings.map((l, idx) => {
               const item = l[lang] || l.tr;
@@ -556,6 +556,160 @@ export default function Home() {
           className="font-mono text-xs md:text-sm text-white/50 uppercase tracking-[0.4em]"
           testId="footer-marquee"
         />
+      </section>
+
+      {/* ═══════════════ SEO EDITORIAL CONTENT ═══════════════ */}
+      <section
+        className="py-24 md:py-32 bg-[#0A0A0B] border-t border-white/[0.05]"
+        data-testid="seo-content"
+      >
+        <div className="max-w-5xl mx-auto px-6 lg:px-10">
+          <Reveal>
+            <div className="flex items-center gap-4 text-[10px] uppercase tracking-[0.5em] text-[#B76E79] mb-8 font-mono">
+              <span className="w-10 h-px bg-[#B76E79]" />
+              — {lang === "tr" ? "GİRNE REHBERİ" : "KYRENIA GUIDE"} · 009
+            </div>
+          </Reveal>
+          <Reveal delay={0.05}>
+            <h2 className="font-editorial text-4xl md:text-6xl lg:text-7xl text-white leading-[0.95] tracking-tight mb-12">
+              {lang === "tr" ? (
+                <>
+                  Girne <em className="italic text-[#E0BFB8]">night club</em>,{" "}
+                  <em className="italic text-[#D4AF37]">cabaret</em> ve VIP
+                  konsiyerj.
+                </>
+              ) : (
+                <>
+                  Kyrenia <em className="italic text-[#E0BFB8]">nightclub</em>,{" "}
+                  <em className="italic text-[#D4AF37]">cabaret</em> and VIP
+                  concierge.
+                </>
+              )}
+            </h2>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <div className="grid md:grid-cols-2 gap-x-12 gap-y-8 text-white/65 leading-[1.85] text-base md:text-[17px]">
+              {lang === "tr" ? (
+                <>
+                  <p>
+                    <strong className="text-white">Kıbrıs Night Club</strong>,{" "}
+                    Girne&apos;nin lider VIP konsiyerj ve eğlence rehberidir. 2015&apos;ten
+                    beri night club rezervasyonu, cabaret & sahne şovu
+                    organizasyonu, aerial silk performansı ve direk dansı
+                    ambiyansı sunan lazer geceleri için tek adres.{" "}
+                    <Link
+                      to="/kibris-gece-hayati"
+                      className="text-[#E0BFB8] underline underline-offset-4 hover:text-[#D4AF37] transition-colors"
+                      data-testid="seo-link-nightlife"
+                    >
+                      Kıbrıs gece hayatı rehberi →
+                    </Link>
+                  </p>
+                  <p>
+                    Otel dışı bir alternatif ister misiniz?{" "}
+                    <strong className="text-white">Girne rezidans</strong> ve{" "}
+                    <strong className="text-white">konsept ev</strong> kiralama
+                    koordinasyonumuz ile deniz manzaralı 2-6 yatak odalı
+                    rezidansta veya özel havuzlu villada kalın. Günlük temizlik,
+                    özel şef ve şampanya karşılaması dahil.{" "}
+                    <Link
+                      to="/girne-rezidans-hizmeti"
+                      className="text-[#E0BFB8] underline underline-offset-4 hover:text-[#D4AF37] transition-colors"
+                      data-testid="seo-link-residence"
+                    >
+                      Rezidans hizmeti →
+                    </Link>
+                  </p>
+                  <p>
+                    Casino severler için 20+ 5 yıldızlı casino: Cratos, Merit
+                    Crystal Cove, Acapulco, Grand Pasha, Lord&apos;s Palace, Kaya
+                    Artemis ve Elexus. Blackjack, rulet, baccarat, poker
+                    turnuvaları ve VIP salon erişimi.{" "}
+                    <Link
+                      to="/casino-servisi"
+                      className="text-[#E0BFB8] underline underline-offset-4 hover:text-[#D4AF37] transition-colors"
+                    >
+                      Casino rehberi →
+                    </Link>
+                  </p>
+                  <p>
+                    Gündüz için Karpaz yat turu, Acapulco beach club havuz
+                    partileri, glass-bottom tekne, dalış ve ATV safari. Akşam
+                    için 5 yıldızlı otel süiti check-in, fine dining, cocktail
+                    bar ve rooftop terrace. Gece için night club VIP masa,
+                    cabaret sahnesi ve bottle service.{" "}
+                    <Link
+                      to="/kibris-eglence-rehberi"
+                      className="text-[#E0BFB8] underline underline-offset-4 hover:text-[#D4AF37] transition-colors"
+                      data-testid="seo-link-entertainment"
+                    >
+                      Kıbrıs eğlence rehberi →
+                    </Link>
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p>
+                    <strong className="text-white">Kıbrıs Night Club</strong> is
+                    Kyrenia&apos;s leading VIP concierge and entertainment guide.
+                    Since 2015 — one address for nightclub bookings, cabaret &
+                    stage show organisation, aerial silk performances and
+                    pole-dance ambiance laser nights.{" "}
+                    <Link
+                      to="/kibris-gece-hayati"
+                      className="text-[#E0BFB8] underline underline-offset-4 hover:text-[#D4AF37] transition-colors"
+                      data-testid="seo-link-nightlife"
+                    >
+                      Cyprus nightlife guide →
+                    </Link>
+                  </p>
+                  <p>
+                    Prefer an alternative to a hotel? Our{" "}
+                    <strong className="text-white">Kyrenia residence</strong>{" "}
+                    and <strong className="text-white">concept house</strong>{" "}
+                    rental coordination places you in a 2–6-bedroom sea-view
+                    residence or a private-pool villa. Daily cleaning, private
+                    chef and champagne welcome included.{" "}
+                    <Link
+                      to="/girne-rezidans-hizmeti"
+                      className="text-[#E0BFB8] underline underline-offset-4 hover:text-[#D4AF37] transition-colors"
+                      data-testid="seo-link-residence"
+                    >
+                      Residence service →
+                    </Link>
+                  </p>
+                  <p>
+                    For casino lovers — 20+ 5-star casinos: Cratos, Merit
+                    Crystal Cove, Acapulco, Grand Pasha, Lord&apos;s Palace, Kaya
+                    Artemis and Elexus. Blackjack, roulette, baccarat, poker
+                    tournaments and VIP-lounge access.{" "}
+                    <Link
+                      to="/casino-servisi"
+                      className="text-[#E0BFB8] underline underline-offset-4 hover:text-[#D4AF37] transition-colors"
+                    >
+                      Casino guide →
+                    </Link>
+                  </p>
+                  <p>
+                    Daytime: Karpaz yacht tour, Acapulco beach-club pool
+                    parties, glass-bottom boat, diving and ATV safari. Evening:
+                    5-star suite check-in, fine dining, cocktail bar and
+                    rooftop terrace. Night: nightclub VIP table, cabaret stage
+                    and bottle service.{" "}
+                    <Link
+                      to="/kibris-eglence-rehberi"
+                      className="text-[#E0BFB8] underline underline-offset-4 hover:text-[#D4AF37] transition-colors"
+                      data-testid="seo-link-entertainment"
+                    >
+                      Cyprus entertainment guide →
+                    </Link>
+                  </p>
+                </>
+              )}
+            </div>
+          </Reveal>
+        </div>
       </section>
 
       {/* ═══════════════ FINAL CTA ═══════════════ */}

@@ -31,8 +31,8 @@ export const SEO = ({
       customDesc ||
       descriptionKey ||
       (lang === "tr"
-        ? "Kıbrıs Night Club — Girne'nin lider VIP konsiyerj ve turizm servisi. Otel, restoran, casino ve yat rezervasyonu, çok dilli tur rehberliği, havalimanı transferi ve etkinlik organizasyonu."
-        : "Kıbrıs Night Club — Kyrenia's leading VIP concierge and tourism service. Hotel, restaurant, casino and yacht bookings, multilingual tour guidance, airport transfer and event organisation.");
+        ? "Kıbrıs Night Club — Girne'nin lider VIP konsiyerj, gece hayatı ve eğlence rehberi. Night club rezervasyonu, cabaret & sahne şovu, rezidans & konsept ev, 5 yıldızlı otel, casino, yat kiralama ve havalimanı transferi. 7/24 çok dilli hizmet."
+        : "Kıbrıs Night Club — Kyrenia's leading VIP concierge, nightlife and entertainment guide. Night club bookings, cabaret & stage shows, residence rentals, 5-star hotels, casino, yacht charter and airport transfer. 24/7 multilingual service.");
 
     document.title = title;
 
@@ -56,8 +56,8 @@ export const SEO = ({
     setMeta(
       "keywords",
       lang === "tr"
-        ? "Girne VIP konsiyerj, Kıbrıs konsiyerj servisi, Girne turizm rehberi, Kıbrıs Night Club, otel rezervasyon Girne, casino rehberi Kıbrıs, yat kiralama Girne, havalimanı transferi Girne, tur rehberliği Kıbrıs, etkinlik organizasyonu Girne, Cratos konsiyerj, Merit konsiyerj, Acapulco konsiyerj"
-        : "Kyrenia VIP concierge, Cyprus concierge service, Kyrenia tourism guide, Kıbrıs Night Club, Kyrenia hotel booking, Cyprus casino guide, Kyrenia yacht charter, Kyrenia airport transfer, Cyprus tour guide, Kyrenia event organisation, Cratos concierge, Merit concierge, Acapulco concierge",
+        ? "Kıbrıs Night Club, Girne night club, Girne gece hayatı, Kıbrıs gece hayatı, kıbrıs eğlence rehberi, girne eğlence, night club rezervasyon Kıbrıs, direk dansı Kıbrıs, cabaret Kıbrıs, sahne şovu Girne, aerial silk gösterisi, VIP masa Girne, Girne rezidans, Girne konsept ev, Kıbrıs kiralık rezidans, Girne otel rezervasyon, Kıbrıs 5 yıldızlı otel, casino rehberi Kıbrıs, Cratos casino, Merit casino, Acapulco resort, yat kiralama Girne, Karpaz turu, havalimanı transferi Ercan Larnaka, çok dilli tur rehberi Kıbrıs, VIP konsiyerj Girne"
+        : "Kıbrıs Night Club, Kyrenia night club, Kyrenia nightlife, Cyprus nightlife, Cyprus entertainment guide, Kyrenia entertainment, nightclub booking Cyprus, pole dance show Kyrenia, cabaret Cyprus, stage show Kyrenia, aerial silk performance, VIP table Kyrenia, Kyrenia residence, Kyrenia concept house, Cyprus short-term rental, Kyrenia hotel booking, Cyprus 5-star hotel, casino guide Cyprus, Cratos casino, Merit casino, Acapulco resort, yacht charter Kyrenia, Karpaz tour, Ercan Larnaca airport transfer, multilingual tour guide Cyprus, VIP concierge Kyrenia",
     );
 
     // Open Graph
