@@ -120,6 +120,42 @@ export const SEO = ({
       document.head.appendChild(script);
     }
 
+    // BreadcrumbList JSON-LD — auto-generated from pathname
+    const breadcrumbScriptId = "knc-jsonld-breadcrumb";
+    const existingBc = document.getElementById(breadcrumbScriptId);
+    if (existingBc) existingBc.remove();
+    if (pathname !== "/") {
+      const segments = pathname.split("/").filter(Boolean);
+      const homeName = lang === "tr" ? "Anasayfa" : "Home";
+      const items = [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: homeName,
+          item: SITE.url,
+        },
+      ];
+      segments.forEach((seg, idx) => {
+        items.push({
+          "@type": "ListItem",
+          position: idx + 2,
+          name: decodeURIComponent(seg)
+            .replace(/-/g, " ")
+            .replace(/\b\w/g, (c) => c.toUpperCase()),
+          item: `${SITE.url}/${segments.slice(0, idx + 1).join("/")}`,
+        });
+      });
+      const bcScript = document.createElement("script");
+      bcScript.type = "application/ld+json";
+      bcScript.id = breadcrumbScriptId;
+      bcScript.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: items,
+      });
+      document.head.appendChild(bcScript);
+    }
+
     // Update html lang
     document.documentElement.lang = lang;
   }, [lang, t, titleKey, descriptionKey, customTitle, customDesc, pathname, jsonLd]);

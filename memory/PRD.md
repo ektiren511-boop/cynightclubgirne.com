@@ -7,7 +7,7 @@
 
 ## User Choices
 - Brand: **Kıbrıs Night Club**
-- Phone / WhatsApp: **+90 548 855 23 87**
+- Phone / WhatsApp: **+90 533 849 48 98**
 - Domain: **cynightclubgirne.com**
 - Languages: **Turkish (default) + English**
 - Google Ads Tag: **AW-18318323179** (public/index.html)

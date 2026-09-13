@@ -33,7 +33,7 @@ const CONTENT = {
       {
         n: "02",
         title: "WhatsApp'tan bize yazın",
-        desc: "Sayfanın sağ alt köşesindeki yeşil WhatsApp butonuna tıklayın veya doğrudan +90 548 855 23 87 numarasını arayın. Tarihinizi, misafir sayınızı ve tercih ettiğiniz otel/lokasyonu bildirin.",
+        desc: "Sayfanın sağ alt köşesindeki yeşil WhatsApp butonuna tıklayın veya doğrudan +90 533 849 48 98 numarasını arayın. Tarihinizi, misafir sayınızı ve tercih ettiğiniz otel/lokasyonu bildirin.",
       },
       {
         n: "03",
@@ -120,7 +120,7 @@ const CONTENT = {
       {
         n: "02",
         title: "Message us on WhatsApp",
-        desc: "Tap the green WhatsApp button at the bottom-right of any page, or call +90 548 855 23 87 directly. Share your dates, guest count and preferred hotel/location.",
+        desc: "Tap the green WhatsApp button at the bottom-right of any page, or call +90 533 849 48 98 directly. Share your dates, guest count and preferred hotel/location.",
       },
       {
         n: "03",

@@ -2,7 +2,7 @@
 export const translations = {
   tr: {
     brand: "Kıbrıs Night Club",
-    tagline: "Girne Kıbrıs'ın Lüks Konsiyerj Deneyimi",
+    tagline: "Girne Night Club, Gece Hayatı, Cabaret & VIP Konsiyerj Rehberi",
     nav: {
       home: "Anasayfa",
       gallery: "Vitrin",
@@ -210,7 +210,7 @@ export const translations = {
   },
   en: {
     brand: "Kıbrıs Night Club",
-    tagline: "The Luxury Concierge Experience of Kyrenia Cyprus",
+    tagline: "Kyrenia Nightclub, Nightlife, Cabaret & VIP Concierge Guide",
     nav: {
       home: "Home",
       gallery: "Showcase",
